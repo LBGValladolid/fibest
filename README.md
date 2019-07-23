@@ -22,3 +22,20 @@ python manage.py runserver
 ```
 
 La base de datos y los CV están en volúmenes de Docker
+
+## Crear bases de datos
+
+```
+docker-compose run django python manage.py makemigrations fibest
+docker-compose run django python manage.py migrate
+```
+
+# Crear superusuario
+
+Los superusuarios tienen acceso a Django Admin
+
+```
+docker-compose run django python manage.py createsuperuser
+```
+
+Django Admin: /admin
