@@ -74,4 +74,3 @@ class Company(models.Model):
     # REGISTRO
     # AVISO LEGAL
     # GDPR
-
