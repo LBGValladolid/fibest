@@ -70,18 +70,19 @@ class Titulation(Enum):
     PROGRAMA_CONJUNTO_PUBLICIDAD_TURISMO    = (63, "Programa de estudios conjunto de Grado en Publicidad y Relaciones Públicas y Grado en Turismo")
     PROGRAMA_CONJUNTO_RECURSOS_HUMANOS_ADE  = (64, "Programa de estudios conjunto de Grado en Relaciones Laborales y Recursos Humanos y Grado de Administración y Dirección de Empresas")
 
-    @staticmethod
-    def get_titulations(enum):
-        return [titulation for x in enum]
+    @classmethod
+    def get_titulations(en):
+        return [(x.value[0],x.value[1]) for x in en]
 
 
 
-class CV(models.Model):¡
+class CV(models.Model):
     name = models.CharField(max_length=200)
     email = models.EmailField()
     dni = models.CharField(max_length=15)
     titulation = models.IntegerField(choices=Titulation.get_titulations())
 
-    # ACTIVIDADES
+    # TODO ACTIVIDADES
+
     cv = models.FileField()
     cover_letter = models.FileField()

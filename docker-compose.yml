@@ -21,7 +21,7 @@ services:
   ports:
    - "3031:3031"
   volumes:
-   - ./:/opt/fibest:ro
+   - ./:/opt/fibest
   depends_on:
    - postgres
   
