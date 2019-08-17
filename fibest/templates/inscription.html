@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Inscription FiBEST</title>
+    </head>
+    <body>
+        <h1>Ficha de inscripción</h1>
+        {% if company %}
+        <h2>Editando la ficha de {{ company.name }}</h2>
+        {% else %}
+        <h2>Registrando nueva empresa participante</h2>
+        {% endif %}
+    </body>
+</html>

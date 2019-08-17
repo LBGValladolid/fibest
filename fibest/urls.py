@@ -18,9 +18,15 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 
-from fibest.views import index 
+from fibest.views import index
+from fibest.views import login
+from fibest.views import dashboard
+from fibest.views import inscription
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index.index, name='index')
+    path('', index.index, name='index'),
+    path('login/', login.login, name="login"),
+    path('dashboard/', dashboard.index, name="dashboard"),
+    path('inscription/', inscription.index, name="inscription")
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

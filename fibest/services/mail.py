@@ -11,8 +11,8 @@ Reply-To: valladolid@best.eu.org
 Subject: {subject}
 Content-Type: text/html
 
-    {text}
-    """
+{text}
+"""
 
     with smtplib.SMTP("smtp-relay.sendinblue.com",587) as smtp:
         smtp.starttls(context=context)

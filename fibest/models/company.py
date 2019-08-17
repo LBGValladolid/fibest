@@ -1,6 +1,9 @@
 from django.db import models
 
 class Company(models.Model):
+    login = models.EmailField()
+    login_code = models.CharField(max_length=15)
+
     name = models.CharField(max_length=200)
     logo = models.ImageField()
     link = models.URLField()
