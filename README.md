@@ -23,7 +23,13 @@ python manage.py runserver
 
 La base de datos y los CV están en volúmenes de Docker
 
-## Crear bases de datos
+## Ficheros estáticos
+
+```
+docker-compose run django python manage.py collectstatic
+```
+
+## Crear bases de datos / Modificar
 
 ```
 docker-compose run django python manage.py makemigrations fibest

@@ -7,9 +7,20 @@
     <body>
         <h1>Ficha de inscripción</h1>
         {% if company %}
-        <h2>Editando la ficha de {{ company.name }}</h2>
+        <h2>Editing company {{ company.name }}</h2>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Save">
+        </form>
         {% else %}
-        <h2>Registrando nueva empresa participante</h2>
+        <h2>Register new company</h2>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Register">
+        </form>
+        <p>After this registration, you will be able to enter the FiBEST companies dashboard and complete the inscription, set FiBEST Online and magazine.</p>
         {% endif %}
     </body>
 </html>

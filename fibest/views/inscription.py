@@ -1,10 +1,28 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.forms import ModelForm
 
 from fibest.models.company import Company
 
+class CompanyForm(ModelForm):
+    class Meta:
+        model = Company
+        fields = ("login", "name", "link")
+
 def index(request):
-    try:
-        company = Company.objects.get(id=request.session["id"])
-        return render(request, "inscription.html", {"company": company})
-    except:
-        return render(request, "inscription.html")
+    if request.method == "GET":
+        try:
+            company = Company.objects.get(id=request.session["id"])
+            form = CompanyForm(instance=company)
+            return render(request, "inscription.html", {"form": form})
+        except:
+            form = CompanyForm()
+            return render(request, "inscription.html", {"form": form})
+    elif request.method == "POST":
+        form = CompanyForm(request.POST)
+        if form.is_valid():
+            company = form.save(commit=False)
+            company.login_code = "AAA"
+            company.save()
+            return redirect("/login/")
+        else:
+            return redirect("/inscription/")
