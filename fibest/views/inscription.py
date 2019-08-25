@@ -18,11 +18,17 @@ def index(request):
             form = CompanyForm()
             return render(request, "inscription.html", {"form": form})
     elif request.method == "POST":
-        form = CompanyForm(request.POST)
-        if form.is_valid():
-            company = form.save(commit=False)
-            company.login_code = "AAA"
-            company.save()
-            return redirect("/login/")
-        else:
-            return redirect("/inscription/")
+        try:
+            company = Company.objects.get(id=request.session["id"])
+            form = CompanyForm(request.POST, instance=company)
+            if form.is_valid():
+                company = form.save(commit=False)
+                company.save()
+        except:
+            form = CompanyForm(request.POST)
+            if form.is_valid():
+                company = form.save(commit=False)
+                company.login_code = 'AAA'
+                company.save()
+        finally:
+            return redirect("/dashboard/")
