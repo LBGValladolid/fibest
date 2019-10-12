@@ -1,11 +1,21 @@
 from django.db import models
 
 class Company(models.Model):
-    login = models.EmailField("Login email", help_text="This mail will be used to login to FiBEST")
+    login = models.EmailField(
+        "Login email", 
+        help_text="This mail will be used to login to FiBEST"
+    )
     login_code = models.CharField(max_length=15)
 
-    name = models.CharField("Name", max_length=200, help_text="Name of the company")
-    link = models.URLField("Website", help_text="Website of the company")
+    name = models.CharField(
+        "Name", 
+        max_length=200, 
+        help_text="Name of the company"
+    )
+    link = models.URLField(
+        "Website", 
+        help_text="Website of the company"
+    )
 
 class Magazine(models.Model):
     company = models.ForeignKey(Company, models.CASCADE)

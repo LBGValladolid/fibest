@@ -1,9 +1,12 @@
+from django import forms
 from django.shortcuts import render, redirect
-from django.forms import ModelForm
 
 from fibest.models.company import Company
 
-class CompanyForm(ModelForm):
+# Probando Héctor.
+from django.views.generic import CreateView
+
+class CompanyForm(forms.ModelForm):
     class Meta:
         model = Company
         fields = ("login", "name", "link")
