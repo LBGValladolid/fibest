@@ -6,16 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400&display=swap&subset=latin-ext" rel="stylesheet"> 
-                
+        
         <style>
             * {
                 font-family: 'Source Sans Pro', sans-serif;
                 font-weight: 300;
-                font-size: 20px;
+                font-size: 18px;
             }
 
             body {
-                padding-top: 2.5rem;
                 padding-bottom: 2.5rem;
             }
 
@@ -26,26 +25,35 @@
         </style>
 
         {% load crispy_forms_tags %}
-
     </head>
     <body>
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow container">
+            <h3 class="my-0 mr-md-auto ">FiBEST Company Area</h3>
+            <nav class="my-2 my-md-0 mr-md-3">
+                <a class="p-2 text-dark" href="{% url 'dashboard' %}">Dashboard</a>
+            </nav>
+        </div>
+
+
         <section class="container">
-            <h1>Ficha de inscripción</h1>
-            {% if company %}
-            <h2>Editing company {{ company.name }}</h2>
+            <h1>Inscription form</h1>
+            {% if form.instance.name %}
+            <h2>Editing company <span class="font-weight-normal" style="font-size: inherit;">{{ form.instance.name }}</h2>
             <form method="POST">
                 {% csrf_token %}
                 {{ form|crispy }}
-                <input type="submit" value="Save">
+                <button type="submit" class="btn btn-primary">Edit</button> 
             </form>
             {% else %}
             <h2>Register new company</h2>
             <form method="POST">
                 {% csrf_token %}
                 {{ form|crispy }}
-                <input type="submit" value="Register">
+
+                <p class="card card-body bg-light">After this registration, you will be able to enter the FiBEST companies dashboard and complete the inscription, set FiBEST Online and magazine.</p>
+                <button type="submit" class="btn btn-primary">Register</button>
             </form>
-            <p>After this registration, you will be able to enter the FiBEST companies dashboard and complete the inscription, set FiBEST Online and magazine.</p>
+            
             {% endif %}
         </section>
 

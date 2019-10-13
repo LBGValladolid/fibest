@@ -3,18 +3,18 @@ from django.db import models
 class Company(models.Model):
     login = models.EmailField(
         "Login email", 
-        help_text="This mail will be used to login to FiBEST"
+        help_text="This mail will be used to login to FiBEST."
     )
     login_code = models.CharField(max_length=15)
 
     name = models.CharField(
         "Name", 
         max_length=200, 
-        help_text="Name of the company"
+        help_text="Name of the company."
     )
     link = models.URLField(
-        "Website", 
-        help_text="Website of the company"
+        "Website",
+        help_text='Website of the company. Example: https://www.fibest.org.'
     )
 
 class Magazine(models.Model):

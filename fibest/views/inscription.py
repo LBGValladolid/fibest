@@ -11,6 +11,11 @@ class CompanyForm(forms.ModelForm):
         model = Company
         fields = ("login", "name", "link")
 
+        help_texts = {
+            'link': 'Website of the company. Example: https://www.fibest.org.',
+        }
+
+
 def index(request):
     if request.method == "GET":
         try:
