@@ -1,0 +1,4 @@
+*.pyc
+static
+.vscode
+data.db
