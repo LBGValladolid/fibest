@@ -5,8 +5,8 @@
         <title>Inscription FiBEST</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400&display=swap&subset=latin-ext" rel="stylesheet"> 
-        
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400&display=swap&subset=latin-ext" rel="stylesheet">
+
         <style>
             * {
                 font-family: 'Source Sans Pro', sans-serif;
@@ -29,9 +29,11 @@
     <body>
         <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow container">
             <h3 class="my-0 mr-md-auto ">FiBEST Company Area</h3>
+            {% if form.instance.name %}
             <nav class="my-2 my-md-0 mr-md-3">
                 <a class="p-2 text-dark" href="{% url 'dashboard' %}">Dashboard</a>
             </nav>
+            {% endif %}
         </div>
 
 
@@ -42,7 +44,7 @@
             <form method="POST">
                 {% csrf_token %}
                 {{ form|crispy }}
-                <button type="submit" class="btn btn-primary">Edit</button> 
+                <button type="submit" class="btn btn-primary">Edit</button>
             </form>
             {% else %}
             <h2>Register new company</h2>
@@ -53,11 +55,11 @@
                 <p class="card card-body bg-light">After this registration, you will be able to enter the FiBEST companies dashboard and complete the inscription, set FiBEST Online and magazine.</p>
                 <button type="submit" class="btn btn-primary">Register</button>
             </form>
-            
+
             {% endif %}
         </section>
 
-        
+
         {# Bootstrap JS, Popper y JQuery #}
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

@@ -1,0 +1,4 @@
+*.pyc
+fibest/static
+.vscode
+data.db
