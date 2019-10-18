@@ -1,4 +1,4 @@
 *.pyc
-static
+fibest/static
 .vscode
 data.db
