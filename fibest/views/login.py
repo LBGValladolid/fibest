@@ -27,6 +27,7 @@ def login(request):
             company.login_code = code
             company.save()
             send_login_mail(email, code)
+            return redirect("/")
         except Company.DoesNotExist:
             # CREAR COMPAÑIA NUEVA
             return redirect("/inscription/")

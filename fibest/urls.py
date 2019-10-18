@@ -22,11 +22,13 @@ from fibest.views import index
 from fibest.views import login
 from fibest.views import dashboard
 from fibest.views import inscription
+from fibest.views import magazine
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index.index, name='index'),
     path('login/', login.login, name="login"),
     path('dashboard/', dashboard.index, name="dashboard"),
-    path('inscription/', inscription.index, name="inscription")
+    path('inscription/', inscription.index, name="inscription"),
+    path('magazine/', magazine.index, name="magazine")
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
