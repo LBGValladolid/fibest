@@ -23,6 +23,7 @@ from fibest.views import login
 from fibest.views import dashboard
 from fibest.views import inscription
 from fibest.views import magazine
+from fibest.views import forum
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -30,5 +31,6 @@ urlpatterns = [
     path('login/', login.login, name="login"),
     path('dashboard/', dashboard.index, name="dashboard"),
     path('inscription/', inscription.index, name="inscription"),
-    path('magazine/', magazine.index, name="magazine")
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    path('magazine/', magazine.index, name="magazine"),
+    path('forum/', forum.index, name="forum")
+              ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
