@@ -4,6 +4,7 @@ services:
 
  postgres:
   image: postgres:12.0
+
   restart: always
   environment:
    POSTGRES_USER: postgres
