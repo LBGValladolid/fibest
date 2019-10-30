@@ -1,5 +1,15 @@
 from django.db import models
 
+from django.core.files.storage import FileSystemStorage
+from django.conf import settings
+
+image_storage = FileSystemStorage(
+    # Physical file location ROOT
+    location= settings.MEDIA_ROOT,
+    # Url for file
+    base_url= settings.MEDIA_URL
+)
+
 class Company(models.Model):
     login = models.EmailField(
         "Login email", 
@@ -19,7 +29,7 @@ class Company(models.Model):
 
 class Magazine(models.Model):
     company = models.ForeignKey(Company, models.CASCADE)
-    publi_magazine = models.ImageField("Image for magazine", help_text="Ideal size TBD")
+    publi_magazine = models.ImageField("Image for magazine", storage=image_storage, help_text="Ideal size TBD")
     name_magazine = models.CharField("Name of the company (magazine)", max_length=200)
     activity_magazine = models.CharField("Activity of the company (magazine)", max_length=500)
     search_magazine = models.CharField("What is your company looking for? (magazine)", max_length=2500)

@@ -15,12 +15,16 @@ class ForumForm(forms.ModelForm):
 def index(request):
     if request.method == "GET":
         try:
-            forum = Forum.objects.get(company=request.session["id"])
-            form = ForumForm(instance=forum)
-            return render(request, "forum.html", {"form": form})
+            Company.objects.get(id=request.session["id"])
+            try:
+                forum = Forum.objects.get(company=request.session["id"])
+                form = ForumForm(instance=forum)
+                return render(request, "forum.html", {"form": form})
+            except:
+                form = ForumForm()
+                return render(request, "forum.html", {"form": form})
         except:
-            form = ForumForm()
-            return render(request, "forum.html", {"form": form})
+            return redirect("/login")
     elif request.method == "POST":
         try:
             forum = Forum.objects.get(company=request.session["id"])
@@ -28,7 +32,7 @@ def index(request):
             if form.is_valid():
                 form.save()
         except:
-            form = ForumForm(request.POST)
+            form = ForumForm(request.POST, request.FILES)
             if form.is_valid():
                 forum = form.save(commit=False)
                 forum.company = Company.objects.get(id=request.session["id"])

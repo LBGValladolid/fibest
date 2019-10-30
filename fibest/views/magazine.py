@@ -13,20 +13,25 @@ class MagazineForm(forms.ModelForm):
 def index(request):
     if request.method == "GET":
         try:
-            magazine = Magazine.objects.get(company=request.session["id"])
-            form = MagazineForm(instance=magazine)
-            return render(request, "magazine.html", {"form": form})
+            Company.objects.get(id=request.session["id"])
+            try:
+                magazine = Magazine.objects.get(company=request.session["id"])
+                form = MagazineForm(instance=magazine)
+                return render(request, "magazine.html", {"form": form})
+            except:
+                form = MagazineForm()
+                return render(request, "magazine.html", {"form": form})
         except:
-            form = MagazineForm()
-            return render(request, "magazine.html", {"form": form})
+            return redirect("/login")
     elif request.method == "POST":
         try:
             magazine = Magazine.objects.get(company=request.session["id"])
             form = MagazineForm(request.POST, instance=magazine)
+
             if form.is_valid():
                 form.save()
         except:
-            form = MagazineForm(request.POST)
+            form = MagazineForm(request.POST, request.FILES)
             if form.is_valid():
                 magazine = form.save(commit=False)
                 magazine.company = Company.objects.get(id=request.session["id"])
