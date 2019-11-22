@@ -16,7 +16,10 @@
 
             body {
                 padding-bottom: 2.5rem;
-                
+                background: #95ffdc63;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right up, #fff, #95ffdc63);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #fff, #95ffdc63); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
             }
 
             h1, h2, h3 {
@@ -45,7 +48,7 @@
                     <small id="emailHelp" class="form-text text-muted">Please, introduce your email to access your company inscription details and dashboard. We will send a link to the email to login so you don't have to remember a password.</small>
                 </div>
                 
-                <input type="submit" value="Login">
+                <button type="submit" class="btn btn-primary">Login</button>
 
                 {% if error_message %}
                     <div class="alert alert-danger" role="alert">
