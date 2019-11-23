@@ -1,14 +1,61 @@
 {% extends "base.html" %}
 
 {% block title %}
-<title>Dashboard | FiBEST Private Area</title>
+<title>Dashboard | FiBEST Company Area</title>
 {% endblock %}
 
 {% block content %}
-    
-    <h1>{{ company.name }}</h1>
-    <a href="/inscription/">Revisar inscripción</a>
-    <a href="/magazine/">Editar detalles de la revista</a>
-    <a href="/forum/">Editar detalles del foro</a>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow container">
+        <h3 class="my-0 mr-md-auto ">FiBEST Company Area</h3>
+        <nav class="my-2 my-md-0 mr-md-3">
+            <a class="p-2 text-dark" href="{% url 'dashboard' %}">Dashboard</a>
+        </nav>
+    </div>
 
+
+    <section class="container">
+        <h1>{{ company.name }}</h1>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Edit Inscription</h5>
+                    <p class="card-text">Change your basic data:
+                        <ul>
+                            <li>Login email</li>
+                            <li>Company name</li>
+                            <li>Website</li>
+                        </ul>
+                    </p>
+                    <a href="/inscription/" class="btn btn-primary">Go to Edit Inscription</a>
+                </div>
+                </div>
+            </div>
+
+            {# Magazine #}
+            <div class="col-sm-4">
+                <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Edit Magazine</h5>
+                    <p class="card-text">Edit the information and the logo that will appear in the magazine that will be given to all the attendees of FiBEST.
+                    </p>
+                    <a href="/magazine/" class="btn btn-primary">Go to Edit Magazine</a>
+                </div>
+                </div>
+            </div>
+
+            {# EDITAR:.... #}
+            <div class="col-sm-4">
+                <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Edit Forum</h5>
+                    <p class="card-text">Check and edit all the data related to the contract and payments.
+                    </p>
+                    <a href="/forum/" class="btn btn-primary">Go to Edit Forum</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock %}

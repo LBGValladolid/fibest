@@ -8,13 +8,16 @@
         {% endblock %}
         
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400&display=swap&subset=latin-ext" rel="stylesheet">
         
-        
+        {# Favicon #}
         <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
         <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
 
+        {# Imports de Bootstrap #}
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400&display=swap&subset=latin-ext" rel="stylesheet">
+        
+        {# El buen CSS en el HTML 👍 #}
         <style>
             * {
                 font-family: 'Source Sans Pro', sans-serif;
@@ -22,12 +25,8 @@
                 font-size: 18px;
             }
 
-            bodye {
+            body {
                 padding-bottom: 2.5rem;
-                background: #95ffdc63;  /* fallback for old browsers */
-                background: -webkit-linear-gradient(to right up, #fff, #95ffdc63);  /* Chrome 10-25, Safari 5.1-6 */
-                background: linear-gradient(to right, #fff, #95ffdc63); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
             }
 
             h1, h2, h3 {
