@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Dashboard FiBEST</title>
-    </head>
-    <body>
-        <h1>{{ company.name }}</h1>
-        <a href="/inscription/">Revisar inscripción</a>
-        <a href="/magazine/">Editar detalles de la revista</a>
-        <a href="/forum/">Editar detalles del foro</a>
+{% extends "base.html" %}
 
-    </body>
-</html>
+{% block title %}
+<title>Dashboard | FiBEST Private Area</title>
+{% endblock %}
+
+{% block content %}
+    
+    <h1>{{ company.name }}</h1>
+    <a href="/inscription/">Revisar inscripción</a>
+    <a href="/magazine/">Editar detalles de la revista</a>
+    <a href="/forum/">Editar detalles del foro</a>
+
+{% endblock %}
