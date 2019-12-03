@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        {% load static %}
+        {{ form.media }}
+            <script src="{% static 'tiny_mce/tinymce.min.js' %}"></script>
+          <script type="text/javascript" src="{% static 'tiny_mce/custom.js' %}" ></script>
+
         <meta charset="utf-8">
         <title>Magazine FiBEST</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">

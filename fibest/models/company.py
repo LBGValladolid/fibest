@@ -1,4 +1,5 @@
 from django.db import models
+from tinymce.models import HTMLField
 
 from django.core.files.storage import FileSystemStorage
 from django.conf import settings
@@ -37,7 +38,7 @@ class Magazine(models.Model):
     workers_magazine = models.IntegerField("Number of workers (magazine)")
     location_magazine = models.CharField("Location (magazine)",max_length=500)
     internships_magazine = models.CharField("Magazine text for internships", max_length=2500)
-    message_magazine = models.TextField("Magazine message (big text)")
+    message_magazine = HTMLField()
 
 class Stand(models.Model):
     company = models.ForeignKey(Company, models.CASCADE)
