@@ -1,18 +1,39 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Login for companies</title>
-    </head>
-    <body>
+
+{% extends "base.html" %}
+
+{% block title %}
+<title>Login for companies | FiBEST Private Area</title>
+{% endblock %}
+
+{% block customstyle %}
+    main {
+        max-width: 450px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+{% endblock %}
+
+{% block  content %}
+    <main>
         <h1>Welcome to FiBEST</h1>
-        {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
         <form action="/login/" method="POST">
             {% csrf_token %}
-            <label for="email">Email: </label>
-            <input id="email" name="email" type="email">
-            <p>Please, introduce your email to access your company inscription details and dashboard. We will send a link to the email to login so you don't have to remember a password</p>
-            <input type="submit" value="Login">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">Please, introduce your email to access your company inscription details and dashboard. We will send a link to the email to login so you don't have to remember a password.</small>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Login</button>
+
+            {% if error_message %}
+                <div class="alert alert-danger" role="alert">
+                    {{ error_message }}
+                </div>
+            {% endif %}
         </form>
-    </body>
-</html>
+    </main>
+{% endblock  %}
