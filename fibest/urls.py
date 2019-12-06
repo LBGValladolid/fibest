@@ -25,14 +25,17 @@ from fibest.views import dashboard
 from fibest.views import inscription
 from fibest.views import magazine
 from fibest.views import forum
+from fibest.views import stand
+
 
 urlpatterns = [
-    url(r'^tinymce/', include('tinymce.urls')),
-    path('admin/', admin.site.urls),
-    path('', index.index, name='index'),
-    path('login/', login.login, name="login"),
-    path('dashboard/', dashboard.index, name="dashboard"),
-    path('inscription/', inscription.index, name="inscription"),
-    path('magazine/', magazine.index, name="magazine"),
-    path('forum/', forum.index, name="forum")
+                  url(r'^tinymce/', include('tinymce.urls')),
+                  path('admin/', admin.site.urls),
+                  path('', index.index, name='index'),
+                  path('login/', login.login, name="login"),
+                  path('dashboard/', dashboard.index, name="dashboard"),
+                  path('inscription/', inscription.index, name="inscription"),
+                  path('magazine/', magazine.index, name="magazine"),
+                  path('stand/', stand.index, name="stand"),
+                  path('forum/', forum.index, name="forum")
               ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

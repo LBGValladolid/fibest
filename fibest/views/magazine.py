@@ -1,11 +1,12 @@
 from django import forms
+from tinymce.widgets import TinyMCE
+
 from django.shortcuts import render, redirect
 
 from fibest.models.company import Magazine, Company
 
-# TODO: no guarda bien
-
 class MagazineForm(forms.ModelForm):
+
     class Meta:
         model = Magazine
         fields = ("publi_magazine", "name_magazine", "activity_magazine", "search_magazine", "year_magazine", "workers_magazine", "location_magazine", "internships_magazine", "message_magazine")
@@ -21,7 +22,8 @@ def index(request):
             except:
                 form = MagazineForm()
                 return render(request, "magazine.html", {"form": form})
-        except:
+        except Exception as e:
+            print(str(e))
             return redirect("/login")
     elif request.method == "POST":
         try:

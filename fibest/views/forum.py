@@ -8,8 +8,9 @@ class ForumForm(forms.ModelForm):
     class Meta:
         model = Forum
         fields = ("logo", "stand_name", "company_contract", "cif_contract", "signer_contract", "postal_contract",
-                  "company_billing", "cif_billing", "postal_social_billing", "phone_billing", "postal_send_billing",
-                  "pack")
+                  "company_billing", "cif_billing", "postal_social_billing", "phone_billing", "order_number",
+                  "postal_send_billing",
+                  "pack", "assembly_service")
 
 
 def index(request):
@@ -39,4 +40,3 @@ def index(request):
                 forum.save()
         finally:
             return redirect("/dashboard")
-
