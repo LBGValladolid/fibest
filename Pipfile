@@ -11,8 +11,6 @@ Pillow = "==6.1.0"
 requests = "*"
 flake8 = "*"
 django-crispy-forms = "*"
-django_tinymce = "*"
-
 [dev-packages]
 
 [requires]

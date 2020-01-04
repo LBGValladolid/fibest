@@ -1,42 +1,37 @@
 from django import forms
 from django.shortcuts import render, redirect
 
-from fibest.models.company import Forum, Company
+from fibest.models.company import Company
 
 
-class ForumForm(forms.ModelForm):
+class CompanyForm(forms.ModelForm):
     class Meta:
-        model = Forum
-        fields = ("logo", "stand_name", "company_contract", "cif_contract", "signer_contract", "postal_contract",
-                  "company_billing", "cif_billing", "postal_social_billing", "phone_billing", "order_number",
-                  "postal_send_billing",
-                  "pack", "assembly_service")
-
+        model = Company
+        fields = ("logo", "stand_name", "assembly_service")
+        value = {
+            'logo': "logo",
+        }
 
 def index(request):
     if request.method == "GET":
         try:
-            Company.objects.get(id=request.session["id"])
-            try:
-                forum = Forum.objects.get(company=request.session["id"])
-                form = ForumForm(instance=forum)
-                return render(request, "forum.html", {"form": form})
-            except:
-                form = ForumForm()
-                return render(request, "forum.html", {"form": form})
-        except:
+            company = Company.objects.get(id=request.session["id"])
+            form = CompanyForm(instance=company)
+            return render(request, "forum.html", {"form": form})
+        except Exception as e:
+            print(str(e))
             return redirect("/login")
     elif request.method == "POST":
-        try:
-            forum = Forum.objects.get(company=request.session["id"])
-            form = ForumForm(request.POST, instance=forum)
-            if form.is_valid():
-                form.save()
-        except:
-            form = ForumForm(request.POST, request.FILES)
-            if form.is_valid():
-                forum = form.save(commit=False)
-                forum.company = Company.objects.get(id=request.session["id"])
-                forum.save()
-        finally:
+        company = Company.objects.get(id=request.session["id"])
+        print(company.logo)
+
+        request.FILES['logo'].name = company.name + ".jpg"
+        form = CompanyForm(request.POST, request.FILES, instance=company)
+
+        print(form.data)
+        if form.is_valid():
+            form.save()
             return redirect("/dashboard")
+        else:
+            return render(request, 'magazine.html', {'form': form})
+

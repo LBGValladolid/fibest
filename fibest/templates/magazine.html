@@ -2,31 +2,54 @@
 
 {% block title %}
     <title>Magazine | FiBEST Private Area</title>
-    {% load static %}
-            {{ form.media }}
-                <script src="{% static 'tiny_mce/tiny_mce.js' %}"></script>
-                      <script type="text/javascript" src="{% static 'tiny_mce/custom.js' %}" ></script>
 {% endblock %}
 
+{% block navbar %}
+    {% include "navbar.html" %}
+{% endblock %}
+
+
 {% block content %}
-{% load crispy_forms_tags %}
-
-        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow container">
-            <h3 class="my-0 mr-md-auto ">FiBEST Company Area</h3>
-            <nav class="my-2 my-md-0 mr-md-3">
-                <a class="p-2 text-dark" href="{% url 'dashboard' %}">Dashboard</a>
-            </nav>
-        </div>
+    {% load crispy_forms_tags %}
+    {% load i18n %}
 
 
-        <section class="container">
-            <h1>Magazine</h1>
-            <form method="POST" enctype='multipart/form-data'>
-                {% csrf_token %}
-                {{ form|crispy }}
 
-                <button type="submit" class="btn btn-primary">Save magazine details</button>
-            </form>
-        </section>
+    <section class="container">
+        <h1>{% trans "Revista" %}</h1>
+        <form method="POST" enctype='multipart/form-data' novalidate>
+            {% csrf_token %}
+            <p>{% trans "texto publi revista" %}</p>
+            {{ form.non_field_errors }}
+            {{ form.publi_magazine|as_crispy_field }}
+            {{ form.name_magazine|as_crispy_field }}
+            {{ form.activity_magazine|as_crispy_field }}
+            {{ form.search_magazine|as_crispy_field }}
+            {{ form.year_magazine|as_crispy_field }}
+            {{ form.workers_magazine|as_crispy_field }}
+            {{ form.location_magazine|as_crispy_field }}
+            {{ form.internships_magazine|as_crispy_field }}
+            {{ form.beca_magazine|as_crispy_field }}
+            {{ form.tfg_magazine|as_crispy_field }}
+            {{ form.message_magazine|as_crispy_field }}
+            {{ form.web_contact|as_crispy_field }}
+            {{ form.email_contact|as_crispy_field }}
+            {{ form.person_contact|as_crispy_field }}
+            {{ form.phone_contact|as_crispy_field }}
+            {{ form.postal_contact|as_crispy_field }}
+            {{ form.twitter|as_crispy_field }}
+            {{ form.facebook|as_crispy_field }}
+            {{ form.instagram|as_crispy_field }}
+            {{ form.youtube|as_crispy_field }}
 
+
+            <button type="submit" class="btn btn-primary">Save magazine details</button>
+        </form>
+    </section>
+
+{% endblock %}
+{% block script %}
+    {% load static %}
+    <script src="{% static 'tinymce/tinymce.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'magazine.js' %}"></script>
 {% endblock %}

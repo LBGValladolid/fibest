@@ -1,15 +1,14 @@
 from django import forms
-from tinymce.widgets import TinyMCE
-
 from django.shortcuts import render, redirect
 
 from fibest.models.company import Magazine, Company
 
-class MagazineForm(forms.ModelForm):
 
+class MagazineForm(forms.ModelForm):
     class Meta:
         model = Magazine
-        fields = ("publi_magazine", "name_magazine", "activity_magazine", "search_magazine", "year_magazine", "workers_magazine", "location_magazine", "internships_magazine", "message_magazine")
+        exclude = ["company"]
+
 
 def index(request):
     if request.method == "GET":
@@ -26,17 +25,25 @@ def index(request):
             print(str(e))
             return redirect("/login")
     elif request.method == "POST":
+        company = Company.objects.get(id=request.session["id"])
+        request.FILES['publi_magazine'].name = company.name + ".jpg"
+
         try:
             magazine = Magazine.objects.get(company=request.session["id"])
             form = MagazineForm(request.POST, instance=magazine)
 
             if form.is_valid():
                 form.save()
+                return redirect("/dashboard")
+            else:
+                return render(request, 'magazine.html', {'form': form})
+
         except:
             form = MagazineForm(request.POST, request.FILES)
             if form.is_valid():
                 magazine = form.save(commit=False)
                 magazine.company = Company.objects.get(id=request.session["id"])
                 magazine.save()
-        finally:
-            return redirect("/dashboard")
+                return redirect("/dashboard")
+            else:
+                return render(request, 'magazine.html', {'form': form})
