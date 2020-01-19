@@ -43,7 +43,7 @@ def login(request):
 def send_login_mail(email, code):
     context = ssl.create_default_context()
 
-    url = f" https://fibest.org/login/?email={email}&code={code}"
+    url = f" https://empresas.fibest.org/login/?email={email}&code={code}"
     EmailMessage(
         subject=_("Login to FiBEST"),
         body=_("Please, click on the following link to login to FiBEST website:") + url,
