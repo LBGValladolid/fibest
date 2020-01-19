@@ -1,14 +1,10 @@
 {% extends "base.html" %}
+{% load i18n %}
 
 {% block title %}
-    <title>Forum | FiBEST Private Area</title>
+    <title>{% trans "Official Information | FiBEST Private Area" %}</title>
 
 {% endblock %}
-
-   {%  block navbar %}
-           {% include "navbar.html" %}
-
-{%  endblock %}
 
 {% block content %}
     {% load crispy_forms_tags %}
@@ -39,52 +35,9 @@
             {{ form.phone_billing|as_crispy_field }}
             {{ form.order_number|as_crispy_field }}
             {{ form.postal_send_billing|as_crispy_field }}
-            <h3> {% trans "Titulo envio" %}</h3>
-            <p> {% trans "Texto info envio" %}</p>
 
             <button type="submit" class="btn btn-primary">{% trans "Boton guardar info ofi" %}</button>
         </form>
     </section>
 
 {% endblock %}
-
-<!--
- <div class="form-row">
-                <div class="form-group col-md-6 mb-0">
-                </div>
-                <div class="form-group col-md-6 mb-0">
-                    {{ form.stand_name|as_crispy_field }}
-                </div>
-            </div>
-            {{ form.company_contract|as_crispy_field }}
-            {{ form.cif_contract|as_crispy_field }}
-            <div class="form-row">
-                <div class="form-group col-md-6 mb-0">
-                    {{ form.signer_contract|as_crispy_field }}
-                </div>
-                <div class="form-group col-md-4 mb-0">
-                    {{ form.postal_contract|as_crispy_field }}
-                </div>
-                <div class="form-group col-md-2 mb-0">
-                    {{ form.company_billing|as_crispy_field }}
-                </div>
-            </div>
-            {{ form.cif_billing|as_crispy_field }}
-            <div class="form-row">
-                <div class="form-group col-md-6 mb-0">
-                    {{ form.postal_social_billing|as_crispy_field }}
-                </div>
-                <div class="form-group col-md-6 mb-0">
-                    {{ form.phone_billing|as_crispy_field }}
-                </div>
-            </div>
-            {{ form.order_number|as_crispy_field }}
-            {{ form.postal_send_billing|as_crispy_field }}
-            <div class="form-row">
-                <div class="form-group col-md-6 mb-0">
-                    {{ form.assembly_service|as_crispy_field }}
-                </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Sign in</button>
-
-            <button type="submit" class="btn btn-primary">Save forum details</button> -->

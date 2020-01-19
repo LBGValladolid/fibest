@@ -27,9 +27,13 @@ from fibest.views import inscription
 from fibest.views import login
 from fibest.views import magazine
 from fibest.views import stand
-
+from fibest.views import terms
+from fibest.views import privacy
+from fibest.views import disclaimer
 urlpatterns = [
                   url(r'^ajax/change_disclaimer/$', dashboard.change_disclaimer, name='change_disclaimer'),
+                  url(r'^ajax/logout/$', login.logout, name='logout'),
+
                   path('i18n/', include('django.conf.urls.i18n')),
                   path('admin/', admin.site.urls),
                   path('', index.index, name='index'),
@@ -39,6 +43,9 @@ urlpatterns = [
                   path('magazine/', magazine.index, name="magazine"),
                   path('stand/', stand.index, name="stand"),
                   path('officialInformation/', officialInformation.index, name="officialInformation"),
-                  path('forum/', forum.index, name="forum")
+                  path('forum/', forum.index, name="forum"),
+                  path('terms/', terms.index, name="terms"),
+                  path('privacy/', privacy.index, name="privacy"),
+                  path('times/', disclaimer.index, name="times")
 
               ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

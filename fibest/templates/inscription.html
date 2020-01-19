@@ -1,13 +1,12 @@
 {% extends "base.html" %}
+{% load i18n %}
 
 {% block title %}
-    <title>Magazine | FiBEST Private Area</title>
+    <title>{% trans "Inscription | FiBEST Private Area" %}</title>
 
 
 {% endblock %}
-{% block navbar %}
-    {% include "navbar.html" %}
-{% endblock %}
+
 {% block content %}
     {% load i18n %}
     {% load static %}
@@ -16,31 +15,59 @@
 
 
     <section class="container">
-        <h1>Inscription form</h1>
+        <h1>{% trans "Inscription form" %}</h1>
         {% if company is not None %}
             <form method="POST">
                 {% csrf_token %}
                 {{ form.login|as_crispy_field }}
                 {{ form.name|as_crispy_field }}
                 {{ form.link|as_crispy_field }}
-                <button type="submit" class="btn btn-primary">Edit</button>
+                <button type="submit" class="btn btn-primary">{% trans "Edit inscripcion" %}</button>
             </form>
         {% else %}
-            <h2>Register new company</h2>
+            <h2>{% trans "Register new company" %}</h2>
             <form method="POST">
                 {% csrf_token %}
                 {{ form.login|as_crispy_field }}
                 {{ form.name|as_crispy_field }}
                 {{ form.link|as_crispy_field }}
                 {{ form.pack|as_crispy_field }}
+                <div id="custom" style="display: none;">
+                    {{ form.hasVirtualStand|as_crispy_field }}
+                    {{ form.hasMagazine|as_crispy_field }}
+                </div>
                 {{ form.password|as_crispy_field }}
+                {{ form.terms_confirmed|as_crispy_field }}
 
-                <p class="card card-body bg-light">After this registration, you will be able to enter the FiBEST
-                    companies dashboard and complete the inscription, set FiBEST Online and magazine.</p>
-                <button type="submit" class="btn btn-primary">Register</button>
+                <p class="card card-body bg-light">{% trans "After this registration, you will be able to enter the FiBEST companies dashboard and complete the inscription, set FiBEST Online and magazine." %}</p>
+                <button type="submit" class="btn btn-primary">{% trans "Register" %}</button>
             </form>
 
         {% endif %}
     </section>
 
+{% endblock %}
+
+
+{% block script %}
+
+    <script>
+
+        function hideForm() {
+            console.log("ah");
+            var x = document.getElementById("custom");
+            var y = document.getElementById("id_pack");
+
+            if (y.value == "??") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        window.onload = function () {
+            hideForm();
+            $("#id_pack").change(hideForm);
+        }
+    </script>
 {% endblock %}

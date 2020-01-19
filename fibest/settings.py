@@ -27,7 +27,7 @@ FILE_UPLOAD_PERMISSIONS = 0o644
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'qs77_a55uyve-(=)sdp8kze=#$=5x7-qz$%y@ic=9)_i7)+7o5'
+SECRET_KEY = os.environ["SECRET_KEY"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -154,3 +154,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'fibest/static')
+
+# Mail
+
+EMAIL_HOST = "smtp-relay.sendinblue.com"
+EMAIL_PORT = 587
+EMAIL_HOST_USER = "valladolid@best.eu.org"
+EMAIL_HOST_PASSWORD = os.environ["PASSMAIL"]
+EMAIL_USE_TSL = True

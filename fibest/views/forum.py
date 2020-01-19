@@ -7,10 +7,11 @@ from fibest.models.company import Company
 class CompanyForm(forms.ModelForm):
     class Meta:
         model = Company
-        fields = ("logo", "stand_name", "assembly_service")
-        value = {
-            'logo': "logo",
+        fields = ("logo", "stand_name", "cvs_requested", "assembly_service")
+        widgets = {
+            'cvs_requested': forms.Textarea(attrs={'rows': 4, 'cols': 15}),
         }
+
 
 def index(request):
     if request.method == "GET":
@@ -23,15 +24,12 @@ def index(request):
             return redirect("/login")
     elif request.method == "POST":
         company = Company.objects.get(id=request.session["id"])
-        print(company.logo)
 
-        request.FILES['logo'].name = company.name + ".jpg"
+        if request.FILES.get('logo', None) is not None:
+            request.FILES['logo'].name = company.name + ".jpg"
         form = CompanyForm(request.POST, request.FILES, instance=company)
-
-        print(form.data)
         if form.is_valid():
             form.save()
             return redirect("/dashboard")
         else:
             return render(request, 'magazine.html', {'form': form})
-

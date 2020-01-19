@@ -26,7 +26,8 @@ def index(request):
             return redirect("/login")
     elif request.method == "POST":
         company = Company.objects.get(id=request.session["id"])
-        request.FILES['publi_magazine'].name = company.name + ".jpg"
+        if request.FILES.get('publi_magazine', None) is not None:
+            request.FILES['publi_magazine'].name = company.name + ".jpg"
 
         try:
             magazine = Magazine.objects.get(company=request.session["id"])

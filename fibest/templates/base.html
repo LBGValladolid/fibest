@@ -1,8 +1,11 @@
 {% load staticfiles %}
 
 <!DOCTYPE html>
-<html style="overflow-y: scroll">
+<html style="overflow-y: scroll" lang="ES">
 <head>
+    {% load i18n %}
+    {% load static %}
+
     <meta charset="utf-8">
     {% block title %}
     {% endblock %}
@@ -18,44 +21,132 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400&display=swap&subset=latin-ext"
           rel="stylesheet">
-    {# El buen CSS en el HTML 👍 #}
-    <style type="text/css">
-        * {
-            font-family: 'Source Sans Pro', sans-serif;
-            font-weight: 300;
-            font-size: 18px;
-        }
-
-        body {
-            padding-bottom: 2.5rem;
-        }
-
-        h1, h2, h3 {
-            font-weight: 200;
-            color: #1447ff;
-        }
-
-
-   {% block customstyle %}
-    {% endblock %}
-
+    <link rel="stylesheet" href={% static "css/basic.css" %}>
+    <link rel="stylesheet" href={% static "css/custom-bootstrap.css" %}>
+    <script src="https://kit.fontawesome.com/09d2fc1173.js" crossorigin="anonymous"></script>
+    <style>
+        {% block customstyle %}
+        {% endblock %}
     </style>
-
 </head>
 <body>
 
+<nav class="navbar fixed-top navbar-light navbar-expand-lg bg-white justify-content-center border-bottom container">
+    <a style="white-space: nowrap; text-decoration: none !important" href="{% url 'dashboard' %}" href="/"
+       class="navbar-brand d-flex w-50 mr-auto"><h3>{% trans "FiBEST Company Area" %}</h3></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse w-100" id="collapsingNavbar">
+        <div class="navbar-text w-100 text-center p-0">
+            <h3 class=" ">{{ company.name }}</h3>
+        </div>
+        <div class="nav navbar-nav ml-auto w-100  justify-content-end  flex-nowrap">
+            {% if not navButton %}
+                <button style="white-space: nowrap" id="logout"
+                        class="btn btn-sm btn-outline-danger nav-item m-1">{% trans "Log out" %}</button>
+                <a style="white-space: nowrap" role="button" class="btn  btn-sm btn-outline-primary nav-item m-1"
+                   href="{% url 'dashboard' %}">{% trans "Dashboard" %}</a>
+            {% endif %}
+            <div class="nav-item row mx-1  flex-nowrap justify-content-center">
+                {% get_current_language as LANGUAGE_CODE %}
+                {% get_available_languages as LANGUAGES %}
+                {% get_language_info_list for LANGUAGES as languages %}
+                {% for language in languages %}
 
-<div id="wrap">
-    {% block navbar %}
-    {% endblock %}
+                    <form class="my-auto"
+                          action="{% url 'set_language' %}"
+                          method="post">
+                        {% csrf_token %}
+                        <input name="next" type="hidden" value="{{ redirect_to }}">
+                        <input type="hidden" name="language" value="{{ language.code }}"/>
+                        <input type="image" class="m-1 align-middle" src={% static language.code|add:".png" %}/>
+                    </form>
 
-    <div id="main" class="container clear-top">
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</nav>
+
+{# Template #}
+    <div  class="container clear-top page-wrap">
         {% block content %}
         {% endblock %}
     </div>
-</div>
+{#  Footer #}
+<footer class=" container site-footer font-small blue mt-3 pt-3 border-top">
+    <div class="mb-3 row  container text-md-left text-center">
+        <div class="col-md-9">
+            <h2>{% trans "Contacta con Nosotros" %}</h2>
+        </div>
+        <div class="flex-nowrap col-md-3 row align-items-center ml-0">
+            <div class="col social mb-2 text-center">
+                <a href="https://facebook.com/FiBESTorg/" target="_blank" title="Facebook"
+                   class="icon-wrap small facebook">
+                    <i class="fab fa-facebook-f fa-2x"></i>
 
-{% include "footer.html" %}
+
+                </a></div>
+            <div class="col social mb-2 text-center">
+
+                <a href="https://twitter.com/fibestorg" target="_blank" title="Twitter" class="icon-wrap small twitter">
+                    <i class="fab fa-twitter fa-2x"></i>
+
+
+                </a></div>
+            <div class="col social mb-2 text-center">
+
+                <a href="https://www.linkedin.com/in/fibest-valladolid-0a3a805a" target="_blank" title="Linkedin"
+                   class="icon-wrap small linkedin">
+                    <i class="fab fa-linkedin-in fa-2x"></i>
+
+
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md  text-center">
+            <h3>Marina Bujedo Esteban</h3>
+            <p>{% trans "Coordinador FiBEST 2020" %}</p>
+            <p>
+                <i class="iconf-mail"></i> Email: <a href="mailto:a.lazaro@bestspain.es">marina.bujedo@bestspain.es</a>
+            </p>
+            <p>
+                <i class="iconf-phone"></i> Tlfn.: +34 611 071 488
+            </p>
+        </div>
+        <div class="col-md text-center">
+            <h3>BEST Valladolid</h3>
+            <p style="text-align:justify">{% trans "Es el grupo local de BEST en la Universidad de Valladolid, fundado en 1994. BEST Valladolid cuenta con aproximadamente 30 miembros y lleva a cabo numerosos proyectos cada año,entre ellos el Foro de empleo FiBEST." %}</p>
+            <p style="text-align:center">
+                {% trans "Para más información:" %} <a href="http://www.BESTValladolid.org">www.BESTValladolid.org</a>.
+            </p>
+
+        </div>
+        <div class="col-md  text-center">
+            <h3>Víctor Herrezuelo Paredes</h3>
+            <p>{% trans "Coordinador FiBEST 2020" %}</p>
+            <p>
+                <i class="iconf-mail"></i> Email: <a
+                    href="mailto:a.garcia@bestspain.es">victor.herrezuelo@bestspain.es</a>
+            </p>
+            <p>
+                <i class="iconf-phone"></i> Tlfn.: +34 642 108 349
+            </p>
+        </div>
+
+    </div>
+    <!-- Footer Links -->
+    <div class="footer-copyright text-center py-3">© 2020
+        <a href="https://www.BESTValladolid.org/"> BEST Valladolid</a>, All rights reserved. | <a
+                href={% url "terms" %}>{% trans "Terms and Conditions" %}</a> | <a href={% url "privacy" %}>
+            {% trans "Privacy" %}</a>
+    </div>
+
+</footer>
+
 
 {# Bootstrap JS, Popper y JQuery #}
 <script
@@ -70,6 +161,21 @@
         crossorigin="anonymous"></script>
 {% block script %}
 {% endblock %}
-
+{# Navbar JS idioma #}
+<script>
+    $("#logout").on('click', function () {
+        var active = true;// or false, you have to set it
+        $.ajax({
+            url: '/ajax/logout/',
+            data: {
+                'csrfmiddlewaretoken': $('input[name="csrfmiddlewaretoken"]').val(),
+            },
+        }).done(function (data) {
+            if (data.success) {
+                window.location.href = data.url;
+            }
+        });
+    });
+</script>
 </body>
 </html>

@@ -13,12 +13,15 @@ services:
   volumes:
    - data:/var/lib/postgresql/data
  django:
+  container_name: django
   build: .
   restart: always
   command: "uwsgi --socket :3031 --module fibest.wsgi"
   environment:
    ENV: "PROD"
-   INSCRIPCION:
+   INSCRIPTION:
+   SECRET_KEY:
+   PASSMAIL:
   ports:
    - "3031:3031"
   volumes:

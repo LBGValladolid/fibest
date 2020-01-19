@@ -1,13 +1,9 @@
 {% extends "base.html" %}
+{% load i18n %}
 
 {% block title %}
-    <title>Magazine | FiBEST Private Area</title>
+    <title>{% trans "Magazine | FiBEST Private Area" %}</title>
 {% endblock %}
-
-{% block navbar %}
-    {% include "navbar.html" %}
-{% endblock %}
-
 
 {% block content %}
     {% load crispy_forms_tags %}
@@ -19,9 +15,10 @@
         <h1>{% trans "Revista" %}</h1>
         <form method="POST" enctype='multipart/form-data' novalidate>
             {% csrf_token %}
-            <p>{% trans "texto publi revista" %}</p>
             {{ form.non_field_errors }}
             {{ form.publi_magazine|as_crispy_field }}
+            <h3> {% trans "Ficha tecnica revista" %}</h3>
+            <p>{% trans "Texto ficha tecnica revista" %}</p>
             {{ form.name_magazine|as_crispy_field }}
             {{ form.activity_magazine|as_crispy_field }}
             {{ form.search_magazine|as_crispy_field }}
@@ -32,6 +29,7 @@
             {{ form.beca_magazine|as_crispy_field }}
             {{ form.tfg_magazine|as_crispy_field }}
             {{ form.message_magazine|as_crispy_field }}
+            <h3> {% trans "info para contacto" %}</h3>
             {{ form.web_contact|as_crispy_field }}
             {{ form.email_contact|as_crispy_field }}
             {{ form.person_contact|as_crispy_field }}
@@ -41,9 +39,11 @@
             {{ form.facebook|as_crispy_field }}
             {{ form.instagram|as_crispy_field }}
             {{ form.youtube|as_crispy_field }}
+            <h3> {%  trans "Reparto de publicidad" %}</h3>
+            <p> {%  trans "Info reparto publicidad" %}</p>
 
 
-            <button type="submit" class="btn btn-primary">Save magazine details</button>
+            <button type="submit" class="btn btn-primary">{% trans "Save magazine details" %}</button>
         </form>
     </section>
 

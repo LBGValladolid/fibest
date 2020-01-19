@@ -1,13 +1,12 @@
 {% extends "base.html" %}
+{% load i18n %}
 
 {% block title %}
-    <title>Forum | FiBEST Private Area</title>
+    <title>{% trans "Forum | FiBEST Private Area" %}</title>
 
 
 {% endblock %}
-{% block navbar %}
-    {% include "navbar.html" %}
-{% endblock %}
+
 {% block content %}
     {% load i18n %}
     {% load crispy_forms_tags %}
@@ -20,8 +19,9 @@
             {% csrf_token %}
             {{ form.logo|as_crispy_field }}
             {{ form.stand_name|as_crispy_field }}
+            {{ form.cvs_requested|as_crispy_field }}
             {{ form.assembly_service|as_crispy_field }}
-            <button type="submit" class="btn btn-primary">Edit</button>
+            <button type="submit" class="btn btn-primary">{% trans "Edit forum info" %}</button>
         </form>
     </section>
 

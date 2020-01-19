@@ -1,13 +1,9 @@
 {% extends "base.html" %}
+{% load i18n %}
 
 {% block title %}
-    <title>Stand | FiBEST Private Area</title>
+    <title>{% trans "Stand | FiBEST Private Area" %}</title>
 {% endblock %}
-
-{% block navbar %}
-    {% include "navbar.html" %}
-{% endblock %}
-
 
 {% block content %}
     {% load crispy_forms_tags %}
@@ -18,7 +14,7 @@
         <h1>Stand</h1>
         <form method="POST" enctype='multipart/form-data' novalidate>
             {% csrf_token %}
-            <p>{% trans "texto publi revista" %}</p>
+            <p>{% trans "texto publi virtual" %}</p>
             <input onclick="hideForm()" type="checkbox" name="{{ form.copy_magazine_info.html_name }}"
                    class="checkboxinput form-check-input" id="{{ form.copy_magazine_info.id_for_label }}"
                     {% if  form.copy_magazine_info.value %} checked {% endif %}
@@ -40,6 +36,8 @@
                 {{ form.beca_stand|as_crispy_field }}
                 {{ form.tfg_stand|as_crispy_field }}
                 {{ form.message_stand|as_crispy_field }}
+                <h3> {% trans "info para contacto" %}</h3>
+
                 {{ form.web_contact|as_crispy_field }}
                 {{ form.email_contact|as_crispy_field }}
                 {{ form.person_contact|as_crispy_field }}
@@ -49,8 +47,11 @@
                 {{ form.facebook|as_crispy_field }}
                 {{ form.instagram|as_crispy_field }}
                 {{ form.youtube|as_crispy_field }}
+                <h3> {% trans "Ofertas laborales y publi en redes" %}</h3>
+                <p> {% trans "Info ofertas laborales y publi en redes" %}</p>
+
             </div>
-            <button type="submit" class="btn btn-primary">Save magazine details</button>
+            <button type="submit" class="btn btn-primary">{% trans "Save magazine details" %}</button>
         </form>
     </section>
 

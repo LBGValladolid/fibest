@@ -1,14 +1,18 @@
+{% extends "base.html" %}
+{% load i18n %}
 
-<div class="modal  fade" id="disclaimerModalLong" data-backdrop="static" tabindex="-1" role="dialog"
-     aria-labelledby="disclaimerModalLongTitle" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title" id="exampleModalLongTitle">Disclaimer</h2>
-            </div>
-            <div class="modal-body">
-                <h4>PLAZOS DE ENVÍO DE LA INFORMACIÓN</h4>
-                Es conveniente que nos envíen la información solicitada con la mayor brevedad posible, con el fin de
+{% block title %}
+    <title>{% trans "Times | FiBEST Private Area" %}</title>
+{% endblock %}
+
+{% block content %}
+    {% load crispy_forms_tags %}
+    {% load i18n %}
+
+
+    <section class="container">
+        <h1>PLAZOS DE ENVÍO DE LA INFORMACIÓN</h1>
+        Es conveniente que nos envíen la información solicitada con la mayor brevedad posible, con el fin de
                 agilizar la
                 creación de los materiales promocionales, así como formalizar por ambas partes la participación en el
                 evento a través
@@ -43,11 +47,7 @@
                 Escuela de Ingenierías Industriales<br>
                 Paseo del Cauce, 59<br>
                 47011 Valladolid, España<br>
-            </div>
-            <div class="modal-footer">
-                <button id= "accept_disclaimer" type="button" class="btn btn-primary" data-dismiss="modal">Accept disclaimer</button>
-            </div>
-        </div>
-    </div>
-</div>
+    </section>
+
+{% endblock %}
 
