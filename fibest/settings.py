@@ -39,7 +39,7 @@ ALLOWED_HOSTS = ["*"]
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale'),
 )
-
+print(LOCALE_PATHS)
 # Internationalization
 
 LANGUAGE_CODE = 'es'

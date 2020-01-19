@@ -34,9 +34,8 @@ urlpatterns = [
 
                   path('i18n/', include('django.conf.urls.i18n')),
                   path('admin/', admin.site.urls),
-                  path('', index.index, name='index'),
+                  path('', dashboard.index, name='dashboard'),
                   path('login/', login.login, name="login"),
-                  path('dashboard/', dashboard.index, name="dashboard"),
                   path('inscription/', inscription.index, name="inscription"),
                   path('magazine/', magazine.index, name="magazine"),
                   path('stand/', stand.index, name="stand"),
