@@ -35,7 +35,7 @@ def index(request):
 
             if form.is_valid():
                 form.save()
-                return redirect("/dashboard")
+                return redirect("/")
             else:
                 return render(request, 'magazine.html', {'form': form})
 
@@ -45,6 +45,6 @@ def index(request):
                 magazine = form.save(commit=False)
                 magazine.company = Company.objects.get(id=request.session["id"])
                 magazine.save()
-                return redirect("/dashboard")
+                return redirect("/")
             else:
                 return render(request, 'magazine.html', {'form': form})

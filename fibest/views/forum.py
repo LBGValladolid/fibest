@@ -30,6 +30,6 @@ def index(request):
         form = CompanyForm(request.POST, request.FILES, instance=company)
         if form.is_valid():
             form.save()
-            return redirect("/dashboard")
+            return redirect("/")
         else:
             return render(request, 'magazine.html', {'form': form})

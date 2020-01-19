@@ -58,7 +58,7 @@ def index(request):
             form = StandForm(myRequest, instance=stand)
             if form.is_valid():
                 form.save()
-                return redirect("/dashboard")
+                return redirect("/")
             else:
                 return render(request, 'stand.html', {'form': form})
 
@@ -69,6 +69,6 @@ def index(request):
                 stand = form.save(commit=False)
                 stand.company = Company.objects.get(id=request.session["id"])
                 stand.save()
-                return redirect("/dashboard")
+                return redirect("/")
             else:
                 return render(request, 'stand.html', {'form': form})

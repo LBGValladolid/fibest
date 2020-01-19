@@ -40,4 +40,4 @@ def index(request):
                 forum.company = Company.objects.get(id=request.session["id"])
                 forum.save()
         finally:
-            return redirect("/dashboard")
+            return redirect("/")
