@@ -19,9 +19,9 @@ services:
   command: "uwsgi --socket :3031 --module fibest.wsgi"
   environment:
    ENV: "PROD"
-   INSCRIPTION:
-   SECRET_KEY:
-   PASSMAIL:
+   INSCRIPTION: ${INSCRIPTION}
+   SECRET_KEY: ${SECRET_KEY}
+   PASSMAIL: ${PASSMAIL}
   ports:
    - "3031:3031"
   volumes:

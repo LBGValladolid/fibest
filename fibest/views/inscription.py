@@ -46,7 +46,7 @@ def index(request):
             if form.is_valid():
                 company = form.save(commit=False)
                 company.save()
-                return redirect("/dashboard/")
+                return redirect("/")
             else:
                 print(form.errors)
                 return render(request, 'inscription.html', {'form': form, "company": company})
@@ -75,6 +75,6 @@ def index(request):
                     pass
                 company.id = tmpPk
                 company.save()
-                return redirect("/dashboard/")
+                return redirect("/")
             else:
                 return render(request, 'inscription.html', {'form': form, "company": None})

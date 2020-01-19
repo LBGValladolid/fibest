@@ -18,7 +18,7 @@ def login(request):
             code = request.GET["code"]
             if company.login_code == code:
                 request.session["id"] = company.id
-                return redirect("/dashboard/")
+                return redirect("/")
             else:
                 return render(request, "login.html", {"error_message": "Incorrect credentials"})
         else:
