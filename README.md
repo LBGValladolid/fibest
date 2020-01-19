@@ -9,7 +9,7 @@ FiBEST usa Docker Compose para gestionar su entorno.
 
 Se usan variables de entorno, están subidas en el servidor en la propia carpeta de fibest
 ```
-source .env; docker-compose up --build
+docker-compose up --build
 ```
 
 Debería arrancar la web en modo producción desde cero
