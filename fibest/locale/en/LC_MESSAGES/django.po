@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-18 17:33+0000\n"
+"POT-Creation-Date: 2020-01-19 22:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -94,6 +94,14 @@ msgstr ""
 "this way, you simply have to send the promotional materials to the "
 "organization two days in advance, and upon arrival at the forum it will all "
 "be ready."
+
+#: fibest/models/company.py:49
+msgid "Tiene stand virtual"
+msgstr "Has virtual stand"
+
+#: fibest/models/company.py:50
+msgid "Tiene revista"
+msgstr "Has magazine"
 
 #: fibest/models/company.py:51
 msgid "Curriculums"
@@ -248,8 +256,7 @@ msgstr ""
 
 #: fibest/models/company.py:152
 msgid "Name of the person who will sign."
-msgstr ""
-"Name of the person who will sign."
+msgstr "Name of the person who will sign."
 
 #: fibest/models/company.py:154
 msgid "Address where we will send the contract."

@@ -46,8 +46,8 @@ class Company(models.Model):
                                                        "arrival at the forum they will all be "
                                                        "ready."))
     disclaimer = models.BooleanField(default=False)
-    hasVirtualStand = models.BooleanField(default=False, blank=True)
-    hasMagazine = models.BooleanField(default=False, blank=True)
+    hasVirtualStand = models.BooleanField(_("Tiene stand virtual"), default=False, blank=True)
+    hasMagazine = models.BooleanField(_("Tiene revista"), default=False, blank=True)
     cvs_requested = models.TextField(_("Curriculums"), max_length=2500, default="",
                                      help_text=_("Texto ayuda curriculums demandados"))
     terms_confirmed = models.BooleanField(_("terminos y condiciones"), default=False)

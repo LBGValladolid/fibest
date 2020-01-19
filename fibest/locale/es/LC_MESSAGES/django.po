@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-18 17:33+0000\n"
+"POT-Creation-Date: 2020-01-19 22:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,6 +96,18 @@ msgstr ""
 "losservicios del foro). De esta manera, simplemente tiene que enviarnos a la "
 "organización los materiales promocionalcon dos días de antelación, y a su "
 "llegada al foro estarán todos dispuestos."
+
+#: fibest/models/company.py:49
+msgid "Tiene stand virtual"
+msgstr ""
+
+#: fibest/models/company.py:50
+#, fuzzy
+#| msgid "Texto ficha tecnica revista"
+msgid "Tiene revista"
+msgstr ""
+"Junto a la hoja de publicidad, dispondrá de una ficha técnica en la revista "
+"del foro en la que ofrecer informaciónampliada sobre su empresa."
 
 #: fibest/models/company.py:51
 msgid "Curriculums"
@@ -463,8 +475,6 @@ msgid "Login for companies | FiBEST Private Area"
 msgstr "Inicio para empresas | Area de Empresas de FiBEST"
 
 #: fibest/templates/login.html:21
-#, fuzzy
-#| msgid "Login to FiBEST"
 msgid "Welcome to FiBEST"
 msgstr "Inicio sesión FiBEST"
 
