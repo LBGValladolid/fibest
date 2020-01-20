@@ -11,5 +11,6 @@ class OverwriteStorage(FileSystemStorage):
 
         if self.exists(name):
             os.remove(self.path(name))
+            print(self.exists(name))
         return name
 

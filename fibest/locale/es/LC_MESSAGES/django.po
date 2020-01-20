@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 12:43+0000\n"
+"POT-Creation-Date: 2020-01-20 12:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -639,11 +639,11 @@ msgstr "Contraseña erronea"
 msgid "Terms not accepted"
 msgstr "Términos no aceptados"
 
-#: fibest/views/login.py:49
+#: fibest/views/login.py:47
 msgid "Login to FiBEST"
 msgstr "Inicio sesión FiBEST"
 
-#: fibest/views/login.py:50
+#: fibest/views/login.py:48
 msgid "Please, click on the following link to login to FiBEST website:"
 msgstr ""
 "Por favor, haga lick en el siguiente enlace para iniciar sesión en FiBEST"

@@ -31,10 +31,10 @@ def login(request):
             company.login_code = code
             company.save()
             send_login_mail(email, code)
-            return render(request, "login.html", {"mailSent": True})
+            return render(request, "login.html", {"mailSent": True, "navButton": True})
         except Company.DoesNotExist:
             # CREAR COMPAÑIA NUEVA
-            return render(request, "login.html", {"mailFailed": True})
+            return render(request, "login.html", {"mailFailed": True, "navButton": True})
 
     else:
         return
