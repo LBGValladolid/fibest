@@ -8,10 +8,8 @@ class OverwriteStorage(FileSystemStorage):
 
     def get_available_name(self, name, max_length=None):
         # If the filename already exists, remove it as if it was a true file system
+
         if self.exists(name):
-            try:
-                os.remove(os.path.join(settings.MEDIA_ROOT, name))
-            except FileNotFoundError as e:
-                pass
-            finally:
-                return name
+            os.remove(self.path(name))
+        return name
+
