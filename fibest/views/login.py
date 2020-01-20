@@ -1,6 +1,5 @@
 import random
 import string
-import ssl
 
 from django.core.mail import EmailMessage
 from django.http import JsonResponse
@@ -32,16 +31,16 @@ def login(request):
             company.login_code = code
             company.save()
             send_login_mail(email, code)
-            return redirect("/")
+            return render(request, "login.html", {"mailSent": True})
         except Company.DoesNotExist:
             # CREAR COMPAÑIA NUEVA
-            return redirect("/inscription/")
+            return render(request, "login.html", {"mailFailed": True})
+
     else:
         return
 
 
 def send_login_mail(email, code):
-    context = ssl.create_default_context()
 
     url = f" http://empresas.fibest.org/login/?email={email}&code={code}"
     EmailMessage(

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-19 23:25+0000\n"
+"POT-Creation-Date: 2020-01-20 12:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,8 +48,8 @@ msgstr "Página web"
 #: fibest/models/company.py:25
 msgid "Website of the company. Example: https://www.fibest.org."
 msgstr ""
-"Dirección web a la que dirigirá el logo de su empresa en FiBEST Online de la "
-"página web del foro. Por ejemplo: https://www.fibest.org."
+"Dirección web a la que  se le redirigirá a aquellos usuarios interesados en "
+"su empresa. Por ejemplo: https://www.fibest.org."
 
 #: fibest/models/company.py:27
 msgid "Logo"
@@ -59,8 +59,8 @@ msgstr ""
 msgid "Logo for the website, ideal size is 200x100 pixels"
 msgstr ""
 "El logo de su empresa aparecerá en todos los materiales promocionales: "
-"página web www.FiBEST.org, carteles ycartelones de promoción del foro, "
-"carpetillas de promoción del foro, revista, etc. Es deseable que el logo sea "
+"página web www.FiBEST.org, carteles y cartelones de promoción del foro, "
+"carpetillas de promoción del foro, revista, etc. Es deseable que el logo "
 "enviado tenga alta resolución (300 ppp)."
 
 #: fibest/models/company.py:32
@@ -74,7 +74,7 @@ msgid ""
 "be case sensitive."
 msgstr ""
 "Rogamos nos indiquen con qué nombre exactamente desean que aparezca en el "
-"banner del stand, en los mapas delforo y en los horarios de actividades. Se "
+"banner del stand, en los mapas del foro y en los horarios de actividades. Se "
 "distinguirá entre mayúsculas y minúsculas."
 
 #: fibest/models/company.py:38
@@ -91,23 +91,19 @@ msgid ""
 "will all be ready."
 msgstr ""
 "Basándonos en las demandas de empresas participantes en anteriores "
-"ediciones, ofrecemos además un servicio demontaje de material promocional de "
-"su empresa, con un coste de 50 € (esta cantidad se agregará a la factura de "
-"losservicios del foro). De esta manera, simplemente tiene que enviarnos a la "
-"organización los materiales promocionalcon dos días de antelación, y a su "
-"llegada al foro estarán todos dispuestos."
+"ediciones, ofrecemos además un servicio de montaje de material promocional "
+"de su empresa, con un coste de 50 € (esta cantidad se agregará a la factura "
+"de los servicios del foro). De esta manera, simplemente tiene que enviarnos "
+"a la organización los materiales promocionales con dos días de antelación, y "
+"a su llegada al foro estarán todos dispuestos."
 
 #: fibest/models/company.py:49
 msgid "Tiene stand virtual"
 msgstr ""
 
 #: fibest/models/company.py:50
-#, fuzzy
-#| msgid "Texto ficha tecnica revista"
 msgid "Tiene revista"
 msgstr ""
-"Junto a la hoja de publicidad, dispondrá de una ficha técnica en la revista "
-"del foro en la que ofrecer informaciónampliada sobre su empresa."
 
 #: fibest/models/company.py:51
 msgid "Curriculums"
@@ -117,16 +113,16 @@ msgstr "Envio de curriculim vitae"
 msgid "Texto ayuda curriculums demandados"
 msgstr ""
 "Todas las empresas participantes en FiBEST 2020 reciben los currículum vitae "
-"que son recogidos a través de laaplicación de la página web destinada para "
+"que son recogidos a través de la aplicación de la página web destinada para "
 "tal fin.<br>Si su empresa sólo está interesada en ciertos perfiles, rogamos "
-"nos indiquen qué titulaciones resultan de su interés.La organización se "
+"nos indiquen qué titulaciones resultan de su interés. La organización se "
 "encargará de filtrar adecuadamente los CVs, de forma que sólo recibirá "
-"aquellos que realmentesean de interés. Si desea recibir todo tipo de "
+"aquellos que realmente sean de su interés. Si desea recibir todo tipo de "
 "perfiles, por favor, indíquelo también en el siguiente cuadro."
 
 #: fibest/models/company.py:53
 msgid "terminos y condiciones"
-msgstr "Terminos y Condiciones"
+msgstr "Términos y Condiciones"
 
 #: fibest/models/company.py:70
 msgid "pack"
@@ -151,8 +147,8 @@ msgid ""
 "format pdf. Remind them that the size of the magazine is A5."
 msgstr ""
 "Su empresa dispondrá de una página completa de publicidad (imagen a tamaño "
-"A5) en la revista del foro. Para evitarproblemas de pixelado en la impresión "
-"sería conveniente que nos enviasen esta hoja de publicidad con una "
+"A5) en la revista del foro. Para evitar problemas de pixelado en la "
+"impresión sería conveniente que nos enviasen esta hoja de publicidad con una "
 "resolución mínima de 300ppp (preferible en formato .png). Recordarles que el "
 "tamaño de la revista es A5."
 
@@ -174,7 +170,7 @@ msgstr "Año de fundación"
 
 #: fibest/models/company.py:88 fibest/models/company.py:123
 msgid "Number of workers"
-msgstr "Numero de trabajadores"
+msgstr "Número de trabajadores"
 
 #: fibest/models/company.py:89 fibest/models/company.py:124
 msgid "Location"
@@ -194,7 +190,7 @@ msgstr "Proyectos Fin de Carrera (dejar vacio si no se ofrece)"
 
 #: fibest/models/company.py:94 fibest/models/company.py:128
 msgid "web contact"
-msgstr "Pagina web"
+msgstr "Página web"
 
 #: fibest/models/company.py:95 fibest/models/company.py:129
 msgid "email contact"
@@ -214,7 +210,7 @@ msgstr "Dirección postal"
 
 #: fibest/models/company.py:105
 msgid "message magazine"
-msgstr "Mensaje de su empresa de cara al públicoa"
+msgstr "Mensaje de su empresa de cara al público"
 
 #: fibest/models/company.py:107
 msgid ""
@@ -224,9 +220,9 @@ msgid ""
 "of the Text would be approximately 300 words."
 msgstr ""
 "Texto en el cual tiene la oportunidad de incluir información detallada sobre "
-"su misión, valores, identidad, oferta de laempresa, proyectos actuales, "
+"su misión, valores, identidad, oferta de la empresa, proyectos actuales, "
 "casos de éxito, proceso de selección, etc. De forma orientativa, el tamaño "
-"adecuado deltexto sería de aproximadamente 300 palabras."
+"adecuado del texto sería de aproximadamente 300 palabras."
 
 #: fibest/models/company.py:115
 msgid "copy magazine info"
@@ -236,7 +232,7 @@ msgstr "Copiar información de la revista"
 msgid "Info copia  datos revista"
 msgstr ""
 "No es necesario reescribir la información ofrecida en la sección Revista. Si "
-"desea incluir la misma información que harellenado para la ficha técnica en "
+"desea incluir la misma información que ha rellenado para la ficha técnica en "
 "la revista, marque la casilla"
 
 #: fibest/models/company.py:118
@@ -258,7 +254,7 @@ msgid ""
 "success stories, selection process, most searched profiles etc."
 msgstr ""
 "Texto en el cual tiene la oportunidad de incluir información detallada sobre "
-"su misión, valores, identidad, oferta de laempresa, proyectos actuales, "
+"su misión, valores, identidad, oferta de la empresa, proyectos actuales, "
 "casos de éxito, proceso de selección, perfiles más buscados etc."
 
 #: fibest/models/company.py:150
@@ -317,11 +313,11 @@ msgstr "Menú principal"
 msgid "Contacta con Nosotros"
 msgstr "Contacta con Nosotros"
 
-#: fibest/templates/base.html:112 fibest/templates/base.html:130
+#: fibest/templates/base.html:112 fibest/templates/base.html:122
 msgid "Coordinador FiBEST 2020"
 msgstr "Coordinador FiBEST 2020"
 
-#: fibest/templates/base.html:122
+#: fibest/templates/base.html:136
 msgid ""
 "Es el grupo local de BEST en la Universidad de Valladolid, fundado en 1994. "
 "BEST Valladolid cuenta con aproximadamente 30 miembros y lleva a cabo "
@@ -329,17 +325,17 @@ msgid ""
 msgstr ""
 "Es el grupo local de BEST en la Universidad de Valladolid, fundado en 1994. "
 "BEST Valladolid cuenta con aproximadamente 30 miembros y lleva a cabo "
-"numerosos proyectos cada año,entre ellos el Foro de empleo FiBEST."
+"numerosos proyectos cada año, entre ellos el Foro de empleo FiBEST."
 
-#: fibest/templates/base.html:124
+#: fibest/templates/base.html:138
 msgid "Para más información:"
 msgstr "Para más información:"
 
-#: fibest/templates/base.html:144 fibest/views/inscription.py:25
+#: fibest/templates/base.html:146 fibest/views/inscription.py:26
 msgid "Terms and Conditions"
-msgstr "Terminos y Condiciones"
+msgstr "Términos y Condiciones"
 
-#: fibest/templates/base.html:145 fibest/views/inscription.py:27
+#: fibest/templates/base.html:147 fibest/views/inscription.py:28
 msgid "Privacy"
 msgstr "Privacidad"
 
@@ -365,7 +361,7 @@ msgstr "Cambie su información básica:"
 
 #: fibest/templates/dashboard.html:54
 msgid "Company name"
-msgstr "Nombre de la compañia"
+msgstr "Nombre de la compañía"
 
 #: fibest/templates/dashboard.html:59
 msgid "Go to Edit Inscription"
@@ -378,7 +374,7 @@ msgstr "Editar información oficial"
 #: fibest/templates/dashboard.html:66
 msgid "Check and edit all the data related to the contract and payments."
 msgstr ""
-"Compruebe y edite la información relaccionada con el contrato y los pagos."
+"Compruebe y edite la información relacionada con el contrato y los pagos."
 
 #: fibest/templates/dashboard.html:69
 msgid " Go to Edit OfficialInformation"
@@ -390,7 +386,7 @@ msgstr "Editar información del foro"
 
 #: fibest/templates/dashboard.html:76
 msgid "Check and edit all the data related to the forum itself."
-msgstr "Compruebe y edite la información relaccionada con el foro en si mismo."
+msgstr "Compruebe y edite la información relacionada con el foro en si mismo."
 
 #: fibest/templates/dashboard.html:79
 msgid "Go to Edit Froum Info"
@@ -409,7 +405,7 @@ msgid ""
 "Edit the information and the logo that will appear in the magazine that will "
 "be given to all the attendees of FiBEST."
 msgstr ""
-"Edite la informacion que aparecerá en la revista que se dará a todos los "
+"Edite la información que aparecerá en la revista que se dará a todos los "
 "asistentes."
 
 #: fibest/templates/dashboard.html:97
@@ -423,8 +419,8 @@ msgstr "Editar el stand virtual"
 #: fibest/templates/dashboard.html:106
 msgid "Check and edit all the data related to the virtual stand."
 msgstr ""
-"Edite la información relaccionada con el stand que tendrá en la página web "
-"de FiBEST"
+"Edite la información relacionada con el stand que tendrá en la página web de "
+"FiBEST"
 
 #: fibest/templates/dashboard.html:108
 msgid "Go to Edit Stand"
@@ -448,7 +444,7 @@ msgstr "Inscripción | Area de Empresas de FiBEST"
 
 #: fibest/templates/inscription.html:18
 msgid "Inscription form"
-msgstr "Formularion de inscripción"
+msgstr "Formulario de inscripción"
 
 #: fibest/templates/inscription.html:25
 msgid "Edit inscripcion"
@@ -456,14 +452,14 @@ msgstr "Editar"
 
 #: fibest/templates/inscription.html:28
 msgid "Register new company"
-msgstr "Registrar nueva compañia"
+msgstr "Registrar nueva compañía"
 
 #: fibest/templates/inscription.html:42
 msgid ""
 "After this registration, you will be able to enter the FiBEST companies "
 "dashboard and complete the inscription, set FiBEST Online and magazine."
 msgstr ""
-"Una vez registrado podrá acceder al Area de Empresas de FiBEST y completar "
+"Una vez registrado podrá acceder al Área de Empresas de FiBEST y completar "
 "el resto de información."
 
 #: fibest/templates/inscription.html:43
@@ -474,11 +470,33 @@ msgstr "Registrar"
 msgid "Login for companies | FiBEST Private Area"
 msgstr "Inicio para empresas | Area de Empresas de FiBEST"
 
-#: fibest/templates/login.html:21
+#: fibest/templates/login.html:17
+msgid "Mail sent succesfully!"
+msgstr ""
+
+#: fibest/templates/login.html:17
+msgid "Check your mailbox to access."
+msgstr ""
+
+#: fibest/templates/login.html:24
+msgid "Mail unkown!"
+msgstr ""
+
+#: fibest/templates/login.html:24
+msgid "Are you already registered? Check out "
+msgstr ""
+
+#: fibest/templates/login.html:25
+#, fuzzy
+#| msgid "Edit Inscription"
+msgid "inscription"
+msgstr "Editar inscripción"
+
+#: fibest/templates/login.html:32
 msgid "Welcome to FiBEST"
 msgstr "Inicio sesión FiBEST"
 
-#: fibest/templates/login.html:29
+#: fibest/templates/login.html:40
 msgid ""
 "Please, introduce your email to access your company inscription details and "
 "dashboard. We will send a link to the email to login so you don't have to "
@@ -489,37 +507,43 @@ msgstr ""
 
 #: fibest/templates/magazine.html:5
 msgid "Magazine | FiBEST Private Area"
-msgstr "Revista  | Area de Empresas de FiBEST"
+msgstr "Revista  | Área de Empresas de FiBEST"
 
 #: fibest/templates/magazine.html:15
 msgid "Revista"
 msgstr "Revista"
 
 #: fibest/templates/magazine.html:20
+#, fuzzy
+#| msgid "Texto ficha tecnica revista"
 msgid "Ficha tecnica revista"
 msgstr ""
+"Junto a la hoja de publicidad, dispondrá de una ficha técnica en la revista "
+"del foro en la que ofrecer información ampliada sobre su empresa."
 
 #: fibest/templates/magazine.html:21
 msgid "Texto ficha tecnica revista"
 msgstr ""
 "Junto a la hoja de publicidad, dispondrá de una ficha técnica en la revista "
-"del foro en la que ofrecer informaciónampliada sobre su empresa."
+"del foro en la que ofrecer información ampliada sobre su empresa."
 
 #: fibest/templates/magazine.html:32 fibest/templates/stand.html:39
 msgid "info para contacto"
 msgstr "Información de contacto"
 
 #: fibest/templates/magazine.html:42
+#, fuzzy
+#| msgid "Info reparto publicidad"
 msgid "Reparto de publicidad"
-msgstr ""
+msgstr "Reparto de publicidad"
 
 #: fibest/templates/magazine.html:43
 msgid "Info reparto publicidad"
 msgstr ""
 "En el Welcome Pack que reciben todos los asistentes al Foro el día 18 de "
-"marzo, se incluirá un folleto o materialpublicitario que su empresa desee."
+"marzo, se incluirá un folleto o material publicitario que su empresa desee."
 "<br>El material deberá ser recibido, en la dirección que puede leer en el "
-"pie de página, ya impreso con el número deejemplares que consideren "
+"pie de página, ya impreso con el número de ejemplares que consideren "
 "oportuno, antes del 29 de febrero.<br>Si desea que la organización se haga "
 "cargo de la impresión del material, por favor consúltenos lo antes posible."
 
@@ -549,7 +573,7 @@ msgstr "Datos para redactar el contrato"
 msgid "Texto info contrato"
 msgstr ""
 "Les enviaremos dos copias del contrato firmadas y selladas por nosotros. Una "
-"de esas copias es para ustedes, y laotra, han de remitírnosla firmada por "
+"de esas copias es para ustedes, y la otra, han de remitírnosla firmada por "
 "ustedes. De este modo, ambas partes dispondremos de una copia del contrato."
 "<br>Es imprescindible que una de las copias del contrato haya sido firmada y "
 "enviada de vuelta a BEST Valladolid antesdel 17 de febrero de 2020."
@@ -574,11 +598,11 @@ msgstr "Stand  | Area de Empresas de FiBEST"
 msgid "texto publi virtual"
 msgstr ""
 "En la web del Foro, en la sección de empresas participantes (FiBEST Online), "
-"el visitante podrá acceder a informaciónsobre la empresa. Se dispondrá de "
-"una página propia dedicada a la empresa. Dicha página se estructurará en "
-"3secciones para hacer la información más accesible al visitante.<br>Desde la "
+"el visitante podrá acceder a información sobre la empresa. Se dispondrá de "
+"una página propia dedicada a la empresa. Dicha página se estructurará en 3 "
+"secciones para hacer la información más accesible al visitante.<br>Desde la "
 "organización le proponemos los siguientes apartados orientativos que, desde "
-"nuestra experiencia, son deinterés para los estudiantes."
+"nuestra experiencia, son de interés para los estudiantes."
 
 #: fibest/templates/stand.html:50
 msgid "Ofertas laborales y publi en redes"
@@ -589,29 +613,42 @@ msgstr ""
 msgid "Info ofertas laborales y publi en redes"
 msgstr ""
 "Su empresa tiene la oportunidad de publicar ofertas de empleo en la página "
-"web del foro, así como de publicar unmensaje en las redes sociales del foro. "
-"Todos estos servicios están disponibles hasta el inicio del curso 2020/2021 "
-"enseptiembre de 2020. En el momento en que su empresa desee hacer uso de "
-"alguno de ellos, por favor comuníquelo ala organización, junto con la "
-"información relativa a la publicación, a través de FiBEST@BEST.eu.org."
+"web del foro, así como de publicar un mensaje en las redes sociales del "
+"foro. Todos estos servicios están disponibles hasta el inicio del curso "
+"2020/2021 en septiembre de 2020. En el momento en que su empresa desee hacer "
+"uso de alguno de ellos, por favor comuníquelo a la organización, junto con "
+"la información relativa a la publicación, a través de FiBEST@BEST.eu.org."
 
 #: fibest/templates/terms.html:5
 msgid "Terms | FiBEST Private Area"
-msgstr "Terminos | Area de Empresas de FiBEST"
+msgstr "Términos | Area de Empresas de FiBEST"
 
-#: fibest/views/inscription.py:61
+#: fibest/views/inscription.py:17
+msgid "password"
+msgstr "Contraseña"
+
+#: fibest/views/inscription.py:17
+msgid "info password"
+msgstr "Contraseña que le hemos enviado para la inscripción"
+
+#: fibest/views/inscription.py:62
 msgid "passwords do not match !"
 msgstr "Contraseña erronea"
 
-#: fibest/views/inscription.py:64
+#: fibest/views/inscription.py:65
 msgid "Terms not accepted"
-msgstr "Terminos no aceptados"
+msgstr "Términos no aceptados"
 
-#: fibest/views/login.py:48
+#: fibest/views/login.py:49
 msgid "Login to FiBEST"
 msgstr "Inicio sesión FiBEST"
 
-#: fibest/views/login.py:49
+#: fibest/views/login.py:50
 msgid "Please, click on the following link to login to FiBEST website:"
 msgstr ""
 "Por favor, haga lick en el siguiente enlace para iniciar sesión en FiBEST"
+
+#, fuzzy
+#~| msgid "close"
+#~ msgid "close "
+#~ msgstr "cerrar"

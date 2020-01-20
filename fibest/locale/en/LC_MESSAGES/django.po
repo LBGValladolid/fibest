@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-19 23:26+0000\n"
+"POT-Creation-Date: 2020-01-20 12:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -306,11 +306,11 @@ msgstr ""
 msgid "Contacta con Nosotros"
 msgstr "Contact us"
 
-#: fibest/templates/base.html:112 fibest/templates/base.html:130
+#: fibest/templates/base.html:112 fibest/templates/base.html:122
 msgid "Coordinador FiBEST 2020"
 msgstr "FiBEST 2020 coordinator"
 
-#: fibest/templates/base.html:122
+#: fibest/templates/base.html:136
 msgid ""
 "Es el grupo local de BEST en la Universidad de Valladolid, fundado en 1994. "
 "BEST Valladolid cuenta con aproximadamente 30 miembros y lleva a cabo "
@@ -320,15 +320,15 @@ msgstr ""
 "BEST Valladolid has approximately 30 members and carries out numerous "
 "projects every year, including the FiBEST Employment Forum."
 
-#: fibest/templates/base.html:124
+#: fibest/templates/base.html:138
 msgid "Para más información:"
 msgstr "Extra info"
 
-#: fibest/templates/base.html:144 fibest/views/inscription.py:25
+#: fibest/templates/base.html:146 fibest/views/inscription.py:26
 msgid "Terms and Conditions"
 msgstr ""
 
-#: fibest/templates/base.html:145 fibest/views/inscription.py:27
+#: fibest/templates/base.html:147 fibest/views/inscription.py:28
 msgid "Privacy"
 msgstr ""
 
@@ -456,11 +456,33 @@ msgstr ""
 msgid "Login for companies | FiBEST Private Area"
 msgstr ""
 
-#: fibest/templates/login.html:21
+#: fibest/templates/login.html:17
+msgid "Mail sent succesfully!"
+msgstr ""
+
+#: fibest/templates/login.html:17
+msgid "Check your mailbox to access."
+msgstr ""
+
+#: fibest/templates/login.html:24
+msgid "Mail unkown!"
+msgstr ""
+
+#: fibest/templates/login.html:24
+msgid "Are you already registered? Check out "
+msgstr ""
+
+#: fibest/templates/login.html:25
+#, fuzzy
+#| msgid "Edit inscripcion"
+msgid "inscription"
+msgstr "Edit"
+
+#: fibest/templates/login.html:32
 msgid "Welcome to FiBEST"
 msgstr ""
 
-#: fibest/templates/login.html:29
+#: fibest/templates/login.html:40
 msgid ""
 "Please, introduce your email to access your company inscription details and "
 "dashboard. We will send a link to the email to login so you don't have to "
@@ -578,18 +600,31 @@ msgstr ""
 msgid "Terms | FiBEST Private Area"
 msgstr ""
 
-#: fibest/views/inscription.py:61
+#: fibest/views/inscription.py:17
+msgid "password"
+msgstr "Password"
+
+#: fibest/views/inscription.py:17
+msgid "info password"
+msgstr "Password we have sent you for registration"
+
+#: fibest/views/inscription.py:62
 msgid "passwords do not match !"
 msgstr "Itencorrect password"
 
-#: fibest/views/inscription.py:64
+#: fibest/views/inscription.py:65
 msgid "Terms not accepted"
 msgstr ""
 
-#: fibest/views/login.py:48
+#: fibest/views/login.py:49
 msgid "Login to FiBEST"
 msgstr ""
 
-#: fibest/views/login.py:49
+#: fibest/views/login.py:50
 msgid "Please, click on the following link to login to FiBEST website:"
 msgstr ""
+
+#, fuzzy
+#~| msgid "close"
+#~ msgid "close "
+#~ msgstr "close"

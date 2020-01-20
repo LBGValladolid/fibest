@@ -70,13 +70,13 @@
 </nav>
 
 {# Template #}
-    <div  class="container clear-top page-wrap">
+    <div  class="row page-wrap mx-auto">
         {% block content %}
         {% endblock %}
     </div>
 {#  Footer #}
-<footer class=" container site-footer font-small blue mt-3 pt-3 border-top">
-    <div class="mb-3 row  container text-md-left text-center">
+<footer class=" container site-footer font-small blue border-top">
+    <div class="mb-3 row  container text-md-left text-center pt-1">
         <div class="col-md-9">
             <h2>{% trans "Contacta con Nosotros" %}</h2>
         </div>
@@ -106,7 +106,7 @@
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row mb-2">
         <div class="col-md  text-center">
             <h3>Marina Bujedo Esteban</h3>
             <p>{% trans "Coordinador FiBEST 2020" %}</p>
@@ -116,14 +116,6 @@
             <p>
                 <i class="iconf-phone"></i> Tlfn.: +34 611 071 488
             </p>
-        </div>
-        <div class="col-md text-center">
-            <h3>BEST Valladolid</h3>
-            <p style="text-align:justify">{% trans "Es el grupo local de BEST en la Universidad de Valladolid, fundado en 1994. BEST Valladolid cuenta con aproximadamente 30 miembros y lleva a cabo numerosos proyectos cada año,entre ellos el Foro de empleo FiBEST." %}</p>
-            <p style="text-align:center">
-                {% trans "Para más información:" %} <a href="http://www.BESTValladolid.org">www.BESTValladolid.org</a>
-            </p>
-
         </div>
         <div class="col-md  text-center">
             <h3>Víctor Herrezuelo Paredes</h3>
@@ -137,6 +129,16 @@
             </p>
         </div>
 
+    </div>
+    <div class="row">
+        <div class="col-md text-center py-1">
+            <h3>BEST Valladolid</h3>
+            <p style="text-align:justify">{% trans "Es el grupo local de BEST en la Universidad de Valladolid, fundado en 1994. BEST Valladolid cuenta con aproximadamente 30 miembros y lleva a cabo numerosos proyectos cada año,entre ellos el Foro de empleo FiBEST." %}</p>
+            <p style="text-align:center">
+                {% trans "Para más información:" %} <a href="http://www.BESTValladolid.org">www.BESTValladolid.org</a>
+            </p>
+
+        </div>
     </div>
     <!-- Footer Links -->
     <div class="footer-copyright text-center py-3">© 2020

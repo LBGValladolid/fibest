@@ -158,7 +158,7 @@ class Forum(models.Model):
     cif_billing = models.CharField(_("CIF  of the company."), max_length=15)
     postal_social_billing = models.CharField(_("postal social billing"), max_length=2500)
     phone_billing = models.CharField(_("Phone number for billing"), max_length=15)
-    order_number = models.CharField(_("Order number"), max_length=30, default="")
+    order_number = models.CharField(_("Order number"), max_length=30, default="", blank=True, null=True)
     postal_send_billing = models.CharField(_("Address where we will send the bill."), max_length=2500)
 
     # ENVIO DE MATERIAL (poner que van a enviar para que se lo podamos devolver)

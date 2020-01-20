@@ -14,7 +14,8 @@ from fibest.models.company import Company
 # Recordar de asignar la variable de entorno INSCRIPCION
 
 class CompanyForm(forms.ModelForm):
-    password = forms.CharField(required=False)
+    password = forms.CharField(label=_("password"), help_text=_("info password"), required=False,
+                               widget=forms.PasswordInput)
 
     class Meta:
         model = Company
@@ -70,7 +71,9 @@ def index(request):
                 letters = string.ascii_letters
                 code = ''.join(random.choice(letters) for i in range(15))
                 company.login_code = code
-                tmpPk = token_urlsafe(12)
+                safe_name = request.POST["name"].encode("ascii", errors="ignore").decode()
+                safe_name = (safe_name[:6]) if len(safe_name) > 6 else safe_name
+                tmpPk = safe_name + "_" + token_urlsafe(6)
                 while Company.objects.filter(pk=tmpPk).exists():
                     pass
                 company.id = tmpPk
