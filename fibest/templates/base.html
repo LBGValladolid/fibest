@@ -32,15 +32,13 @@
 <body>
 
 <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-white justify-content-center border-bottom container">
-    <a style="white-space: nowrap; text-decoration: none !important" href="{% url 'dashboard' %}"
-       class="navbar-brand d-flex w-50 mr-auto"><h3>{% trans "FiBEST Company Area" %}</h3></a>
+    <a style="white-space:nowrap;" href="{% url 'dashboard' %}"
+       class="navbar-brand d-flex mr-auto"><h3 class="m-0">{% trans "FiBEST Company Area" %}</h3></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="navbar-collapse collapse w-100" id="collapsingNavbar">
-        <div class="navbar-text w-100 text-center p-0">
-            <h3 class=" ">{{ company.name }}</h3>
-        </div>
+
         <div class="nav navbar-nav ml-auto w-100  justify-content-end  flex-nowrap">
             {% if not navButton %}
                 <button style="white-space: nowrap" id="logout"

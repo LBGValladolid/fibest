@@ -2,7 +2,7 @@
 {% load i18n %}
 
 {% block title %}
-    <title>{% trans "Forum | FiBEST Private Area" %}</title>
+    <title>{% trans "Job fair | FiBEST Private Area" %}</title>
 
 
 {% endblock %}
@@ -14,14 +14,14 @@
 
 
     <section class="container form">
-        <h1>Forum form</h1>
+        <h1>{%  trans "Job fair form" %}</h1>
         <form method="POST" enctype='multipart/form-data'>
             {% csrf_token %}
             {{ form.logo|as_crispy_field }}
             {{ form.stand_name|as_crispy_field }}
             {{ form.cvs_requested|as_crispy_field }}
             {{ form.assembly_service|as_crispy_field }}
-            <button type="submit" class="btn btn-primary">{% trans "Edit forum info" %}</button>
+            <button type="submit" class="btn btn-primary">{% trans "Edit job fair info" %}</button>
         </form>
     </section>
 

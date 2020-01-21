@@ -31,7 +31,7 @@ class Company(models.Model):
     # Stand
     stand_name = models.CharField(_("Stand name"), max_length=200,
                                   help_text=_("Please indicate with what name exactly you want it to "
-                                              "appear on the stand banner, on the maps of the forum and "
+                                              "appear on the stand banner, on the maps of the job fair and "
                                               "in the schedules of activities. It will be case "
                                               "sensitive."), default="")
 
@@ -40,10 +40,10 @@ class Company(models.Model):
                                                        "editions, we also offer a service of "
                                                        "assembly of promotional material of your company, with a cost "
                                                        "of € 50 (this amount will be added "
-                                                       "to the invoice of the forum services). In this way, you simply "
+                                                       "to the invoice of the job fair services). In this way, you simply "
                                                        "have to send the promotional "
                                                        "materials to the organization Two days in advance, and upon "
-                                                       "arrival at the forum they will all be "
+                                                       "arrival at the job fair they will all be "
                                                        "ready."))
     disclaimer = models.BooleanField(default=False)
     hasVirtualStand = models.BooleanField(_("Tiene stand virtual"), default=False, blank=True)
@@ -76,7 +76,7 @@ class Magazine(models.Model):
                                        storage=OverwriteStorage(location=os.path.join(settings.MEDIA_ROOT, "magazine"),
                                                                 base_url=os.path.join(settings.MEDIA_URL, "magazine")),
                                        help_text=_("Your company will have a complete advertising page (image in size "
-                                                   "A5) in the forum magazine. To avoid pixelated problems in printing "
+                                                   "A5) in the job fair magazine. To avoid pixelated problems in printing "
                                                    "would be convenient to send us this advertising sheet in format "
                                                    "vector, or with a minimum resolution of 300ppp (preferable in .png "
                                                    "format), avoiding if possible the format pdf. Remind them that the "
