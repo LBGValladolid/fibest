@@ -12,16 +12,18 @@
 
 {% block  content %}
     {% if mailSent %}
-        <div class=" position-absolute mx-auto text-center" style="left: 25%" role="alert">
-            <div class="alert alert-primary fade show" style="position: relative; left: -25%;">
-                <strong>{% trans "Mail sent succesfully!" %}</strong> {% trans "Check your mailbox to access." %}
-            </div>
-        </div>S
+
+        <div class=" position-absolute mx-auto text-center alert alert-primary fade show center-absolute custom-alert"
+             role="alert">
+            <strong>{% trans "Mail sent succesfully!" %}</strong> {% trans "Check your mailbox to access." %}
+
+        </div>
     {% endif %}
     {% if mailFailed %}
-        <div class=" position-absolute mx-auto text-center alert alert-danger fade show center-absolute custom-alert" role="alert">
-                <strong>{% trans "Mail unkown!" %}</strong> {% trans "Are you already registered? Check out " %} <a
-                    href="{% url "inscription" %}">{% trans "inscription" %}</a>
+        <div class=" position-absolute mx-auto text-center alert alert-danger fade show center-absolute custom-alert"
+             role="alert">
+            <strong>{% trans "Mail unkown!" %}</strong> {% trans "Are you already registered? Check out " %} <a
+                href="{% url "inscription" %}">{% trans "inscription" %}</a>
         </div>
 
     {% endif %}
