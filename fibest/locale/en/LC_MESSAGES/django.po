@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-21 11:15+0000\n"
+"POT-Creation-Date: 2020-01-21 11:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -307,7 +307,13 @@ msgstr ""
 msgid "Contacta con Nosotros"
 msgstr "Contact us"
 
-#: fibest/templates/base.html:110 fibest/templates/base.html:120
+#: fibest/templates/base.html:110
+#, fuzzy
+#| msgid "Coordinador FiBEST 2020"
+msgid "Coordinadora FiBEST 2020"
+msgstr "FiBEST 2020 coordinator"
+
+#: fibest/templates/base.html:120
 msgid "Coordinador FiBEST 2020"
 msgstr "FiBEST 2020 coordinator"
 

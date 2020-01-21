@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-21 11:15+0000\n"
+"POT-Creation-Date: 2020-01-21 11:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -311,7 +311,13 @@ msgstr "Menú principal"
 msgid "Contacta con Nosotros"
 msgstr "Contacta con Nosotros"
 
-#: fibest/templates/base.html:110 fibest/templates/base.html:120
+#: fibest/templates/base.html:110
+#, fuzzy
+#| msgid "Coordinador FiBEST 2020"
+msgid "Coordinadora FiBEST 2020"
+msgstr "Coordinadora FiBEST 2020"
+
+#: fibest/templates/base.html:120
 msgid "Coordinador FiBEST 2020"
 msgstr "Coordinador FiBEST 2020"
 
@@ -502,7 +508,7 @@ msgid ""
 "dashboard. We will send a link to the email to login so you don't have to "
 "remember a password."
 msgstr ""
-"Por vafor, introduzca su email de acceso, un mail será mandado con el enlace "
+"Por favor, introduzca su email de acceso, un mail será mandado con el enlace "
 "para así no tener que recordar contraseñas."
 
 #: fibest/templates/magazine.html:5
