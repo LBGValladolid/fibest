@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-21 10:21+0000\n"
+"POT-Creation-Date: 2020-01-21 11:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -358,8 +358,10 @@ msgid "Company name"
 msgstr ""
 
 #: fibest/templates/dashboard.html:59
+#, fuzzy
+#| msgid "Edit inscripcion"
 msgid "Go to Edit Inscription"
-msgstr ""
+msgstr "Go to Inscription"
 
 #: fibest/templates/dashboard.html:65
 msgid "Edit Official Information"
@@ -371,7 +373,7 @@ msgstr ""
 
 #: fibest/templates/dashboard.html:69
 msgid " Go to Edit OfficialInformation"
-msgstr ""
+msgstr "Go to Official Informatio"
 
 #: fibest/templates/dashboard.html:75
 msgid "Edit Job fair Info"
@@ -383,7 +385,7 @@ msgstr ""
 
 #: fibest/templates/dashboard.html:79
 msgid "Go to Edit Froum Info"
-msgstr ""
+msgstr "Go to Job fair Info"
 
 #: fibest/templates/dashboard.html:87
 msgid "Extra Information"
@@ -401,7 +403,7 @@ msgstr ""
 
 #: fibest/templates/dashboard.html:97
 msgid "Go to Edit Magazine"
-msgstr ""
+msgstr "Go to Magazine"
 
 #: fibest/templates/dashboard.html:105
 msgid "Edit Virtual Stand"
@@ -413,7 +415,7 @@ msgstr ""
 
 #: fibest/templates/dashboard.html:108
 msgid "Go to Edit Stand"
-msgstr ""
+msgstr "Go to Stand"
 
 #: fibest/templates/disclaimerText.html:5
 msgid "Times | FiBEST Private Area"
@@ -461,31 +463,31 @@ msgstr ""
 msgid "Login for companies | FiBEST Private Area"
 msgstr ""
 
-#: fibest/templates/login.html:17
+#: fibest/templates/login.html:18
 msgid "Mail sent succesfully!"
 msgstr ""
 
-#: fibest/templates/login.html:17
+#: fibest/templates/login.html:18
 msgid "Check your mailbox to access."
 msgstr ""
 
-#: fibest/templates/login.html:23
+#: fibest/templates/login.html:25
 msgid "Mail unkown!"
 msgstr ""
 
-#: fibest/templates/login.html:23
+#: fibest/templates/login.html:25
 msgid "Are you already registered? Check out "
 msgstr ""
 
-#: fibest/templates/login.html:24
+#: fibest/templates/login.html:26
 msgid "inscription"
 msgstr ""
 
-#: fibest/templates/login.html:30
+#: fibest/templates/login.html:32
 msgid "Welcome to FiBEST"
 msgstr ""
 
-#: fibest/templates/login.html:38
+#: fibest/templates/login.html:40
 msgid ""
 "Please, introduce your email to access your company inscription details and "
 "dashboard. We will send a link to the email to login so you don't have to "
