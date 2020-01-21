@@ -640,4 +640,4 @@ msgstr "Inicio sesión FiBEST"
 #: fibest/views/login.py:48
 msgid "Please, click on the following link to login to FiBEST website:"
 msgstr ""
-"Por favor, haga lick en el siguiente enlace para iniciar sesión en FiBEST"
+"Por favor, haga click en el siguiente enlace para iniciar sesión en FiBEST"
