@@ -358,8 +358,6 @@ msgid "Company name"
 msgstr ""
 
 #: fibest/templates/dashboard.html:59
-#, fuzzy
-#| msgid "Edit inscripcion"
 msgid "Go to Edit Inscription"
 msgstr "Go to Inscription"
 
@@ -373,7 +371,7 @@ msgstr ""
 
 #: fibest/templates/dashboard.html:69
 msgid " Go to Edit OfficialInformation"
-msgstr "Go to Official Informatio"
+msgstr "Go to Official Information"
 
 #: fibest/templates/dashboard.html:75
 msgid "Edit Job fair Info"
