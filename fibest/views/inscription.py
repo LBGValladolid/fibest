@@ -19,12 +19,14 @@ class CompanyForm(forms.ModelForm):
 
     class Meta:
         model = Company
-        fields = ("login", "name", "link", "pack", "hasVirtualStand", "hasMagazine", "terms_confirmed")
+        fields = ("login", "name", "link", "pack", "hasVirtualStand",
+                  "hasMagazine", "terms_confirmed")
 
         help_texts = {
             'terms_confirmed': mark_safe(
-                "Se aceptan los <a href='/terms' target='_blank'>" + str(_('Terms and Conditions')) + "</a> y <a href="
-                                                                                                      "'/privacy' target='_blank'%}>" + str(
+                "Se aceptan los <a href='/terms' target='_blank'>" +
+                str(_('Terms and Conditions')) + "</a> y <a href="
+                "'/privacy' target='_blank'%}>" + str(
                     _('Privacy')) + "</a>")
         }
 
@@ -60,24 +62,29 @@ def index(request):
             form = CompanyForm(request.POST)
             if request.POST["password"] != os.environ["INSCRIPTION"]:
                 form.add_error('password', _("passwords do not match !"))
+                return render(request, 'inscription.html', {'form': form, "company": None})
 
             if not request.POST.get("terms_confirmed"):
                 form.add_error('terms_confirmed', _("Terms not accepted"))
 
-                return render(request, 'inscription.html', {'form': form, "company": None})
+            if Company.objects.filter(login__exact = request.POST.get('login')).exists():
+                form.add_error('login', _("Mail already registered"))
 
             if form.is_valid():
                 company = form.save(commit=False)
                 letters = string.ascii_letters
                 code = ''.join(random.choice(letters) for i in range(15))
                 company.login_code = code
-                safe_name = request.POST["name"].encode("ascii", errors="ignore").decode()
-                safe_name = (safe_name[:6]) if len(safe_name) > 6 else safe_name
+                safe_name = request.POST["name"].encode(
+                    "ascii", errors="ignore").decode()
+                safe_name = (safe_name[:6]) if len(
+                    safe_name) > 6 else safe_name
                 tmpPk = safe_name + "_" + token_urlsafe(6)
                 while Company.objects.filter(pk=tmpPk).exists():
                     pass
                 company.id = tmpPk
                 company.save()
-                return redirect("/")
+                request.session["mail"] = request.POST.get('login')
+                return redirect("login")
             else:
                 return render(request, 'inscription.html', {'form': form, "company": None})

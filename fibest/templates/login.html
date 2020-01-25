@@ -11,6 +11,14 @@
 {% endblock %}
 
 {% block  content %}
+{% if registered %}
+
+        <div class=" position-absolute mx-auto text-center alert alert-primary fade show center-absolute custom-alert"
+             role="alert">
+            <strong>{{registered}}</strong> {% trans " can now be used to access." %}
+
+        </div>
+    {% endif %}
     {% if mailSent %}
 
         <div class=" position-absolute mx-auto text-center alert alert-primary fade show center-absolute custom-alert"

@@ -12,6 +12,7 @@ from fibest.models.company import Company
 
 def login(request):
     if request.method == "GET":
+
         if "code" in request.GET:
             company = Company.objects.get(login=request.GET["email"])
             code = request.GET["code"]
@@ -21,7 +22,12 @@ def login(request):
             else:
                 return render(request, "login.html", {"error_message": "Incorrect credentials"})
         else:
-            return render(request, "login.html", {"navButton": True})
+            try:
+                mail = request.session["mail"]
+                request.session["id"] = None
+                return render(request, "login.html", {'registered': mail, "navButton": True})
+            except Exception:
+                return render(request, "login.html", {"navButton": True})
     elif request.method == "POST":
         email = request.POST["email"]
         try:

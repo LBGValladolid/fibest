@@ -31,8 +31,8 @@ def index(request):
 
         try:
             magazine = Magazine.objects.get(company=request.session["id"])
-            form = MagazineForm(request.POST, instance=magazine)
-
+            form = MagazineForm(request.POST, request.FILES, instance=magazine)
+            print(form)
             if form.is_valid():
                 form.save()
                 return redirect("/")
