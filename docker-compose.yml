@@ -42,7 +42,7 @@ services:
    - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
    - ./:/opt/fibest:ro
    - media:/opt/fibest/media
-   - /data/certs:/etc/nginx/certs
+   - ./data/certs:/etc/nginx/certs
   depends_on:
    - django
    - postgres
