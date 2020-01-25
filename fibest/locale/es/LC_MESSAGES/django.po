@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-21 11:30+0000\n"
+"POT-Creation-Date: 2020-01-25 19:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,12 +31,15 @@ msgid "This mail will be used to login to FiBEST."
 msgstr "Este mail será usado para acceder al área de empresas de FiBEST"
 
 #: fibest/models/company.py:18
-msgid "Fullname"
+#, fuzzy
+#| msgid "Fullname"
+msgid "Full name"
 msgstr "Nombre de la empresa"
 
-#: fibest/models/company.py:20 fibest/models/company.py:149
-#: fibest/models/company.py:157
-msgid "Fullname of the company."
+#: fibest/models/company.py:20
+#, fuzzy
+#| msgid "Fullname of the company."
+msgid "Full name of the company."
 msgstr "Nombre completo de la empresa"
 
 #: fibest/models/company.py:24 fibest/templates/dashboard.html:55
@@ -77,7 +80,7 @@ msgstr ""
 
 #: fibest/models/company.py:38
 msgid "Assembly service"
-msgstr "Servicio de montaje de material promocional"
+msgstr "Servicio de montaje de material promocional (50€)"
 
 #: fibest/models/company.py:39
 msgid ""
@@ -176,15 +179,15 @@ msgstr "Ubicación (nacional e internacional)"
 
 #: fibest/models/company.py:90 fibest/models/company.py:125
 msgid "Magazine text for internships"
-msgstr "Programas de prácticas (dejar vacio si no se ofrece)"
+msgstr "Programas de prácticas (dejar vacío si no se ofrece)"
 
 #: fibest/models/company.py:91 fibest/models/company.py:126
 msgid "Magazine text for becas"
-msgstr "Programas de becas (dejar vacio si no se ofrece)"
+msgstr "Programas de becas (dejar vacío si no se ofrece)"
 
 #: fibest/models/company.py:92 fibest/models/company.py:127
 msgid "Magazine text for TFGs"
-msgstr "Proyectos Fin de Carrera (dejar vacio si no se ofrece)"
+msgstr "Proyectos Fin de Carrera (dejar vacío si no se ofrece)"
 
 #: fibest/models/company.py:94 fibest/models/company.py:128
 msgid "web contact"
@@ -254,6 +257,10 @@ msgstr ""
 "Texto en el cual tiene la oportunidad de incluir información detallada sobre "
 "su misión, valores, identidad, oferta de la empresa, proyectos actuales, "
 "casos de éxito, proceso de selección, perfiles más buscados etc."
+
+#: fibest/models/company.py:149 fibest/models/company.py:157
+msgid "Fullname of the company."
+msgstr "Nombre completo de la empresa"
 
 #: fibest/models/company.py:150
 msgid "CIF of the company."
@@ -335,11 +342,11 @@ msgstr ""
 msgid "Para más información:"
 msgstr "Para más información:"
 
-#: fibest/templates/base.html:144 fibest/views/inscription.py:26
+#: fibest/templates/base.html:144 fibest/views/inscription.py:28
 msgid "Terms and Conditions"
 msgstr "Términos y Condiciones"
 
-#: fibest/templates/base.html:145 fibest/views/inscription.py:28
+#: fibest/templates/base.html:145 fibest/views/inscription.py:30
 msgid "Privacy"
 msgstr "Privacidad"
 
@@ -349,7 +356,7 @@ msgstr "Menú principal | Area de Empresas de FiBEST"
 
 #: fibest/templates/dashboard.html:38
 msgid "Tiempos envio"
-msgstr "Tiempos de envio"
+msgstr "Plazos de envio"
 
 #: fibest/templates/dashboard.html:44
 msgid "Basic Information"
@@ -479,30 +486,34 @@ msgid "Login for companies | FiBEST Private Area"
 msgstr "Inicio para empresas | Area de Empresas de FiBEST"
 
 #: fibest/templates/login.html:18
+msgid " can now be used to access."
+msgstr " puede ser usada para acceder"
+
+#: fibest/templates/login.html:26
 msgid "Mail sent succesfully!"
 msgstr ""
 
-#: fibest/templates/login.html:18
+#: fibest/templates/login.html:26
 msgid "Check your mailbox to access."
-msgstr ""
+msgstr "Compruebe su correo para acceder"
 
-#: fibest/templates/login.html:25
+#: fibest/templates/login.html:33
 msgid "Mail unkown!"
 msgstr "¡Mail desconocido!"
 
-#: fibest/templates/login.html:25
+#: fibest/templates/login.html:33
 msgid "Are you already registered? Check out "
 msgstr "¿Estás registrado? Entra en"
 
-#: fibest/templates/login.html:26
+#: fibest/templates/login.html:34
 msgid "inscription"
 msgstr "inscripción"
 
-#: fibest/templates/login.html:32
+#: fibest/templates/login.html:40
 msgid "Welcome to FiBEST"
 msgstr "Inicio sesión FiBEST"
 
-#: fibest/templates/login.html:40
+#: fibest/templates/login.html:48
 msgid ""
 "Please, introduce your email to access your company inscription details and "
 "dashboard. We will send a link to the email to login so you don't have to "
@@ -520,11 +531,17 @@ msgid "Revista"
 msgstr "Revista"
 
 #: fibest/templates/magazine.html:20
-msgid "Ficha tecnica revista"
+#, fuzzy
+#| msgid "Texto ficha tecnica revista"
+msgid "Ficha técnica revista"
 msgstr ""
+"Junto a la hoja de publicidad, dispondrá de una ficha técnica en la revista "
+"del foro en la que ofrecer información ampliada sobre su empresa."
 
 #: fibest/templates/magazine.html:21
-msgid "Texto ficha tecnica revista"
+#, fuzzy
+#| msgid "Texto ficha tecnica revista"
+msgid "Texto ficha técnica revista"
 msgstr ""
 "Junto a la hoja de publicidad, dispondrá de una ficha técnica en la revista "
 "del foro en la que ofrecer información ampliada sobre su empresa."
@@ -599,7 +616,7 @@ msgid "texto publi virtual"
 msgstr ""
 "En la web del Foro, en la sección de empresas participantes (FiBEST Online), "
 "el visitante podrá acceder a información sobre la empresa. Se dispondrá de "
-"una página propia dedicada a la empresa. Dicha página se estructurará en 3 "
+"una sección propia dedicada a la empresa. Dicha página se estructurará en 3 "
 "secciones para hacer la información más accesible al visitante.<br>Desde la "
 "organización le proponemos los siguientes apartados orientativos que, desde "
 "nuestra experiencia, son de interés para los estudiantes."
@@ -631,19 +648,25 @@ msgstr "Contraseña"
 msgid "info password"
 msgstr "Contraseña que le hemos enviado para la inscripción"
 
-#: fibest/views/inscription.py:62
+#: fibest/views/inscription.py:64
 msgid "passwords do not match !"
 msgstr "Contraseña erronea"
 
-#: fibest/views/inscription.py:65
+#: fibest/views/inscription.py:68
 msgid "Terms not accepted"
 msgstr "Términos no aceptados"
 
-#: fibest/views/login.py:47
+#: fibest/views/inscription.py:71
+#, fuzzy
+#| msgid "Are you already registered? Check out "
+msgid "Mail already registered"
+msgstr "¿Estás registrado? Entra en"
+
+#: fibest/views/login.py:53
 msgid "Login to FiBEST"
 msgstr "Inicio sesión FiBEST"
 
-#: fibest/views/login.py:48
+#: fibest/views/login.py:54
 msgid "Please, click on the following link to login to FiBEST website:"
 msgstr ""
 "Por favor, haga click en el siguiente enlace para iniciar sesión en FiBEST"

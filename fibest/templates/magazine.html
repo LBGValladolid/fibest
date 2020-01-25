@@ -17,8 +17,8 @@
             {% csrf_token %}
             {{ form.non_field_errors }}
             {{ form.publi_magazine|as_crispy_field }}
-            <h3> {% trans "Ficha tecnica revista" %}</h3>
-            <p>{% trans "Texto ficha tecnica revista" %}</p>
+            <h3> {% trans "Ficha técnica revista" %}</h3>
+            <p>{% trans "Texto ficha técnica revista" %}</p>
             {{ form.name_magazine|as_crispy_field }}
             {{ form.activity_magazine|as_crispy_field }}
             {{ form.search_magazine|as_crispy_field }}

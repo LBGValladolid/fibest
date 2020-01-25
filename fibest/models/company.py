@@ -15,9 +15,9 @@ class Company(models.Model):
     )
     login_code = models.CharField(max_length=15)
     name = models.CharField(
-        _("Fullname"),
+        _("Full name"),
         max_length=200,
-        help_text=_("Fullname of the company.")
+        help_text=_("Full name of the company.")
     )
 
     link = models.URLField(
@@ -146,7 +146,7 @@ class Forum(models.Model):
     company = models.ForeignKey(Company, models.CASCADE)
 
     # Contract data
-    company_contract = models.CharField(_("Fullname of the company."), max_length=500)
+    company_contract = models.CharField(_("Full name of the company."), max_length=500)
     cif_contract = models.CharField(_("CIF of the company."), max_length=15)
     signer_contract = models.CharField(
         _("Name of the person who will sign."), max_length=200)
@@ -154,7 +154,7 @@ class Forum(models.Model):
         _("Address where we will send the contract."), max_length=2500)
 
     # Billing data
-    company_billing = models.CharField(_("Fullname of the company."), max_length=200)
+    company_billing = models.CharField(_("Full name of the company."), max_length=200)
     cif_billing = models.CharField(_("CIF  of the company."), max_length=15)
     postal_social_billing = models.CharField(_("postal social billing"), max_length=2500)
     phone_billing = models.CharField(_("Phone number for billing"), max_length=15)

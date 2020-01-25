@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-21 11:30+0000\n"
+"POT-Creation-Date: 2020-01-25 19:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,13 +32,14 @@ msgid "This mail will be used to login to FiBEST."
 msgstr ""
 
 #: fibest/models/company.py:18
-msgid "Fullname"
+msgid "Full name"
 msgstr ""
 
-#: fibest/models/company.py:20 fibest/models/company.py:149
-#: fibest/models/company.py:157
-msgid "Fullname of the company."
-msgstr ""
+#: fibest/models/company.py:20
+#, fuzzy
+#| msgid "Name of the company magazine"
+msgid "Full name of the company."
+msgstr "Name that will appear in the magazine"
 
 #: fibest/models/company.py:24 fibest/templates/dashboard.html:55
 msgid "Website"
@@ -78,7 +79,7 @@ msgstr ""
 
 #: fibest/models/company.py:38
 msgid "Assembly service"
-msgstr "Promotional material assembly service"
+msgstr "Promotional material assembly service  (€50)"
 
 #: fibest/models/company.py:39
 msgid ""
@@ -251,6 +252,10 @@ msgstr ""
 "your mission, values, identity, company offer, current projects, success "
 "stories, selection process, most searched profiles etc."
 
+#: fibest/models/company.py:149 fibest/models/company.py:157
+msgid "Fullname of the company."
+msgstr ""
+
 #: fibest/models/company.py:150
 msgid "CIF of the company."
 msgstr ""
@@ -261,7 +266,7 @@ msgstr "Name of the person who will sign."
 
 #: fibest/models/company.py:154
 msgid "Address where we will send the contract."
-msgstr "Address to which to send the contract"
+msgstr "Address to which the contract will be sent"
 
 #: fibest/models/company.py:158
 msgid "CIF  of the company."
@@ -331,11 +336,11 @@ msgstr ""
 msgid "Para más información:"
 msgstr "Extra info"
 
-#: fibest/templates/base.html:144 fibest/views/inscription.py:26
+#: fibest/templates/base.html:144 fibest/views/inscription.py:28
 msgid "Terms and Conditions"
 msgstr ""
 
-#: fibest/templates/base.html:145 fibest/views/inscription.py:28
+#: fibest/templates/base.html:145 fibest/views/inscription.py:30
 msgid "Privacy"
 msgstr ""
 
@@ -468,30 +473,34 @@ msgid "Login for companies | FiBEST Private Area"
 msgstr ""
 
 #: fibest/templates/login.html:18
-msgid "Mail sent succesfully!"
-msgstr ""
-
-#: fibest/templates/login.html:18
-msgid "Check your mailbox to access."
-msgstr ""
-
-#: fibest/templates/login.html:25
-msgid "Mail unkown!"
-msgstr ""
-
-#: fibest/templates/login.html:25
-msgid "Are you already registered? Check out "
+msgid " can now be used to access."
 msgstr ""
 
 #: fibest/templates/login.html:26
+msgid "Mail sent succesfully!"
+msgstr ""
+
+#: fibest/templates/login.html:26
+msgid "Check your mailbox to access."
+msgstr ""
+
+#: fibest/templates/login.html:33
+msgid "Mail unkown!"
+msgstr ""
+
+#: fibest/templates/login.html:33
+msgid "Are you already registered? Check out "
+msgstr ""
+
+#: fibest/templates/login.html:34
 msgid "inscription"
 msgstr ""
 
-#: fibest/templates/login.html:32
+#: fibest/templates/login.html:40
 msgid "Welcome to FiBEST"
 msgstr ""
 
-#: fibest/templates/login.html:40
+#: fibest/templates/login.html:48
 msgid ""
 "Please, introduce your email to access your company inscription details and "
 "dashboard. We will send a link to the email to login so you don't have to "
@@ -507,11 +516,15 @@ msgid "Revista"
 msgstr "Magazine"
 
 #: fibest/templates/magazine.html:20
-msgid "Ficha tecnica revista"
+#, fuzzy
+#| msgid "Ficha tecnica revista"
+msgid "Ficha técnica revista"
 msgstr "Technical sheet in the magazine"
 
 #: fibest/templates/magazine.html:21
-msgid "Texto ficha tecnica revista"
+#, fuzzy
+#| msgid "Texto ficha tecnica revista"
+msgid "Texto ficha técnica revista"
 msgstr ""
 "Next to the advertising sheet, you will have a technical sheet in the job "
 "fair magazine in which to offer expanded information about your company."
@@ -617,18 +630,22 @@ msgstr "Password"
 msgid "info password"
 msgstr "Password we have sent you for registration"
 
-#: fibest/views/inscription.py:62
+#: fibest/views/inscription.py:64
 msgid "passwords do not match !"
 msgstr "Itencorrect password"
 
-#: fibest/views/inscription.py:65
+#: fibest/views/inscription.py:68
 msgid "Terms not accepted"
 msgstr ""
 
-#: fibest/views/login.py:47
+#: fibest/views/inscription.py:71
+msgid "Mail already registered"
+msgstr ""
+
+#: fibest/views/login.py:53
 msgid "Login to FiBEST"
 msgstr ""
 
-#: fibest/views/login.py:48
+#: fibest/views/login.py:54
 msgid "Please, click on the following link to login to FiBEST website:"
 msgstr ""
