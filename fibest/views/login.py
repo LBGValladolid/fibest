@@ -24,7 +24,7 @@ def login(request):
         else:
             try:
                 mail = request.session["mail"]
-                request.session["id"] = None
+                request.session["mail"] = None
                 return render(request, "login.html", {'registered': mail, "navButton": True})
             except Exception:
                 return render(request, "login.html", {"navButton": True})

@@ -1,51 +1,46 @@
+{% load i18n %}
 
 <div class="modal  fade" id="disclaimerModalLong" data-backdrop="static" tabindex="-1" role="dialog"
      aria-labelledby="disclaimerModalLongTitle" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h2 class="modal-title" id="exampleModalLongTitle">Disclaimer</h2>
+
+                <h2 class="modal-title" id="exampleModalLongTitle">{% trans "PLAZOS DE ENVÍO DE LA INFORMACIÓN" %}</h2>
             </div>
             <div class="modal-body">
-                <h4>PLAZOS DE ENVÍO DE LA INFORMACIÓN</h4>
-                Es conveniente que nos envíen la información solicitada con la mayor brevedad posible, con el fin de
-                agilizar la
-                creación de los materiales promocionales, así como formalizar por ambas partes la participación en el
-                evento a través
-                del contrato. Por esta razón, hemos de establecer unas fechas límite para que nos envíen la información
-                requerida:
+                {% trans "texto envio 1" %}
+
                 <br><br>
                 <ul>
-                    <li><b>Logo e información para la página web:</b> Con la mayor brevedad posible, con el fin de
-                        colgarlo en
-                        la
-                        página web.
+                    <li>
+                        <b>{% trans "Logo e información para la página web:" %}</b> {% trans "Con la mayor brevedad posible, con el fin de colgarlo en la página web." %}
                     </li>
-                    <li><b>Información y publicidad para la revista:</b> Lo antes posible, y siempre antes del <b>14 de
-                        febrero de
-                        2020</b>. A partir de esa fecha no se asegura la presencia en la revista del foro.
+                    <li>
+                        <b>{% trans "Información y publicidad para la revista:" %}</b> {% trans "Lo antes posible, y siempre antes del" %}
+                        <b> {% trans "14 de febrero de 2020" %}</b>
+                        . {% trans "A partir de esa fecha no se asegura la presencia en la revista del foro." %}
                     </li>
-                    <li><b>Publicidad que será incluida en el Welcome Pack:</b> Se debe recibir, ya impreso con el
-                        número de
-                        ejemplares deseados antes del día <b>29 de febrero de 2020</b>. La dirección se encuentra en el
-                        pie de
-                        página.
+                    <li>
+                        <b>{% trans "Publicidad que será incluida en el Welcome Pack:" %}</b>{% trans " Se debe recibir, ya impreso con el número de ejemplares deseados antes del día" %}
+                        <b>{% trans "29 de febrero de 2020" %}</b>. {% trans "La dirección se encuentra en el pie de página." %}
                     </li>
-                    <li><b>Datos de facturación y contrato:</b> Lo antes posible, siempre antes del <b>18 de febrero de
-                        2020.</b></li>
+                    <li>
+                        <b>{% trans "Datos de facturación y contrato:" %}</b> {% trans "Lo antes posible, siempre antes del" %}
+                        <b> {% trans "18 de febrero de 2020." %}</b></li>
                 </ul>
-                Para el envío de la información solicitada, pueden hacerlo a esta dirección de correo electrónico
-                victor.herrezuelo@bestspain.es
+                {% trans "texto envio 2" %}
                 <br><br>
-                Para el envío del folleto promocional incluido en el Welcome pack, pueden enviarla a esta dirección:
+                {% trans "texto envio 3" %}
+
+
                 <br><br>
-                BEST Valladolid <br>
-                Escuela de Ingenierías Industriales<br>
-                Paseo del Cauce, 59<br>
-                47011 Valladolid, España<br>
+                {% trans "texto dir envio" %}
+
             </div>
             <div class="modal-footer">
-                <button id= "accept_disclaimer" type="button" class="btn btn-primary" data-dismiss="modal">Accept disclaimer</button>
+                <button id="accept_disclaimer" type="button" class="btn btn-primary" data-dismiss="modal">Accept
+                </button>
             </div>
         </div>
     </div>

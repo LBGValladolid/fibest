@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-26 10:24+0000\n"
+"POT-Creation-Date: 2020-01-26 13:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -435,6 +435,92 @@ msgstr ""
 #: fibest/templates/dashboard.html:108
 msgid "Go to Edit Stand"
 msgstr "Ir al stand virtual"
+
+#: fibest/templates/disclaimer.html:9 fibest/templates/disclaimerText.html:14
+msgid "PLAZOS DE ENVÍO DE LA INFORMACIÓN"
+msgstr ""
+
+#: fibest/templates/disclaimer.html:12 fibest/templates/disclaimerText.html:15
+msgid "texto envio 1"
+msgstr ""
+"Es conveniente que nos envíen la información solicitada con la mayor "
+"brevedad posible, con el fin deagilizar lacreación de los materiales "
+"promocionales, así como formalizar por ambas partes la participación en "
+"elevento a travésdel contrato.<br>Por esta razón, hemos de establecer unas "
+"fechas límite para que nos envíen la informaciónrequerida:"
+
+#: fibest/templates/disclaimer.html:17 fibest/templates/disclaimerText.html:20
+msgid "Logo e información para la página web:"
+msgstr ""
+
+#: fibest/templates/disclaimer.html:17 fibest/templates/disclaimerText.html:20
+msgid "Con la mayor brevedad posible, con el fin de colgarlo en la página web."
+msgstr ""
+
+#: fibest/templates/disclaimer.html:20 fibest/templates/disclaimerText.html:23
+msgid "Información y publicidad para la revista:"
+msgstr ""
+
+#: fibest/templates/disclaimer.html:20 fibest/templates/disclaimerText.html:23
+msgid "Lo antes posible, y siempre antes del"
+msgstr ""
+
+#: fibest/templates/disclaimer.html:21 fibest/templates/disclaimerText.html:24
+msgid "14 de febrero de 2020"
+msgstr ""
+
+#: fibest/templates/disclaimer.html:22 fibest/templates/disclaimerText.html:25
+msgid ""
+"A partir de esa fecha no se asegura la presencia en la revista del foro."
+msgstr ""
+
+#: fibest/templates/disclaimer.html:25 fibest/templates/disclaimerText.html:28
+msgid "Publicidad que será incluida en el Welcome Pack:"
+msgstr ""
+
+#: fibest/templates/disclaimer.html:25 fibest/templates/disclaimerText.html:28
+msgid ""
+" Se debe recibir, ya impreso con el número de ejemplares deseados antes del "
+"día"
+msgstr ""
+
+#: fibest/templates/disclaimer.html:26 fibest/templates/disclaimerText.html:29
+msgid "29 de febrero de 2020"
+msgstr ""
+
+#: fibest/templates/disclaimer.html:26 fibest/templates/disclaimerText.html:29
+msgid "La dirección se encuentra en el pie de página."
+msgstr ""
+
+#: fibest/templates/disclaimer.html:29 fibest/templates/disclaimerText.html:32
+msgid "Datos de facturación y contrato:"
+msgstr ""
+
+#: fibest/templates/disclaimer.html:29 fibest/templates/disclaimerText.html:32
+msgid "Lo antes posible, siempre antes del"
+msgstr ""
+
+#: fibest/templates/disclaimer.html:30 fibest/templates/disclaimerText.html:33
+msgid "18 de febrero de 2020."
+msgstr ""
+
+#: fibest/templates/disclaimer.html:32 fibest/templates/disclaimerText.html:35
+msgid "texto envio 2"
+msgstr ""
+"Para el envío de la información solicitada, pueden hacerlo a esta dirección "
+"de correo electrónico victor.herrezuelo@bestspain.es"
+
+#: fibest/templates/disclaimer.html:34 fibest/templates/disclaimerText.html:37
+msgid "texto envio 3"
+msgstr ""
+"Para el envío del folleto promocional incluido en el Welcome pack, pueden "
+"enviarla a esta dirección:"
+
+#: fibest/templates/disclaimer.html:38 fibest/templates/disclaimerText.html:41
+msgid "texto dir envio"
+msgstr ""
+"BEST Valladolid <br>Escuela de Ingenierías Industriales<br>Paseo del Cauce, "
+"59<br>47011 Valladolid, España<br>"
 
 #: fibest/templates/disclaimerText.html:5
 msgid "Times | FiBEST Companies"
