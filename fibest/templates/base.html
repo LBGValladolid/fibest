@@ -33,7 +33,7 @@
 
 <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-white justify-content-center border-bottom container">
     <a style="white-space:nowrap;" href="{% url 'dashboard' %}"
-       class="navbar-brand d-flex mr-auto"><h3 class="m-0">{% trans "FiBEST Company Area" %}</h3></a>
+       class="navbar-brand d-flex mr-auto"><h3 class="m-0">{% trans "FiBEST Companies" %}</h3></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -135,6 +135,12 @@
             <p style="text-align:center">
                 {% trans "Para más información:" %} <a href="http://www.BESTValladolid.org">www.BESTValladolid.org</a>
             </p>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md text-center py-1">
+            <img src={% static "logo.png"%} style="max-height: 5rem;"></img>
 
         </div>
     </div>
