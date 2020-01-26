@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-25 19:29+0000\n"
+"POT-Creation-Date: 2020-01-26 10:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,8 @@ msgstr "Este mail será usado para acceder al área de empresas de FiBEST"
 msgid "Full name"
 msgstr "Nombre de la empresa"
 
-#: fibest/models/company.py:20
+#: fibest/models/company.py:20 fibest/models/company.py:149
+#: fibest/models/company.py:157
 #, fuzzy
 #| msgid "Fullname of the company."
 msgid "Full name of the company."
@@ -258,10 +259,6 @@ msgstr ""
 "su misión, valores, identidad, oferta de la empresa, proyectos actuales, "
 "casos de éxito, proceso de selección, perfiles más buscados etc."
 
-#: fibest/models/company.py:149 fibest/models/company.py:157
-msgid "Fullname of the company."
-msgstr "Nombre completo de la empresa"
-
 #: fibest/models/company.py:150
 msgid "CIF of the company."
 msgstr "CIF"
@@ -303,7 +300,7 @@ msgid "English"
 msgstr "Ingles"
 
 #: fibest/templates/base.html:36
-msgid "FiBEST Company Area"
+msgid "FiBEST Companies"
 msgstr "FiBEST Empresas"
 
 #: fibest/templates/base.html:45
@@ -342,17 +339,19 @@ msgstr ""
 msgid "Para más información:"
 msgstr "Para más información:"
 
-#: fibest/templates/base.html:144 fibest/views/inscription.py:28
+#: fibest/templates/base.html:150 fibest/views/inscription.py:28
 msgid "Terms and Conditions"
 msgstr "Términos y Condiciones"
 
-#: fibest/templates/base.html:145 fibest/views/inscription.py:30
+#: fibest/templates/base.html:151 fibest/views/inscription.py:30
 msgid "Privacy"
 msgstr "Privacidad"
 
 #: fibest/templates/dashboard.html:4
-msgid "Dashboard | FiBEST Company Area"
-msgstr "Menú principal | Area de Empresas de FiBEST"
+#, fuzzy
+#| msgid "Dashboard | FiBEST Companies"
+msgid "Dashboard | FiBEST Companies"
+msgstr "Menú principal | FiBEST Empresas"
 
 #: fibest/templates/dashboard.html:38
 msgid "Tiempos envio"
@@ -438,12 +437,12 @@ msgid "Go to Edit Stand"
 msgstr "Ir al stand virtual"
 
 #: fibest/templates/disclaimerText.html:5
-msgid "Times | FiBEST Private Area"
-msgstr "Tiempos | Area de Empresas de FiBEST"
+msgid "Times | FiBEST Companies"
+msgstr "Tiempos | FiBEST Empresas"
 
 #: fibest/templates/forum.html:5
-msgid "Job fair | FiBEST Private Area"
-msgstr "Foro | Area de Empresas de FiBEST"
+msgid "Job fair | FiBEST Companies"
+msgstr "Foro | FiBEST Empresas"
 
 #: fibest/templates/forum.html:17
 msgid "Job fair form"
@@ -454,8 +453,8 @@ msgid "Edit job fair info"
 msgstr "Editar"
 
 #: fibest/templates/inscription.html:5
-msgid "Inscription | FiBEST Private Area"
-msgstr "Inscripción | Area de Empresas de FiBEST"
+msgid "Inscription | FiBEST Companies"
+msgstr "Inscripción | FiBEST Empresas"
 
 #: fibest/templates/inscription.html:18
 msgid "Inscription form"
@@ -482,8 +481,8 @@ msgid "Register"
 msgstr "Registrar"
 
 #: fibest/templates/login.html:4
-msgid "Login for companies | FiBEST Private Area"
-msgstr "Inicio para empresas | Area de Empresas de FiBEST"
+msgid "Login for companies | FiBEST Companies"
+msgstr "Inicio para empresas | FiBEST Empresas"
 
 #: fibest/templates/login.html:18
 msgid " can now be used to access."
@@ -523,7 +522,7 @@ msgstr ""
 "para así no tener que recordar contraseñas."
 
 #: fibest/templates/magazine.html:5
-msgid "Magazine | FiBEST Private Area"
+msgid "Magazine | FiBEST Companies"
 msgstr "Revista  | Área de Empresas de FiBEST"
 
 #: fibest/templates/magazine.html:15
@@ -569,8 +568,8 @@ msgid "Save magazine details"
 msgstr "Editar"
 
 #: fibest/templates/officialInformation.html:5
-msgid "Official Information | FiBEST Private Area"
-msgstr "Información oficial | Area de Empresas de FiBEST"
+msgid "Official Information | FiBEST Companies"
+msgstr "Información oficial | FiBEST Empresas"
 
 #: fibest/templates/officialInformation.html:14
 msgid "Informacion Oficial"
@@ -604,12 +603,14 @@ msgid "Boton guardar info ofi"
 msgstr "Editar"
 
 #: fibest/templates/privacy.html:5
-msgid "Privacy | FiBEST Private Area"
-msgstr "Privacidad  | Area de Empresas de FiBEST"
+msgid "Privacy | FiBEST Companies"
+msgstr "Privacidad  | FiBEST Empresas"
 
 #: fibest/templates/stand.html:5
-msgid "Stand | FiBEST Private Area"
-msgstr "Stand  | Area de Empresas de FiBEST"
+#, fuzzy
+#| msgid "Stand | FiBEST Companies"
+msgid "Virtual Stand | FiBEST Companies"
+msgstr "Stand  | FiBEST Empresas"
 
 #: fibest/templates/stand.html:17
 msgid "texto publi virtual"
@@ -637,8 +638,8 @@ msgstr ""
 "la información relativa a la publicación, a través de FiBEST@BEST.eu.org."
 
 #: fibest/templates/terms.html:5
-msgid "Terms | FiBEST Private Area"
-msgstr "Términos | Area de Empresas de FiBEST"
+msgid "Terms | FiBEST Companies"
+msgstr "Términos | FiBEST Empresas"
 
 #: fibest/views/inscription.py:17
 msgid "password"
@@ -670,3 +671,11 @@ msgstr "Inicio sesión FiBEST"
 msgid "Please, click on the following link to login to FiBEST website:"
 msgstr ""
 "Por favor, haga click en el siguiente enlace para iniciar sesión en FiBEST"
+
+#, fuzzy
+#~| msgid "FiBEST Companies"
+#~ msgid "FiBEST Company Area"
+#~ msgstr "FiBEST Empresas"
+
+#~ msgid "Fullname of the company."
+#~ msgstr "Nombre completo de la empresa"

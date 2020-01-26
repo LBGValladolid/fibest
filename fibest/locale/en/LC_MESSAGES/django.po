@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-25 19:29+0000\n"
+"POT-Creation-Date: 2020-01-26 10:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,8 @@ msgstr ""
 msgid "Full name"
 msgstr ""
 
-#: fibest/models/company.py:20
+#: fibest/models/company.py:20 fibest/models/company.py:149
+#: fibest/models/company.py:157
 #, fuzzy
 #| msgid "Name of the company magazine"
 msgid "Full name of the company."
@@ -211,12 +212,20 @@ msgid "message magazine"
 msgstr "Advertising in the magazine"
 
 #: fibest/models/company.py:107
+#, fuzzy
+#| msgid ""
+#| "Text in which you have the opportunity to include detailed information "
+#| "about your mission, values, identity, offer of the company, current "
+#| "projects, success stories, selection process, most searched profiles etc."
 msgid ""
 "Text in which you have the opportunity to include detailed information about "
 "your mission, values, identity, offer of the company, current projects, "
 "success stories, selection process, etc. For guidance, the appropriate size "
 "of the Text would be approximately 300 words."
 msgstr ""
+"Text in which you have the opportunity to include detailed information about "
+"your mission, values, identity, company offer, current projects, success "
+"stories, selection process, most searched profiles etc."
 
 #: fibest/models/company.py:115
 msgid "copy magazine info"
@@ -231,8 +240,10 @@ msgstr ""
 "so that you only expand or modify the sections you want"
 
 #: fibest/models/company.py:118
+#, fuzzy
+#| msgid "Name of the company magazine"
 msgid "Name of the company"
-msgstr ""
+msgstr "Name that will appear in the magazine"
 
 #: fibest/models/company.py:119
 msgid "Activity of the company virtual"
@@ -252,13 +263,11 @@ msgstr ""
 "your mission, values, identity, company offer, current projects, success "
 "stories, selection process, most searched profiles etc."
 
-#: fibest/models/company.py:149 fibest/models/company.py:157
-msgid "Fullname of the company."
-msgstr ""
-
 #: fibest/models/company.py:150
+#, fuzzy
+#| msgid "Name of the company magazine"
 msgid "CIF of the company."
-msgstr ""
+msgstr "Name that will appear in the magazine"
 
 #: fibest/models/company.py:152
 msgid "Name of the person who will sign."
@@ -269,8 +278,10 @@ msgid "Address where we will send the contract."
 msgstr "Address to which the contract will be sent"
 
 #: fibest/models/company.py:158
+#, fuzzy
+#| msgid "Name of the company magazine"
 msgid "CIF  of the company."
-msgstr ""
+msgstr "Name that will appear in the magazine"
 
 #: fibest/models/company.py:159
 msgid "postal social billing"
@@ -297,7 +308,9 @@ msgid "English"
 msgstr ""
 
 #: fibest/templates/base.html:36
-msgid "FiBEST Company Area"
+#, fuzzy
+#| msgid "FiBEST Company Area"
+msgid "FiBEST Companies"
 msgstr "FiBEST Companies"
 
 #: fibest/templates/base.html:45
@@ -336,45 +349,57 @@ msgstr ""
 msgid "Para más información:"
 msgstr "Extra info"
 
-#: fibest/templates/base.html:144 fibest/views/inscription.py:28
+#: fibest/templates/base.html:150 fibest/views/inscription.py:28
+#, fuzzy
+#| msgid "terminos y condiciones"
 msgid "Terms and Conditions"
-msgstr ""
+msgstr "Terms and Conditions"
 
-#: fibest/templates/base.html:145 fibest/views/inscription.py:30
+#: fibest/templates/base.html:151 fibest/views/inscription.py:30
 msgid "Privacy"
 msgstr ""
 
 #: fibest/templates/dashboard.html:4
-msgid "Dashboard | FiBEST Company Area"
-msgstr ""
+#, fuzzy
+#| msgid "FiBEST Company Area"
+msgid "Dashboard | FiBEST Companies"
+msgstr "FiBEST Companies"
 
 #: fibest/templates/dashboard.html:38
 msgid "Tiempos envio"
 msgstr "Schedule"
 
 #: fibest/templates/dashboard.html:44
+#, fuzzy
+#| msgid " Go to Edit OfficialInformation"
 msgid "Basic Information"
-msgstr ""
+msgstr "Go to Official Information"
 
 #: fibest/templates/dashboard.html:50
+#, fuzzy
+#| msgid "Edit inscripcion"
 msgid "Edit Inscription"
-msgstr ""
+msgstr "Edit"
 
 #: fibest/templates/dashboard.html:51
 msgid "Change your basic data:"
 msgstr ""
 
 #: fibest/templates/dashboard.html:54
+#, fuzzy
+#| msgid "Stand name"
 msgid "Company name"
-msgstr ""
+msgstr "Name to be on the stand"
 
 #: fibest/templates/dashboard.html:59
 msgid "Go to Edit Inscription"
 msgstr "Go to Inscription"
 
 #: fibest/templates/dashboard.html:65
+#, fuzzy
+#| msgid " Go to Edit OfficialInformation"
 msgid "Edit Official Information"
-msgstr ""
+msgstr "Go to Official Information"
 
 #: fibest/templates/dashboard.html:66
 msgid "Check and edit all the data related to the contract and payments."
@@ -385,8 +410,10 @@ msgid " Go to Edit OfficialInformation"
 msgstr "Go to Official Information"
 
 #: fibest/templates/dashboard.html:75
+#, fuzzy
+#| msgid "Edit job fair info"
 msgid "Edit Job fair Info"
-msgstr ""
+msgstr "Edit"
 
 #: fibest/templates/dashboard.html:76
 msgid "Check and edit all the data related to the job fair itself."
@@ -397,12 +424,16 @@ msgid "Go to Edit Froum Info"
 msgstr "Go to Job fair Info"
 
 #: fibest/templates/dashboard.html:87
+#, fuzzy
+#| msgid " Go to Edit OfficialInformation"
 msgid "Extra Information"
-msgstr ""
+msgstr "Go to Official Information"
 
 #: fibest/templates/dashboard.html:94
+#, fuzzy
+#| msgid "Go to Edit Magazine"
 msgid "Edit Magazine"
-msgstr ""
+msgstr "Go to Magazine"
 
 #: fibest/templates/dashboard.html:95
 msgid ""
@@ -427,28 +458,38 @@ msgid "Go to Edit Stand"
 msgstr "Go to Stand"
 
 #: fibest/templates/disclaimerText.html:5
-msgid "Times | FiBEST Private Area"
-msgstr ""
+#, fuzzy
+#| msgid "FiBEST Company Area"
+msgid "Times | FiBEST Companies"
+msgstr "FiBEST Companies"
 
 #: fibest/templates/forum.html:5
-msgid "Job fair | FiBEST Private Area"
-msgstr ""
+#, fuzzy
+#| msgid "FiBEST Company Area"
+msgid "Job fair | FiBEST Companies"
+msgstr "FiBEST Companies"
 
 #: fibest/templates/forum.html:17
+#, fuzzy
+#| msgid "Edit job fair info"
 msgid "Job fair form"
-msgstr ""
+msgstr "Edit"
 
 #: fibest/templates/forum.html:24
 msgid "Edit job fair info"
 msgstr "Edit"
 
 #: fibest/templates/inscription.html:5
-msgid "Inscription | FiBEST Private Area"
-msgstr ""
+#, fuzzy
+#| msgid "FiBEST Company Area"
+msgid "Inscription | FiBEST Companies"
+msgstr "FiBEST Companies"
 
 #: fibest/templates/inscription.html:18
+#, fuzzy
+#| msgid "Edit inscripcion"
 msgid "Inscription form"
-msgstr ""
+msgstr "Edit"
 
 #: fibest/templates/inscription.html:25
 msgid "Edit inscripcion"
@@ -469,8 +510,10 @@ msgid "Register"
 msgstr ""
 
 #: fibest/templates/login.html:4
-msgid "Login for companies | FiBEST Private Area"
-msgstr ""
+#, fuzzy
+#| msgid "FiBEST Company Area"
+msgid "Login for companies | FiBEST Companies"
+msgstr "FiBEST Companies"
 
 #: fibest/templates/login.html:18
 msgid " can now be used to access."
@@ -493,8 +536,10 @@ msgid "Are you already registered? Check out "
 msgstr ""
 
 #: fibest/templates/login.html:34
+#, fuzzy
+#| msgid "Edit inscripcion"
 msgid "inscription"
-msgstr ""
+msgstr "Edit"
 
 #: fibest/templates/login.html:40
 msgid "Welcome to FiBEST"
@@ -508,8 +553,10 @@ msgid ""
 msgstr ""
 
 #: fibest/templates/magazine.html:5
-msgid "Magazine | FiBEST Private Area"
-msgstr ""
+#, fuzzy
+#| msgid "FiBEST Company Area"
+msgid "Magazine | FiBEST Companies"
+msgstr "FiBEST Companies"
 
 #: fibest/templates/magazine.html:15
 msgid "Revista"
@@ -552,8 +599,10 @@ msgid "Save magazine details"
 msgstr "Edit"
 
 #: fibest/templates/officialInformation.html:5
-msgid "Official Information | FiBEST Private Area"
-msgstr ""
+#, fuzzy
+#| msgid "FiBEST Company Area"
+msgid "Official Information | FiBEST Companies"
+msgstr "FiBEST Companies"
 
 #: fibest/templates/officialInformation.html:14
 msgid "Informacion Oficial"
@@ -587,12 +636,16 @@ msgid "Boton guardar info ofi"
 msgstr "Edit"
 
 #: fibest/templates/privacy.html:5
-msgid "Privacy | FiBEST Private Area"
-msgstr ""
+#, fuzzy
+#| msgid "FiBEST Company Area"
+msgid "Privacy | FiBEST Companies"
+msgstr "FiBEST Companies"
 
 #: fibest/templates/stand.html:5
-msgid "Stand | FiBEST Private Area"
-msgstr ""
+#, fuzzy
+#| msgid "FiBEST Company Area"
+msgid "Virtual Stand | FiBEST Companies"
+msgstr "FiBEST Companies"
 
 #: fibest/templates/stand.html:17
 msgid "texto publi virtual"
@@ -619,8 +672,10 @@ msgstr ""
 "publication, to via FiBEST@BEST.eu.org."
 
 #: fibest/templates/terms.html:5
-msgid "Terms | FiBEST Private Area"
-msgstr ""
+#, fuzzy
+#| msgid "FiBEST Company Area"
+msgid "Terms | FiBEST Companies"
+msgstr "FiBEST Companies"
 
 #: fibest/views/inscription.py:17
 msgid "password"
@@ -649,3 +704,6 @@ msgstr ""
 #: fibest/views/login.py:54
 msgid "Please, click on the following link to login to FiBEST website:"
 msgstr ""
+
+#~ msgid "FiBEST Company Area"
+#~ msgstr "FiBEST Companies"
