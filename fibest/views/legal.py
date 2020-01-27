@@ -5,8 +5,8 @@ from fibest.models.company import  Company
 def index(request):
     try:
         Company.objects.get(id=request.session["id"])
-        return render(request, "terms.html")
+        return render(request, "legal.html")
     except Exception as e:
-        return render(request, "terms.html", {"navButton": True})
+        return render(request, "legal.html", {"navButton": True})
 
 

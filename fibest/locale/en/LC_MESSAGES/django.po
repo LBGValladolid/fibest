@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-26 13:02+0000\n"
+"POT-Creation-Date: 2020-01-27 08:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -321,21 +321,21 @@ msgstr ""
 msgid "Dashboard"
 msgstr ""
 
-#: fibest/templates/base.html:79
+#: fibest/templates/base.html:78
 msgid "Contacta con Nosotros"
 msgstr "Contact us"
 
-#: fibest/templates/base.html:110
+#: fibest/templates/base.html:109
 #, fuzzy
 #| msgid "Coordinador FiBEST 2020"
 msgid "Coordinadora FiBEST 2020"
 msgstr "FiBEST 2020 coordinator"
 
-#: fibest/templates/base.html:120
+#: fibest/templates/base.html:119
 msgid "Coordinador FiBEST 2020"
 msgstr "FiBEST 2020 coordinator"
 
-#: fibest/templates/base.html:134
+#: fibest/templates/base.html:133
 msgid ""
 "Es el grupo local de BEST en la Universidad de Valladolid, fundado en 1994. "
 "BEST Valladolid cuenta con aproximadamente 30 miembros y lleva a cabo "
@@ -345,17 +345,15 @@ msgstr ""
 "BEST Valladolid has approximately 30 members and carries out numerous "
 "projects every year, including the FiBEST Employment job fair."
 
-#: fibest/templates/base.html:136
+#: fibest/templates/base.html:135
 msgid "Para más información:"
 msgstr "Extra info"
 
-#: fibest/templates/base.html:150 fibest/views/inscription.py:28
-#, fuzzy
-#| msgid "terminos y condiciones"
-msgid "Terms and Conditions"
-msgstr "Terms and Conditions"
+#: fibest/templates/base.html:149
+msgid "legal"
+msgstr ""
 
-#: fibest/templates/base.html:151 fibest/views/inscription.py:30
+#: fibest/templates/base.html:150 fibest/views/inscription.py:27
 msgid "Privacy"
 msgstr ""
 
@@ -459,7 +457,7 @@ msgstr "Go to Stand"
 
 #: fibest/templates/disclaimer.html:9 fibest/templates/disclaimerText.html:14
 msgid "PLAZOS DE ENVÍO DE LA INFORMACIÓN"
-msgstr ""
+msgstr "SCHEDULE"
 
 #: fibest/templates/disclaimer.html:12 fibest/templates/disclaimerText.html:15
 msgid "texto envio 1"
@@ -596,6 +594,16 @@ msgstr ""
 msgid "Register"
 msgstr ""
 
+#: fibest/templates/legal.html:5
+#, fuzzy
+#| msgid "FiBEST Company Area"
+msgid "Aviso Legal | FiBEST Companies"
+msgstr "FiBEST Companies"
+
+#: fibest/templates/legal.html:14
+msgid "AVISO LEGAL"
+msgstr "LEGAL NOTICE"
+
 #: fibest/templates/login.html:4
 #, fuzzy
 #| msgid "FiBEST Company Area"
@@ -728,6 +736,10 @@ msgstr "Edit"
 msgid "Privacy | FiBEST Companies"
 msgstr "FiBEST Companies"
 
+#: fibest/templates/privacy.html:14
+msgid "POLÍTICA DE PRIVACIDAD"
+msgstr "PRIVACY POLICY"
+
 #: fibest/templates/stand.html:5
 #, fuzzy
 #| msgid "FiBEST Company Area"
@@ -758,12 +770,6 @@ msgstr ""
 "notify the organization, together with the information related to the "
 "publication, to via FiBEST@BEST.eu.org."
 
-#: fibest/templates/terms.html:5
-#, fuzzy
-#| msgid "FiBEST Company Area"
-msgid "Terms | FiBEST Companies"
-msgstr "FiBEST Companies"
-
 #: fibest/views/inscription.py:17
 msgid "password"
 msgstr "Password"
@@ -772,15 +778,19 @@ msgstr "Password"
 msgid "info password"
 msgstr "Password we have sent you for registration"
 
-#: fibest/views/inscription.py:64
+#: fibest/views/inscription.py:27
+msgid "Se aceptan la "
+msgstr "Accept"
+
+#: fibest/views/inscription.py:61
 msgid "passwords do not match !"
 msgstr "Itencorrect password"
 
-#: fibest/views/inscription.py:68
-msgid "Terms not accepted"
-msgstr ""
+#: fibest/views/inscription.py:65
+msgid "privacy not accepted"
+msgstr "privacy policy not accepted"
 
-#: fibest/views/inscription.py:71
+#: fibest/views/inscription.py:68
 msgid "Mail already registered"
 msgstr ""
 
@@ -791,6 +801,16 @@ msgstr ""
 #: fibest/views/login.py:54
 msgid "Please, click on the following link to login to FiBEST website:"
 msgstr ""
+
+#, fuzzy
+#~| msgid "FiBEST Company Area"
+#~ msgid "Terms | FiBEST Companies"
+#~ msgstr "FiBEST Companies"
+
+#, fuzzy
+#~| msgid "terminos y condiciones"
+#~ msgid "Terms and Conditions"
+#~ msgstr "Terms and Conditions"
 
 #~ msgid "FiBEST Company Area"
 #~ msgstr "FiBEST Companies"

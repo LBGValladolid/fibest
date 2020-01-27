@@ -25,7 +25,7 @@ from fibest.views import inscription
 from fibest.views import login
 from fibest.views import magazine
 from fibest.views import stand
-from fibest.views import terms
+from fibest.views import legal
 from fibest.views import privacy
 from fibest.views import disclaimer
 urlpatterns = [
@@ -41,7 +41,7 @@ urlpatterns = [
                   path('stand/', stand.index, name="stand"),
                   path('officialInformation/', officialInformation.index, name="officialInformation"),
                   path('forum/', forum.index, name="forum"),
-                  path('terms/', terms.index, name="terms"),
+                  path('legal/', legal.index, name="legal"),
                   path('privacy/', privacy.index, name="privacy"),
                   path('times/', disclaimer.index, name="times")
               ]

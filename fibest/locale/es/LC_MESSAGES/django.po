@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-26 13:02+0000\n"
+"POT-Creation-Date: 2020-01-27 08:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -311,21 +311,21 @@ msgstr "Cerrar sesión"
 msgid "Dashboard"
 msgstr "Menú principal"
 
-#: fibest/templates/base.html:79
+#: fibest/templates/base.html:78
 msgid "Contacta con Nosotros"
 msgstr "Contacta con Nosotros"
 
-#: fibest/templates/base.html:110
+#: fibest/templates/base.html:109
 #, fuzzy
 #| msgid "Coordinador FiBEST 2020"
 msgid "Coordinadora FiBEST 2020"
 msgstr "Coordinadora FiBEST 2020"
 
-#: fibest/templates/base.html:120
+#: fibest/templates/base.html:119
 msgid "Coordinador FiBEST 2020"
 msgstr "Coordinador FiBEST 2020"
 
-#: fibest/templates/base.html:134
+#: fibest/templates/base.html:133
 msgid ""
 "Es el grupo local de BEST en la Universidad de Valladolid, fundado en 1994. "
 "BEST Valladolid cuenta con aproximadamente 30 miembros y lleva a cabo "
@@ -335,15 +335,15 @@ msgstr ""
 "BEST Valladolid cuenta con aproximadamente 30 miembros y lleva a cabo "
 "numerosos proyectos cada año, entre ellos el Foro de empleo FiBEST."
 
-#: fibest/templates/base.html:136
+#: fibest/templates/base.html:135
 msgid "Para más información:"
 msgstr "Para más información:"
 
-#: fibest/templates/base.html:150 fibest/views/inscription.py:28
-msgid "Terms and Conditions"
-msgstr "Términos y Condiciones"
+#: fibest/templates/base.html:149
+msgid "legal"
+msgstr ""
 
-#: fibest/templates/base.html:151 fibest/views/inscription.py:30
+#: fibest/templates/base.html:150 fibest/views/inscription.py:27
 msgid "Privacy"
 msgstr "Privacidad"
 
@@ -566,6 +566,14 @@ msgstr ""
 msgid "Register"
 msgstr "Registrar"
 
+#: fibest/templates/legal.html:5
+msgid "Aviso Legal | FiBEST Companies"
+msgstr "Aviso Legal | FiBEST Empresas"
+
+#: fibest/templates/legal.html:14
+msgid "AVISO LEGAL"
+msgstr "AVISO LEGAL"
+
 #: fibest/templates/login.html:4
 msgid "Login for companies | FiBEST Companies"
 msgstr "Inicio para empresas | FiBEST Empresas"
@@ -692,6 +700,10 @@ msgstr "Editar"
 msgid "Privacy | FiBEST Companies"
 msgstr "Privacidad  | FiBEST Empresas"
 
+#: fibest/templates/privacy.html:14
+msgid "POLÍTICA DE PRIVACIDAD"
+msgstr "POLÍTICA DE PRIVACIDAD"
+
 #: fibest/templates/stand.html:5
 #, fuzzy
 #| msgid "Stand | FiBEST Companies"
@@ -723,10 +735,6 @@ msgstr ""
 "uso de alguno de ellos, por favor comuníquelo a la organización, junto con "
 "la información relativa a la publicación, a través de FiBEST@BEST.eu.org."
 
-#: fibest/templates/terms.html:5
-msgid "Terms | FiBEST Companies"
-msgstr "Términos | FiBEST Empresas"
-
 #: fibest/views/inscription.py:17
 msgid "password"
 msgstr "Contraseña"
@@ -735,15 +743,21 @@ msgstr "Contraseña"
 msgid "info password"
 msgstr "Contraseña que le hemos enviado para la inscripción"
 
-#: fibest/views/inscription.py:64
+#: fibest/views/inscription.py:27
+msgid "Se aceptan la "
+msgstr ""
+
+#: fibest/views/inscription.py:61
 msgid "passwords do not match !"
 msgstr "Contraseña erronea"
 
-#: fibest/views/inscription.py:68
-msgid "Terms not accepted"
-msgstr "Términos no aceptados"
+#: fibest/views/inscription.py:65
+#, fuzzy
+#| msgid "Terms not accepted"
+msgid "privacy not accepted"
+msgstr "política de privacidad no aceptada"
 
-#: fibest/views/inscription.py:71
+#: fibest/views/inscription.py:68
 #, fuzzy
 #| msgid "Are you already registered? Check out "
 msgid "Mail already registered"
@@ -757,6 +771,12 @@ msgstr "Inicio sesión FiBEST"
 msgid "Please, click on the following link to login to FiBEST website:"
 msgstr ""
 "Por favor, haga click en el siguiente enlace para iniciar sesión en FiBEST"
+
+#~ msgid "Terms | FiBEST Companies"
+#~ msgstr "Términos | FiBEST Empresas"
+
+#~ msgid "Terms and Conditions"
+#~ msgstr "Términos y Condiciones"
 
 #, fuzzy
 #~| msgid "FiBEST Companies"

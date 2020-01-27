@@ -24,10 +24,7 @@ class CompanyForm(forms.ModelForm):
 
         help_texts = {
             'terms_confirmed': mark_safe(
-                "Se aceptan los <a href='/terms' target='_blank'>" +
-                str(_('Terms and Conditions')) + "</a> y <a href="
-                "'/privacy' target='_blank'%}>" + str(
-                    _('Privacy')) + "</a>")
+                str(_("Se aceptan la "))+"<a href='/privacy' target='_blank'%}>" + str(_('Privacy')) + "</a>")
         }
 
 
@@ -65,7 +62,7 @@ def index(request):
                 return render(request, 'inscription.html', {'form': form, "company": None})
 
             if not request.POST.get("terms_confirmed"):
-                form.add_error('terms_confirmed', _("Terms not accepted"))
+                form.add_error('terms_confirmed', _("privacy not accepted"))
 
             if Company.objects.filter(login__exact = request.POST.get('login')).exists():
                 form.add_error('login', _("Mail already registered"))
