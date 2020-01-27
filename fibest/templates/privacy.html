@@ -8,7 +8,7 @@
 {% block content %}
     {% load crispy_forms_tags %}
     {% load i18n %}
-
+    {% load static %}
 
     <section class="container form">
         <h1>{% trans "POLÍTICA DE PRIVACIDAD" %}</h1>
@@ -33,7 +33,8 @@
             información solicitada.
             <br><br>
             PUBLICACIÓN: Los datos de contacto e información sobre la empresa y actividades que ofrecen,
-            serán harán públicos ya sea en la pagina web fibest.org o por medios fisicos durante el foro de empleo, de acuerdo con las Condiciones de Participación.
+            serán harán públicos ya sea en la pagina web fibest.org o por medios fisicos durante el foro de empleo, de
+            acuerdo con las <a href="{% static "Condiciones de participación - FiBEST2020.pdf" %}">Condiciones de Participación</a>.
             <br><br>
             ENVIO DE INFORMACIÓN COMERCIAL: ASOCIACION JUVENIL BEST solicitará el
             consentimiento explicito de los usuarios de forma adicional para la remisión de
