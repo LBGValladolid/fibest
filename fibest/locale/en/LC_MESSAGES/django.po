@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:10+0000\n"
+"POT-Creation-Date: 2020-01-27 09:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -485,8 +485,8 @@ msgid "Lo antes posible, y siempre antes del"
 msgstr "As soon as possible, and before"
 
 #: fibest/templates/disclaimer.html:21 fibest/templates/disclaimerText.html:24
-msgid "14 de febrero de 2020"
-msgstr "February 14, 2020"
+msgid "14 de febrero de 2020. "
+msgstr "February 14, 2020. "
 
 #: fibest/templates/disclaimer.html:22 fibest/templates/disclaimerText.html:25
 msgid ""
