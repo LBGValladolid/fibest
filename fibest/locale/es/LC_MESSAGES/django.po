@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:06+0000\n"
+"POT-Creation-Date: 2020-01-27 08:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -341,11 +341,11 @@ msgstr "Para más información:"
 
 #: fibest/templates/base.html:149
 msgid "legal"
-msgstr ""
+msgstr "Aviso legal"
 
 #: fibest/templates/base.html:150 fibest/views/inscription.py:27
 msgid "Privacy"
-msgstr "Privacidad"
+msgstr "Política de privacidad"
 
 #: fibest/templates/dashboard.html:4
 #, fuzzy
