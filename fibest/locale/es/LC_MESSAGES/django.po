@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 11:21+0000\n"
+"POT-Creation-Date: 2020-01-29 09:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,12 +104,14 @@ msgid "Tiene stand virtual"
 msgstr ""
 
 #: fibest/models/company.py:50
+#, fuzzy
+#| msgid "Revista"
 msgid "Tiene revista"
-msgstr ""
+msgstr "Revista"
 
 #: fibest/models/company.py:51
 msgid "Curriculums"
-msgstr "Envio de curriculim vitae"
+msgstr "Especifique que curriculums le gustaría recibir"
 
 #: fibest/models/company.py:52
 msgid "Texto ayuda curriculums demandados"

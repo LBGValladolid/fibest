@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 11:21+0000\n"
+"POT-Creation-Date: 2020-01-29 09:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -108,7 +108,7 @@ msgstr "Has magazine"
 
 #: fibest/models/company.py:51
 msgid "Curriculums"
-msgstr "Shipping of resumes"
+msgstr "Specify which resumes you would like to receive"
 
 #: fibest/models/company.py:52
 msgid "Texto ayuda curriculums demandados"
