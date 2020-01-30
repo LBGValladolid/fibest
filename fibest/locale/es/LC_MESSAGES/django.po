@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-29 09:59+0000\n"
+"POT-Creation-Date: 2020-01-30 15:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,15 +31,11 @@ msgid "This mail will be used to login to FiBEST."
 msgstr "Este mail será usado para acceder al área de empresas de FiBEST"
 
 #: fibest/models/company.py:18
-#, fuzzy
-#| msgid "Fullname"
 msgid "Full name"
 msgstr "Nombre de la empresa"
 
 #: fibest/models/company.py:20 fibest/models/company.py:149
 #: fibest/models/company.py:157
-#, fuzzy
-#| msgid "Fullname of the company."
 msgid "Full name of the company."
 msgstr "Nombre completo de la empresa"
 
@@ -316,8 +312,7 @@ msgid "Contacta con Nosotros"
 msgstr "Contacta con Nosotros"
 
 #: fibest/templates/base.html:109
-#, fuzzy
-#| msgid "Coordinador FiBEST 2020"
+
 msgid "Coordinadora FiBEST 2020"
 msgstr "Coordinadora FiBEST 2020"
 
@@ -348,8 +343,6 @@ msgid "Privacy"
 msgstr "Política de privacidad"
 
 #: fibest/templates/dashboard.html:4
-#, fuzzy
-#| msgid "Dashboard | FiBEST Companies"
 msgid "Dashboard | FiBEST Companies"
 msgstr "Menú principal | FiBEST Empresas"
 
@@ -624,16 +617,12 @@ msgid "Revista"
 msgstr "Revista"
 
 #: fibest/templates/magazine.html:20
-#, fuzzy
-#| msgid "Texto ficha tecnica revista"
 msgid "Ficha técnica revista"
 msgstr ""
 "Junto a la hoja de publicidad, dispondrá de una ficha técnica en la revista "
 "del foro en la que ofrecer información ampliada sobre su empresa."
 
 #: fibest/templates/magazine.html:21
-#, fuzzy
-#| msgid "Texto ficha tecnica revista"
 msgid "Texto ficha técnica revista"
 msgstr ""
 "Junto a la hoja de publicidad, dispondrá de una ficha técnica en la revista "
@@ -705,8 +694,6 @@ msgid "POLÍTICA DE PRIVACIDAD"
 msgstr "POLÍTICA DE PRIVACIDAD"
 
 #: fibest/templates/stand.html:5
-#, fuzzy
-#| msgid "Stand | FiBEST Companies"
 msgid "Virtual Stand | FiBEST Companies"
 msgstr "Stand  | FiBEST Empresas"
 
@@ -752,14 +739,10 @@ msgid "passwords do not match !"
 msgstr "Contraseña erronea"
 
 #: fibest/views/inscription.py:65
-#, fuzzy
-#| msgid "Terms not accepted"
 msgid "privacy not accepted"
 msgstr "política de privacidad no aceptada"
 
 #: fibest/views/inscription.py:68
-#, fuzzy
-#| msgid "Are you already registered? Check out "
 msgid "Mail already registered"
 msgstr "¿Estás registrado? Entra en"
 
