@@ -447,8 +447,8 @@ msgid "Logo e información para la página web:"
 msgstr ""
 
 #: fibest/templates/disclaimer.html:17 fibest/templates/disclaimerText.html:20
-msgid "Con la mayor brevedad posible, con el fin de colgarlo en la página web."
-msgstr ""
+msgid "Con la mayor brevedad posible."
+msgstr "Con la mayor brevedad posible y siempre antes del <b>7 de febrero</b>, con el fin de garantizar su aparición en materiales promocionales."
 
 #: fibest/templates/disclaimer.html:20 fibest/templates/disclaimerText.html:23
 msgid "Información y publicidad para la revista:"
@@ -494,7 +494,7 @@ msgid "Lo antes posible, siempre antes del"
 msgstr ""
 
 #: fibest/templates/disclaimer.html:30 fibest/templates/disclaimerText.html:33
-msgid "18 de febrero de 2020."
+msgid "14 de febrero de 2020."
 msgstr ""
 
 #: fibest/templates/disclaimer.html:32 fibest/templates/disclaimerText.html:35
@@ -675,7 +675,7 @@ msgstr ""
 "de esas copias es para ustedes, y la otra, han de remitírnosla firmada por "
 "ustedes. De este modo, ambas partes dispondremos de una copia del contrato."
 "<br>Es imprescindible que una de las copias del contrato haya sido firmada y "
-"enviada de vuelta a BEST Valladolid antesdel 17 de febrero de 2020."
+"enviada de vuelta a BEST Valladolid."
 
 #: fibest/templates/officialInformation.html:30
 msgid "Datos Factura"
