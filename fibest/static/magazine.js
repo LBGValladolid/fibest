@@ -24,7 +24,7 @@ tinymce.init({
         'shortcuts',
         'keyboardnav'],
 
-    max_chars: 500, // max. allowed chars
+    max_chars: 1500, // max. allowed chars
     setup: function (ed) {
         ed.on('keydown', function (e) {
             var wordcount = tinymce.activeEditor.plugins.wordcount;

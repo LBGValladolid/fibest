@@ -64,7 +64,7 @@ tinymce.init({
         'keyboardnav'],
     extended_valid_elements: [ "iframe[src|frameborder|style|scrolling|class|width|height|name|align]"],
 
-    max_chars: 500, // max. allowed chars
+    max_chars: 1500, // max. allowed chars
     setup: function (ed) {
         ed.on('keydown', function (e) {
             var wordcount = tinymce.activeEditor.plugins.wordcount;

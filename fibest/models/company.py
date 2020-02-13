@@ -107,7 +107,7 @@ class Magazine(models.Model):
                                             "Text in which you have the opportunity to include detailed information "
                                             "about your mission, values, identity, offer of the company, "
                                             "current projects, success stories, selection process, etc. For guidance, "
-                                            "the appropriate size of the Text would be approximately 300 words."))
+                                            "the appropriate size of the Text would be approximately 1500 characters."))
 
 
 class Stand(models.Model):
