@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-30 15:57+0000\n"
+"POT-Creation-Date: 2020-02-27 13:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,8 +34,8 @@ msgstr "Este mail será usado para acceder al área de empresas de FiBEST"
 msgid "Full name"
 msgstr "Nombre de la empresa"
 
-#: fibest/models/company.py:20 fibest/models/company.py:149
-#: fibest/models/company.py:157
+#: fibest/models/company.py:20 fibest/models/company.py:150
+#: fibest/models/company.py:158
 msgid "Full name of the company."
 msgstr "Nombre completo de la empresa"
 
@@ -132,11 +132,15 @@ msgstr ""
 "Seleccione el pack que tiene contratado, una vez registrado no se podrá "
 "modificar."
 
-#: fibest/models/company.py:75
+#: fibest/models/company.py:71
+msgid "Ha sido subido a fibest"
+msgstr ""
+
+#: fibest/models/company.py:76
 msgid "Image for magazine"
 msgstr "Publicidad en la revista"
 
-#: fibest/models/company.py:78
+#: fibest/models/company.py:79
 msgid ""
 "Your company will have a complete advertising page (image in size A5) in the "
 "job fair magazine. To avoid pixelated problems in printing would be "
@@ -150,67 +154,67 @@ msgstr ""
 "resolución mínima de 300ppp (preferible en formato .png). Recordarles que el "
 "tamaño de la revista es A5."
 
-#: fibest/models/company.py:84
+#: fibest/models/company.py:85
 msgid "Name of the company magazine"
 msgstr "Nombre que aparecerá en la revista"
 
-#: fibest/models/company.py:85
+#: fibest/models/company.py:86
 msgid "Activity of the company"
 msgstr "Actividad de la empresa (sectores de actividad o productos)"
 
-#: fibest/models/company.py:86 fibest/models/company.py:120
+#: fibest/models/company.py:87 fibest/models/company.py:121
 msgid "What is your company looking for?"
 msgstr "Perfiles demandados"
 
-#: fibest/models/company.py:87 fibest/models/company.py:122
+#: fibest/models/company.py:88 fibest/models/company.py:123
 msgid "Year of foundation"
 msgstr "Año de fundación"
 
-#: fibest/models/company.py:88 fibest/models/company.py:123
+#: fibest/models/company.py:89 fibest/models/company.py:124
 msgid "Number of workers"
 msgstr "Número de trabajadores"
 
-#: fibest/models/company.py:89 fibest/models/company.py:124
+#: fibest/models/company.py:90 fibest/models/company.py:125
 msgid "Location"
 msgstr "Ubicación (nacional e internacional)"
 
-#: fibest/models/company.py:90 fibest/models/company.py:125
+#: fibest/models/company.py:91 fibest/models/company.py:126
 msgid "Magazine text for internships"
 msgstr "Programas de prácticas (dejar vacío si no se ofrece)"
 
-#: fibest/models/company.py:91 fibest/models/company.py:126
+#: fibest/models/company.py:92 fibest/models/company.py:127
 msgid "Magazine text for becas"
 msgstr "Programas de becas (dejar vacío si no se ofrece)"
 
-#: fibest/models/company.py:92 fibest/models/company.py:127
+#: fibest/models/company.py:93 fibest/models/company.py:128
 msgid "Magazine text for TFGs"
 msgstr "Proyectos Fin de Carrera (dejar vacío si no se ofrece)"
 
-#: fibest/models/company.py:94 fibest/models/company.py:128
+#: fibest/models/company.py:95 fibest/models/company.py:129
 msgid "web contact"
 msgstr "Página web"
 
-#: fibest/models/company.py:95 fibest/models/company.py:129
+#: fibest/models/company.py:96 fibest/models/company.py:130
 msgid "email contact"
 msgstr "Email"
 
-#: fibest/models/company.py:96 fibest/models/company.py:130
+#: fibest/models/company.py:97 fibest/models/company.py:131
 msgid "person contact"
 msgstr "Nombre de la persona de contacto"
 
-#: fibest/models/company.py:97 fibest/models/company.py:131
+#: fibest/models/company.py:98 fibest/models/company.py:132
 msgid "phone contact"
 msgstr "Número de teléfono"
 
-#: fibest/models/company.py:98 fibest/models/company.py:132
+#: fibest/models/company.py:99 fibest/models/company.py:133
 msgid "postal contact"
 msgstr "Dirección postal"
 
-#: fibest/models/company.py:105
+#: fibest/models/company.py:106
 msgid "message magazine"
 msgstr "Mensaje de su empresa de cara al público"
 
-#: fibest/models/company.py:107
+#: fibest/models/company.py:108
 msgid ""
 "Text in which you have the opportunity to include detailed information about "
 "your mission, values, identity, offer of the company, current projects, "
@@ -222,30 +226,30 @@ msgstr ""
 "casos de éxito, proceso de selección, etc. De forma orientativa, el tamaño "
 "adecuado del texto sería de aproximadamente 1500 caracteres."
 
-#: fibest/models/company.py:115
+#: fibest/models/company.py:116
 msgid "copy magazine info"
 msgstr "Copiar información de la revista"
 
-#: fibest/models/company.py:116
+#: fibest/models/company.py:117
 msgid "Info copia  datos revista"
 msgstr ""
 "No es necesario reescribir la información ofrecida en la sección Revista. Si "
 "desea incluir la misma información que ha rellenado para la ficha técnica en "
 "la revista, marque la casilla"
 
-#: fibest/models/company.py:118
+#: fibest/models/company.py:119
 msgid "Name of the company"
 msgstr "Nombre que aparecerá en la web"
 
-#: fibest/models/company.py:119
+#: fibest/models/company.py:120
 msgid "Activity of the company virtual"
 msgstr "Actividad de la empresa (sectores o productos)"
 
-#: fibest/models/company.py:138
+#: fibest/models/company.py:139
 msgid "message vertual"
 msgstr "Mensaje de su empresa de cara al público"
 
-#: fibest/models/company.py:139
+#: fibest/models/company.py:140
 msgid ""
 "Text in which you have the opportunity to include detailed information about "
 "your mission, values, identity, offer of the company, current projects, "
@@ -255,35 +259,35 @@ msgstr ""
 "su misión, valores, identidad, oferta de la empresa, proyectos actuales, "
 "casos de éxito, proceso de selección, perfiles más buscados etc."
 
-#: fibest/models/company.py:150
+#: fibest/models/company.py:151
 msgid "CIF of the company."
 msgstr "CIF"
 
-#: fibest/models/company.py:152
+#: fibest/models/company.py:153
 msgid "Name of the person who will sign."
 msgstr "Nombre de la persona que firmará el contrato"
 
-#: fibest/models/company.py:154
+#: fibest/models/company.py:155
 msgid "Address where we will send the contract."
 msgstr "Dirección a la cual enviar el contrato"
 
-#: fibest/models/company.py:158
+#: fibest/models/company.py:159
 msgid "CIF  of the company."
 msgstr "CIF"
 
-#: fibest/models/company.py:159
+#: fibest/models/company.py:160
 msgid "postal social billing"
 msgstr "Domicilio social"
 
-#: fibest/models/company.py:160
+#: fibest/models/company.py:161
 msgid "Phone number for billing"
 msgstr "Teléfono"
 
-#: fibest/models/company.py:161
+#: fibest/models/company.py:162
 msgid "Order number"
 msgstr "Número de pedido (si procede)"
 
-#: fibest/models/company.py:162
+#: fibest/models/company.py:163
 msgid "Address where we will send the bill."
 msgstr "Dirección a la cual enviar la factura"
 
@@ -312,7 +316,6 @@ msgid "Contacta con Nosotros"
 msgstr "Contacta con Nosotros"
 
 #: fibest/templates/base.html:109
-
 msgid "Coordinadora FiBEST 2020"
 msgstr "Coordinadora FiBEST 2020"
 
@@ -448,7 +451,9 @@ msgstr ""
 
 #: fibest/templates/disclaimer.html:17 fibest/templates/disclaimerText.html:20
 msgid "Con la mayor brevedad posible."
-msgstr "Con la mayor brevedad posible y siempre antes del <b>7 de febrero</b>, con el fin de garantizar su aparición en materiales promocionales."
+msgstr ""
+"Con la mayor brevedad posible y siempre antes del <b>7 de febrero</b>, con "
+"el fin de garantizar su aparición en materiales promocionales."
 
 #: fibest/templates/disclaimer.html:20 fibest/templates/disclaimerText.html:23
 msgid "Información y publicidad para la revista:"

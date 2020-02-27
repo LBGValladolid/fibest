@@ -68,6 +68,7 @@ class Company(models.Model):
         (PACK_CUSTOM, "Custom")
     ]
     pack = models.CharField(_("pack"), max_length=2, choices=PACKS, help_text=_("Ayuda para pack"))
+    uploaded = models.BooleanField(_("Ha sido subido a fibest"), default=False, blank=True)
 
 
 class Magazine(models.Model):

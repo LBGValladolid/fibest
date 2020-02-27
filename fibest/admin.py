@@ -30,9 +30,10 @@ class StandAdmin(admin.StackedInline):
 @admin.register(Company)
 class AuthorAdmin(admin.ModelAdmin):
     search_fields = ['name']
-    list_display = ('name',)
-    list_filter = ('disclaimer', 'assembly_service')
-    ordering = ('name',)
+    list_display = ('name', 'uploaded')
+    list_editable = ('uploaded',)
+    list_filter = ('disclaimer', 'assembly_service', 'uploaded')
+    ordering = ('name', 'uploaded')
 
     inlines = [
         ForumAdmin,

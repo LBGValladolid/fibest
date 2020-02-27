@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-30 15:57+0000\n"
+"POT-Creation-Date: 2020-02-27 13:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,8 +35,8 @@ msgstr ""
 msgid "Full name"
 msgstr ""
 
-#: fibest/models/company.py:20 fibest/models/company.py:149
-#: fibest/models/company.py:157
+#: fibest/models/company.py:20 fibest/models/company.py:150
+#: fibest/models/company.py:158
 #, fuzzy
 #| msgid "Name of the company magazine"
 msgid "Full name of the company."
@@ -133,11 +133,15 @@ msgstr "Pack"
 msgid "Ayuda para pack"
 msgstr "Chose your selected package, once registered it can't be changed."
 
-#: fibest/models/company.py:75
+#: fibest/models/company.py:71
+msgid "Ha sido subido a fibest"
+msgstr ""
+
+#: fibest/models/company.py:76
 msgid "Image for magazine"
 msgstr "Advertising in the magazine"
 
-#: fibest/models/company.py:78
+#: fibest/models/company.py:79
 msgid ""
 "Your company will have a complete advertising page (image in size A5) in the "
 "job fair magazine. To avoid pixelated problems in printing would be "
@@ -151,67 +155,67 @@ msgstr ""
 "300 dpi (preferable in .png format). Remind them that the size of the "
 "magazine is A5."
 
-#: fibest/models/company.py:84
+#: fibest/models/company.py:85
 msgid "Name of the company magazine"
 msgstr "Name that will appear in the magazine"
 
-#: fibest/models/company.py:85
+#: fibest/models/company.py:86
 msgid "Activity of the company"
 msgstr "Company activity (activity sectors or products)"
 
-#: fibest/models/company.py:86 fibest/models/company.py:120
+#: fibest/models/company.py:87 fibest/models/company.py:121
 msgid "What is your company looking for?"
 msgstr "Demand Profiles"
 
-#: fibest/models/company.py:87 fibest/models/company.py:122
+#: fibest/models/company.py:88 fibest/models/company.py:123
 msgid "Year of foundation"
 msgstr "Foundation year"
 
-#: fibest/models/company.py:88 fibest/models/company.py:123
+#: fibest/models/company.py:89 fibest/models/company.py:124
 msgid "Number of workers"
 msgstr "Number of employees"
 
-#: fibest/models/company.py:89 fibest/models/company.py:124
+#: fibest/models/company.py:90 fibest/models/company.py:125
 msgid "Location"
 msgstr "Location (national and international)"
 
-#: fibest/models/company.py:90 fibest/models/company.py:125
+#: fibest/models/company.py:91 fibest/models/company.py:126
 msgid "Magazine text for internships"
 msgstr "Internships programmes (blank if none)"
 
-#: fibest/models/company.py:91 fibest/models/company.py:126
+#: fibest/models/company.py:92 fibest/models/company.py:127
 msgid "Magazine text for becas"
 msgstr "Scholarship programs (blank if none)"
 
-#: fibest/models/company.py:92 fibest/models/company.py:127
+#: fibest/models/company.py:93 fibest/models/company.py:128
 msgid "Magazine text for TFGs"
 msgstr "Final Degree Projects (blank if none)"
 
-#: fibest/models/company.py:94 fibest/models/company.py:128
+#: fibest/models/company.py:95 fibest/models/company.py:129
 msgid "web contact"
 msgstr "Web page"
 
-#: fibest/models/company.py:95 fibest/models/company.py:129
+#: fibest/models/company.py:96 fibest/models/company.py:130
 msgid "email contact"
 msgstr "E-mail Address"
 
-#: fibest/models/company.py:96 fibest/models/company.py:130
+#: fibest/models/company.py:97 fibest/models/company.py:131
 msgid "person contact"
 msgstr "Contact name"
 
-#: fibest/models/company.py:97 fibest/models/company.py:131
+#: fibest/models/company.py:98 fibest/models/company.py:132
 msgid "phone contact"
 msgstr "Phone"
 
-#: fibest/models/company.py:98 fibest/models/company.py:132
+#: fibest/models/company.py:99 fibest/models/company.py:133
 msgid "postal contact"
 msgstr "Postal Address"
 
-#: fibest/models/company.py:105
+#: fibest/models/company.py:106
 msgid "message magazine"
 msgstr "Advertising in the magazine"
 
-#: fibest/models/company.py:107
+#: fibest/models/company.py:108
 #, fuzzy
 #| msgid ""
 #| "Text in which you have the opportunity to include detailed information "
@@ -227,11 +231,11 @@ msgstr ""
 "your mission, values, identity, company offer, current projects, success "
 "stories, selection process, most searched profiles etc."
 
-#: fibest/models/company.py:115
+#: fibest/models/company.py:116
 msgid "copy magazine info"
 msgstr "Copy magazine data"
 
-#: fibest/models/company.py:116
+#: fibest/models/company.py:117
 msgid "Info copia  datos revista"
 msgstr ""
 "It is not necessary to rewrite the information offered in the Magazine "
@@ -239,21 +243,21 @@ msgstr ""
 "for the technical file in the journal, please write YES in the following box "
 "so that you only expand or modify the sections you want"
 
-#: fibest/models/company.py:118
+#: fibest/models/company.py:119
 #, fuzzy
 #| msgid "Name of the company magazine"
 msgid "Name of the company"
 msgstr "Name that will appear in the magazine"
 
-#: fibest/models/company.py:119
+#: fibest/models/company.py:120
 msgid "Activity of the company virtual"
 msgstr "Company activity (sectors or products)"
 
-#: fibest/models/company.py:138
+#: fibest/models/company.py:139
 msgid "message vertual"
 msgstr "Message from your company to the public"
 
-#: fibest/models/company.py:139
+#: fibest/models/company.py:140
 msgid ""
 "Text in which you have the opportunity to include detailed information about "
 "your mission, values, identity, offer of the company, current projects, "
@@ -263,39 +267,39 @@ msgstr ""
 "your mission, values, identity, company offer, current projects, success "
 "stories, selection process, most searched profiles etc."
 
-#: fibest/models/company.py:150
+#: fibest/models/company.py:151
 #, fuzzy
 #| msgid "Name of the company magazine"
 msgid "CIF of the company."
 msgstr "Name that will appear in the magazine"
 
-#: fibest/models/company.py:152
+#: fibest/models/company.py:153
 msgid "Name of the person who will sign."
 msgstr "Name of the person who will sign."
 
-#: fibest/models/company.py:154
+#: fibest/models/company.py:155
 msgid "Address where we will send the contract."
 msgstr "Address to which the contract will be sent"
 
-#: fibest/models/company.py:158
+#: fibest/models/company.py:159
 #, fuzzy
 #| msgid "Name of the company magazine"
 msgid "CIF  of the company."
 msgstr "Name that will appear in the magazine"
 
-#: fibest/models/company.py:159
+#: fibest/models/company.py:160
 msgid "postal social billing"
 msgstr "Registered office"
 
-#: fibest/models/company.py:160
+#: fibest/models/company.py:161
 msgid "Phone number for billing"
 msgstr "Number Phone"
 
-#: fibest/models/company.py:161
+#: fibest/models/company.py:162
 msgid "Order number"
 msgstr "Order number (if applicable)"
 
-#: fibest/models/company.py:162
+#: fibest/models/company.py:163
 msgid "Address where we will send the bill."
 msgstr "Address to which to send the invoice"
 
@@ -474,7 +478,9 @@ msgstr "Logo and information for the web page:"
 
 #: fibest/templates/disclaimer.html:17 fibest/templates/disclaimerText.html:20
 msgid "Con la mayor brevedad posible."
-msgstr "As soon as possible and always before <b>February 7</b>, in order to guarantee its appearance in promotional materials.."
+msgstr ""
+"As soon as possible and always before <b>February 7</b>, in order to "
+"guarantee its appearance in promotional materials.."
 
 #: fibest/templates/disclaimer.html:20 fibest/templates/disclaimerText.html:23
 msgid "Información y publicidad para la revista:"

@@ -1,5 +1,5 @@
-
 tinymce.init({
+
     selector: 'textarea',
     menubar: "",
 

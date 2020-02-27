@@ -62,7 +62,7 @@ tinymce.init({
     help_tabs: [
         'shortcuts',
         'keyboardnav'],
-    extended_valid_elements: [ "iframe[src|frameborder|style|scrolling|class|width|height|name|align]"],
+    extended_valid_elements: ["iframe[src|frameborder|style|scrolling|class|width|height|name|align]"],
 
     max_chars: 1500, // max. allowed chars
     setup: function (ed) {
