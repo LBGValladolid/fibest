@@ -5,6 +5,11 @@ from fibest.models.company import Forum, Company
 
 
 class ForumForm(forms.ModelForm):
+    #Añadido para cancelar la edición (Tambien quitado el botón en el form)
+    def __init__(self, *args, **kwargs):
+        super(ForumForm, self).__init__(*args, **kwargs)
+        for field in self.fields.keys():
+            self.fields[field].disabled = True
     class Meta:
         model = Forum
         fields = ("company_contract", "cif_contract", "signer_contract", "postal_contract",

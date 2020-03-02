@@ -22,7 +22,7 @@
                 {{ form.login|as_crispy_field }}
                 {{ form.name|as_crispy_field }}
                 {{ form.link|as_crispy_field }}
-                <button type="submit" class="btn btn-primary">{% trans "Edit inscripcion" %}</button>
+                <!--<button type="submit" class="btn btn-primary">{% trans "Edit inscripcion" %}</button>-->
             </form>
         {% else %}
             <h2>{% trans "Register new company" %}</h2>
@@ -40,7 +40,7 @@
                 {{ form.terms_confirmed|as_crispy_field }}
 
                 <p class="card card-body bg-light">{% trans "After this registration, you will be able to enter the FiBEST companies dashboard and complete the inscription, set FiBEST Online and magazine." %}</p>
-                <button type="submit" class="btn btn-primary">{% trans "Register" %}</button>
+                <!--<button type="submit" class="btn btn-primary">{% trans "Register" %}</button>-->
             </form>
 
         {% endif %}

@@ -5,12 +5,20 @@ from fibest.models.company import Company
 
 
 class CompanyForm(forms.ModelForm):
+
+    #Añadido para cancelar la edición (Tambien quitado el botón en el form)
+    def __init__(self, *args, **kwargs):
+        super(CompanyForm, self).__init__(*args, **kwargs)
+        for field in self.fields.keys():
+            self.fields[field].disabled = True
+
     class Meta:
         model = Company
         fields = ("logo", "stand_name", "cvs_requested", "assembly_service")
         widgets = {
             'cvs_requested': forms.Textarea(attrs={'rows': 4, 'cols': 15}),
         }
+
 
 
 def index(request):

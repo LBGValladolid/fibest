@@ -18,7 +18,8 @@
             <input onclick="hideForm()" type="checkbox" name="{{ form.copy_magazine_info.html_name }}"
                    class="checkboxinput form-check-input" id="{{ form.copy_magazine_info.id_for_label }}"
                     {% if  form.copy_magazine_info.value %} checked {% endif %}
-                    {% if magazine is None %} disabled {% endif %}>
+                    {% if magazine is None %} disabled {% endif %} disabled=""> <!-- desactivado el botón de cóoia -->
+
             <label for="{{ form.copy_magazine_info.id_for_label }}" class="form-check-label">
                 {{ form.copy_magazine_info.label }}
             </label>
@@ -51,7 +52,7 @@
                 <p> {% trans "Info ofertas laborales y publi en redes" %}</p>
 
             </div>
-            <button type="submit" class="btn btn-primary">{% trans "Save magazine details" %}</button>
+            <!--<button type="submit" class="btn btn-primary">{% trans "Save magazine details" %}</button>-->
         </form>
     </section>
 

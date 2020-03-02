@@ -39,6 +39,7 @@ tinymce.PluginManager.add('PDF', function (editor, url) {
 });
 
 tinymce.init({
+    readonly : 1, //Añadido para readonly
     selector: 'textarea',
     menubar: false,
 

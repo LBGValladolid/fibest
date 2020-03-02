@@ -16,7 +16,11 @@ from fibest.models.company import Company
 class CompanyForm(forms.ModelForm):
     password = forms.CharField(label=_("password"), help_text=_("info password"), required=False,
                                widget=forms.PasswordInput)
-
+    #Añadido para cancelar la edición (Tambien quitado el botón en el form)
+    def __init__(self, *args, **kwargs):
+        super(CompanyForm, self).__init__(*args, **kwargs)
+        for field in self.fields.keys():
+            self.fields[field].disabled = True
     class Meta:
         model = Company
         fields = ("login", "name", "link", "pack", "hasVirtualStand",

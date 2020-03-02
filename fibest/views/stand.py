@@ -5,6 +5,11 @@ from fibest.models.company import Stand, Company, Magazine
 
 
 class StandForm(forms.ModelForm):
+    #Añadido para cancelar la edición (Tambien quitado el botón en el form) (Y en el js de tinymce)
+    def __init__(self, *args, **kwargs):
+        super(StandForm, self).__init__(*args, **kwargs)
+        for field in self.fields.keys():
+            self.fields[field].disabled = True
     class Meta:
         model = Stand
         exclude = ["company"]
