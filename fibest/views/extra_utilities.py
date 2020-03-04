@@ -15,19 +15,20 @@ def contact_download(request):
     response = HttpResponse(content_type='text/csv')
     response['Content-Disposition'] = 'attachment; filename="companies.csv"'
     writer = csv.writer(response, delimiter=',')
+    field_names = []
+    c_list = []
+    m_list = []
+    s_list = []
+
     for c in company:
         m = magazine.filter(company=c.id).first()
         s = stand.filter(company=c.id).first()
         f = forum.filter(company=c.id).first()
-        field_names = []
         if c:
             c_fields = Company._meta.get_fields(include_hidden=True)
             tam = 15 - len(c_fields)
-            c_list = []
             for f in c_fields:
                 if f.__class__.__name__ is not "ManyToOneRel":
-                    print(f.__class__.__name__)
-
                     c_list += [getattr(c, f.name)]
                     field_names += [f.name]
             c_list += [None] * tam
@@ -38,7 +39,6 @@ def contact_download(request):
             m_fields = Magazine._meta.get_fields()
 
             tam = 21 - len(m_fields)
-            m_list = []
             for f in m_fields:
                 m_list += [getattr(m, f.name)]
                 field_names += [f.name]
@@ -50,7 +50,6 @@ def contact_download(request):
         if s:
             s_fields = Stand._meta.get_fields()
             tam = 21 - len(s_fields)
-            s_list = []
             for f in s_fields:
                 s_list += [getattr(s, f.name)]
                 field_names += [f.name]
@@ -59,9 +58,9 @@ def contact_download(request):
         else:
             s_list = [None] * 21
 
-        writer.writerow(
+    writer.writerow(
             field_names)
-        writer.writerow(
+    writer.writerow(
             c_list + m_list + s_list)
 
-        return response
+    return response
