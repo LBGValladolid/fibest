@@ -15,10 +15,22 @@ def contact_download(request):
     response = HttpResponse(content_type='text/csv')
     response['Content-Disposition'] = 'attachment; filename="companies.csv"'
     writer = csv.writer(response, delimiter=',')
-
-
+    field_names = []
+    c_fields = Company._meta.get_fields()
+    for f in c_fields:
+        if f.__class__.__name__ is not "ManyToOneRel":
+           field_names += [f.name]
+    m_fields = Magazine._meta.get_fields()
+    for f in m_fields:
+        if f.__class__.__name__ is not "ManyToOneRel":
+           field_names += [f.name]
+    s_fields = Stand._meta.get_fields()
+    for f in s_fields:
+        if f.__class__.__name__ is not "ManyToOneRel":
+           field_names += [f.name]
+    writer.writerow(
+        field_names)
     for c in company:
-        field_names = []
         c_list = []
         m_list = []
         s_list = []
@@ -59,8 +71,7 @@ def contact_download(request):
         else:
             s_list = [None] * 21
 
-        writer.writerow(
-                field_names)
+
         writer.writerow(
                 c_list + m_list + s_list)
 
