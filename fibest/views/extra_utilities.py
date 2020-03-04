@@ -15,12 +15,13 @@ def contact_download(request):
     response = HttpResponse(content_type='text/csv')
     response['Content-Disposition'] = 'attachment; filename="companies.csv"'
     writer = csv.writer(response, delimiter=',')
-    field_names = []
-    c_list = []
-    m_list = []
-    s_list = []
+
 
     for c in company:
+        field_names = []
+        c_list = []
+        m_list = []
+        s_list = []
         m = magazine.filter(company=c.id).first()
         s = stand.filter(company=c.id).first()
         f = forum.filter(company=c.id).first()
@@ -58,9 +59,9 @@ def contact_download(request):
         else:
             s_list = [None] * 21
 
-    writer.writerow(
-            field_names)
-    writer.writerow(
-            c_list + m_list + s_list)
+        writer.writerow(
+                field_names)
+        writer.writerow(
+                c_list + m_list + s_list)
 
     return response
