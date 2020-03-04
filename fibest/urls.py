@@ -17,7 +17,7 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path, include
 
-from fibest.views import dashboard
+from fibest.views import dashboard, extra_utilities
 from fibest.views import officialInformation
 from fibest.views import index
 from fibest.views import forum
@@ -43,5 +43,6 @@ urlpatterns = [
                   path('forum/', forum.index, name="forum"),
                   path('legal/', legal.index, name="legal"),
                   path('privacy/', privacy.index, name="privacy"),
-                  path('times/', disclaimer.index, name="times")
+                  path('times/', disclaimer.index, name="times"),
+                  path('getCompanyData/', extra_utilities.contact_download, name="descarga")
               ]
