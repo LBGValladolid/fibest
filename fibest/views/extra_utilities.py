@@ -26,7 +26,7 @@ def contact_download(request):
             tam = 21 - len(c_fields)
             c_list = []
             for f in c_fields:
-                c_list += getattr(m, f)
+                c_list += getattr(m, f.name)
             c_list = [None] * tam
         else:
             c_list = [None] * len(c._meta.fields)
@@ -36,7 +36,7 @@ def contact_download(request):
             tam = 21 - len(m_fields)
             m_list = []
             for f in m_fields:
-                m_list += getattr(m, f)
+                m_list += getattr(m, f.name)
             m_list = [None] * tam
         else:
             m_list = [None] * 21
@@ -46,7 +46,7 @@ def contact_download(request):
             tam = 21 - len(s_fields)
             s_list = []
             for f in s_fields:
-                s_list += getattr(m, f)
+                s_list += getattr(m, f.name)
             s_list = [None] * tam
         else:
             s_list = [None] * 21
