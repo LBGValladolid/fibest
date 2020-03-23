@@ -28,7 +28,7 @@ def contact_download(request):
     # for f in s_fields:
     #     if f.__class__.__name__ is not "ManyToOneRel":
     #        field_names += [f.name]
-    fo_fields = Stand._meta.get_fields()
+    fo_fields = Forum._meta.get_fields()
     for f in fo_fields:
         if f.__class__.__name__ is not "ManyToOneRel":
            field_names += [f.name]
