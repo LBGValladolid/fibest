@@ -77,11 +77,11 @@ def contact_download(request):
         # else:
         #     s_list = [None] * 21
 
-        if s:
-            f_fields = Stand._meta.get_fields()
+        if f:
+            f_fields = Forum._meta.get_fields()
             tam = 11 - len(f_fields)
             for f in f_fields:
-                f_list += [getattr(s, f.name)]
+                f_list += [getattr(f, f.name)]
                 field_names += [f.name]
 
             f_list += [None] * tam
