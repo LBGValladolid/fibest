@@ -42,7 +42,7 @@ def contact_download(request):
         f_list = []
         m = magazine.filter(company=c.id).first()
         s = stand.filter(company=c.id).first()
-        f = forum.filter(company=c.id).first()
+        fo = forum.filter(company=c.id).first()
         # if c:
         #     c_fields = Company._meta.get_fields(include_hidden=True)
         #     tam = 15 - len(c_fields)
@@ -77,11 +77,11 @@ def contact_download(request):
         # else:
         #     s_list = [None] * 21
 
-        if f:
+        if fo:
             f_fields = Forum._meta.get_fields()
             tam = 11 - len(f_fields)
             for f in f_fields:
-                f_list += [getattr(f, f.name)]
+                f_list += [getattr(fo, f.name)]
                 field_names += [f.name]
 
             f_list += [None] * tam
