@@ -1,0 +1,822 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-27 13:25+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: fibest/bootstrap4/components.py:17
+#: fibest/bootstrap4/templates/bootstrap4/form_errors.html:3
+#: fibest/bootstrap4/templates/bootstrap4/messages.html:4
+msgid "close"
+msgstr "close"
+
+#: fibest/models/company.py:13 fibest/templates/dashboard.html:53
+msgid "Login email"
+msgstr ""
+
+#: fibest/models/company.py:14
+msgid "This mail will be used to login to FiBEST."
+msgstr ""
+
+#: fibest/models/company.py:18
+msgid "Full name"
+msgstr ""
+
+#: fibest/models/company.py:20 fibest/models/company.py:150
+#: fibest/models/company.py:158
+#, fuzzy
+#| msgid "Name of the company magazine"
+msgid "Full name of the company."
+msgstr "Name that will appear in the magazine"
+
+#: fibest/models/company.py:24 fibest/templates/dashboard.html:55
+msgid "Website"
+msgstr ""
+
+#: fibest/models/company.py:25
+msgid "Website of the company. Example: https://www.fibest.org."
+msgstr ""
+"Web address to which you will direct your company logo on FiBEST Online from "
+"the job fair website. Example: https://www.fibest.org."
+
+#: fibest/models/company.py:27
+msgid "Logo"
+msgstr ""
+
+#: fibest/models/company.py:27
+msgid "Logo for the website, ideal size is 200x100 pixels"
+msgstr ""
+"Your company logo will appear on all promotional materials: www.FiBEST.org "
+"website, job fair promotion posters and big posters, job fair promotion "
+"carpets, magazine, etc. It is desirable that the logo has high resolution "
+"(300 dpi)."
+
+#: fibest/models/company.py:32
+msgid "Stand name"
+msgstr "Name to be on the stand"
+
+#: fibest/models/company.py:33
+msgid ""
+"Please indicate with what name exactly you want it to appear on the stand "
+"banner, on the maps of the job fair and in the schedules of activities. It "
+"will be case sensitive."
+msgstr ""
+"Please indicate with what name exactly you want it to appear on the banner "
+"of the stand, on the maps of the job fair and in the schedules of "
+"activities. It will be case sensitive."
+
+#: fibest/models/company.py:38
+msgid "Assembly service"
+msgstr "Promotional material assembly service  (€50)"
+
+#: fibest/models/company.py:39
+msgid ""
+"Based on the demands of companies participating in previous editions, we "
+"also offer a service of assembly of promotional material of your company, "
+"with a cost of € 50 (this amount will be added to the invoice of the job "
+"fair services). In this way, you simply have to send the promotional "
+"materials to the organization Two days in advance, and upon arrival at the "
+"job fair they will all be ready."
+msgstr ""
+"Based on the demands of companies participating in previous editions, we "
+"also offer a promotional material assembly service for your company, with a "
+"cost of € 50 (this amount will be added to the job fair services invoice). "
+"In this way, you simply have to send the promotional materials to the "
+"organization two days in advance, and upon arrival at the job fair it will "
+"all be ready."
+
+#: fibest/models/company.py:49
+msgid "Tiene stand virtual"
+msgstr "Has virtual stand"
+
+#: fibest/models/company.py:50
+msgid "Tiene revista"
+msgstr "Has magazine"
+
+#: fibest/models/company.py:51
+msgid "Curriculums"
+msgstr "Specify which resumes you would like to receive"
+
+#: fibest/models/company.py:52
+msgid "Texto ayuda curriculums demandados"
+msgstr ""
+"All companies participating in FiBEST 2020 receive the resumes that are "
+"collected through theapplication of the website intended for this "
+"purpose<br>If your company is only interested in some profiles, please let "
+"us know what degrees are you interested in. The organization will filter the "
+"resumes, so you will only recieve the ones you are really interested in. If "
+"you want to recieve all kind of profiles, please let us know in the "
+"following box also."
+
+#: fibest/models/company.py:53
+msgid "terminos y condiciones"
+msgstr "Terms and Conditions"
+
+#: fibest/models/company.py:70
+msgid "pack"
+msgstr "Pack"
+
+#: fibest/models/company.py:70
+msgid "Ayuda para pack"
+msgstr "Chose your selected package, once registered it can't be changed."
+
+#: fibest/models/company.py:71
+msgid "Ha sido subido a fibest"
+msgstr ""
+
+#: fibest/models/company.py:76
+msgid "Image for magazine"
+msgstr "Advertising in the magazine"
+
+#: fibest/models/company.py:79
+msgid ""
+"Your company will have a complete advertising page (image in size A5) in the "
+"job fair magazine. To avoid pixelated problems in printing would be "
+"convenient to send us this advertising sheet in format vector, or with a "
+"minimum resolution of 300ppp (preferable in .png format), avoiding if "
+"possible the format pdf. Remind them that the size of the magazine is A5."
+msgstr ""
+"Your company will have a complete advertising page (image in size A5) in the "
+"job fair magazine. To avoid pixelated problems in printing it would be "
+"convenient to send us this advertising sheet with a minimum resolution of "
+"300 dpi (preferable in .png format). Remind them that the size of the "
+"magazine is A5."
+
+#: fibest/models/company.py:85
+msgid "Name of the company magazine"
+msgstr "Name that will appear in the magazine"
+
+#: fibest/models/company.py:86
+msgid "Activity of the company"
+msgstr "Company activity (activity sectors or products)"
+
+#: fibest/models/company.py:87 fibest/models/company.py:121
+msgid "What is your company looking for?"
+msgstr "Demand Profiles"
+
+#: fibest/models/company.py:88 fibest/models/company.py:123
+msgid "Year of foundation"
+msgstr "Foundation year"
+
+#: fibest/models/company.py:89 fibest/models/company.py:124
+msgid "Number of workers"
+msgstr "Number of employees"
+
+#: fibest/models/company.py:90 fibest/models/company.py:125
+msgid "Location"
+msgstr "Location (national and international)"
+
+#: fibest/models/company.py:91 fibest/models/company.py:126
+msgid "Magazine text for internships"
+msgstr "Internships programmes (blank if none)"
+
+#: fibest/models/company.py:92 fibest/models/company.py:127
+msgid "Magazine text for becas"
+msgstr "Scholarship programs (blank if none)"
+
+#: fibest/models/company.py:93 fibest/models/company.py:128
+msgid "Magazine text for TFGs"
+msgstr "Final Degree Projects (blank if none)"
+
+#: fibest/models/company.py:95 fibest/models/company.py:129
+msgid "web contact"
+msgstr "Web page"
+
+#: fibest/models/company.py:96 fibest/models/company.py:130
+msgid "email contact"
+msgstr "E-mail Address"
+
+#: fibest/models/company.py:97 fibest/models/company.py:131
+msgid "person contact"
+msgstr "Contact name"
+
+#: fibest/models/company.py:98 fibest/models/company.py:132
+msgid "phone contact"
+msgstr "Phone"
+
+#: fibest/models/company.py:99 fibest/models/company.py:133
+msgid "postal contact"
+msgstr "Postal Address"
+
+#: fibest/models/company.py:106
+msgid "message magazine"
+msgstr "Advertising in the magazine"
+
+#: fibest/models/company.py:108
+#, fuzzy
+#| msgid ""
+#| "Text in which you have the opportunity to include detailed information "
+#| "about your mission, values, identity, offer of the company, current "
+#| "projects, success stories, selection process, most searched profiles etc."
+msgid ""
+"Text in which you have the opportunity to include detailed information about "
+"your mission, values, identity, offer of the company, current projects, "
+"success stories, selection process, etc. For guidance, the appropriate size "
+"of the Text would be approximately 1500 characters."
+msgstr ""
+"Text in which you have the opportunity to include detailed information about "
+"your mission, values, identity, company offer, current projects, success "
+"stories, selection process, most searched profiles etc."
+
+#: fibest/models/company.py:116
+msgid "copy magazine info"
+msgstr "Copy magazine data"
+
+#: fibest/models/company.py:117
+msgid "Info copia  datos revista"
+msgstr ""
+"It is not necessary to rewrite the information offered in the Magazine "
+"section. If you wish to include the same information that you have filled in "
+"for the technical file in the journal, please write YES in the following box "
+"so that you only expand or modify the sections you want"
+
+#: fibest/models/company.py:119
+#, fuzzy
+#| msgid "Name of the company magazine"
+msgid "Name of the company"
+msgstr "Name that will appear in the magazine"
+
+#: fibest/models/company.py:120
+msgid "Activity of the company virtual"
+msgstr "Company activity (sectors or products)"
+
+#: fibest/models/company.py:139
+msgid "message vertual"
+msgstr "Message from your company to the public"
+
+#: fibest/models/company.py:140
+msgid ""
+"Text in which you have the opportunity to include detailed information about "
+"your mission, values, identity, offer of the company, current projects, "
+"success stories, selection process, most searched profiles etc."
+msgstr ""
+"Text in which you have the opportunity to include detailed information about "
+"your mission, values, identity, company offer, current projects, success "
+"stories, selection process, most searched profiles etc."
+
+#: fibest/models/company.py:151
+#, fuzzy
+#| msgid "Name of the company magazine"
+msgid "CIF of the company."
+msgstr "Name that will appear in the magazine"
+
+#: fibest/models/company.py:153
+msgid "Name of the person who will sign."
+msgstr "Name of the person who will sign."
+
+#: fibest/models/company.py:155
+msgid "Address where we will send the contract."
+msgstr "Address to which the contract will be sent"
+
+#: fibest/models/company.py:159
+#, fuzzy
+#| msgid "Name of the company magazine"
+msgid "CIF  of the company."
+msgstr "Name that will appear in the magazine"
+
+#: fibest/models/company.py:160
+msgid "postal social billing"
+msgstr "Registered office"
+
+#: fibest/models/company.py:161
+msgid "Phone number for billing"
+msgstr "Number Phone"
+
+#: fibest/models/company.py:162
+msgid "Order number"
+msgstr "Order number (if applicable)"
+
+#: fibest/models/company.py:163
+msgid "Address where we will send the bill."
+msgstr "Address to which to send the invoice"
+
+#: fibest/settings.py:46
+msgid "Spanish"
+msgstr ""
+
+#: fibest/settings.py:47
+msgid "English"
+msgstr ""
+
+#: fibest/templates/base.html:36
+#, fuzzy
+#| msgid "FiBEST Company Area"
+msgid "FiBEST Companies"
+msgstr "FiBEST Companies"
+
+#: fibest/templates/base.html:45
+msgid "Log out"
+msgstr ""
+
+#: fibest/templates/base.html:47
+msgid "Dashboard"
+msgstr ""
+
+#: fibest/templates/base.html:78
+msgid "Contacta con Nosotros"
+msgstr "Contact us"
+
+#: fibest/templates/base.html:109
+#, fuzzy
+#| msgid "Coordinador FiBEST 2020"
+msgid "Coordinadora FiBEST 2020"
+msgstr "FiBEST 2020 coordinator"
+
+#: fibest/templates/base.html:119
+msgid "Coordinador FiBEST 2020"
+msgstr "FiBEST 2020 coordinator"
+
+#: fibest/templates/base.html:133
+msgid ""
+"Es el grupo local de BEST en la Universidad de Valladolid, fundado en 1994. "
+"BEST Valladolid cuenta con aproximadamente 30 miembros y lleva a cabo "
+"numerosos proyectos cada año,entre ellos el Foro de empleo FiBEST."
+msgstr ""
+"It is the BEST local group at the University of Valladolid, founded in 1994. "
+"BEST Valladolid has approximately 30 members and carries out numerous "
+"projects every year, including the FiBEST Employment job fair."
+
+#: fibest/templates/base.html:135
+msgid "Para más información:"
+msgstr "Extra info"
+
+#: fibest/templates/base.html:149
+msgid "legal"
+msgstr "Legal notice"
+
+#: fibest/templates/base.html:150 fibest/views/inscription.py:27
+msgid "Privacy"
+msgstr "Privacy policy"
+
+#: fibest/templates/dashboard.html:4
+#, fuzzy
+#| msgid "FiBEST Company Area"
+msgid "Dashboard | FiBEST Companies"
+msgstr "FiBEST Companies"
+
+#: fibest/templates/dashboard.html:38
+msgid "Tiempos envio"
+msgstr "Schedule"
+
+#: fibest/templates/dashboard.html:44
+#, fuzzy
+#| msgid " Go to Edit OfficialInformation"
+msgid "Basic Information"
+msgstr "Go to Official Information"
+
+#: fibest/templates/dashboard.html:50
+#, fuzzy
+#| msgid "Edit inscripcion"
+msgid "Edit Inscription"
+msgstr "Edit"
+
+#: fibest/templates/dashboard.html:51
+msgid "Change your basic data:"
+msgstr ""
+
+#: fibest/templates/dashboard.html:54
+#, fuzzy
+#| msgid "Stand name"
+msgid "Company name"
+msgstr "Name to be on the stand"
+
+#: fibest/templates/dashboard.html:59
+msgid "Go to Edit Inscription"
+msgstr "Go to Inscription"
+
+#: fibest/templates/dashboard.html:65
+#, fuzzy
+#| msgid " Go to Edit OfficialInformation"
+msgid "Edit Official Information"
+msgstr "Go to Official Information"
+
+#: fibest/templates/dashboard.html:66
+msgid "Check and edit all the data related to the contract and payments."
+msgstr ""
+
+#: fibest/templates/dashboard.html:69
+msgid " Go to Edit OfficialInformation"
+msgstr "Go to Official Information"
+
+#: fibest/templates/dashboard.html:75
+#, fuzzy
+#| msgid "Edit job fair info"
+msgid "Edit Job fair Info"
+msgstr "Edit"
+
+#: fibest/templates/dashboard.html:76
+msgid "Check and edit all the data related to the job fair itself."
+msgstr ""
+
+#: fibest/templates/dashboard.html:79
+msgid "Go to Edit Froum Info"
+msgstr "Go to Job fair Info"
+
+#: fibest/templates/dashboard.html:87
+#, fuzzy
+#| msgid " Go to Edit OfficialInformation"
+msgid "Extra Information"
+msgstr "Go to Official Information"
+
+#: fibest/templates/dashboard.html:94
+#, fuzzy
+#| msgid "Go to Edit Magazine"
+msgid "Edit Magazine"
+msgstr "Go to Magazine"
+
+#: fibest/templates/dashboard.html:95
+msgid ""
+"Edit the information and the logo that will appear in the magazine that will "
+"be given to all the attendees of FiBEST."
+msgstr ""
+
+#: fibest/templates/dashboard.html:97
+msgid "Go to Edit Magazine"
+msgstr "Go to Magazine"
+
+#: fibest/templates/dashboard.html:105
+msgid "Edit Virtual Stand"
+msgstr ""
+
+#: fibest/templates/dashboard.html:106
+msgid "Check and edit all the data related to the virtual stand."
+msgstr ""
+
+#: fibest/templates/dashboard.html:108
+msgid "Go to Edit Stand"
+msgstr "Go to Stand"
+
+#: fibest/templates/disclaimer.html:9 fibest/templates/disclaimerText.html:14
+msgid "PLAZOS DE ENVÍO DE LA INFORMACIÓN"
+msgstr "SCHEDULE"
+
+#: fibest/templates/disclaimer.html:12 fibest/templates/disclaimerText.html:15
+msgid "texto envio 1"
+msgstr ""
+"It is convenient that you send us the requested information as soon as "
+"possible, in order to facilitate the creation of promotional materials, as "
+"well as formalize participation in the event through the contract. <br> For "
+"this reason, we must establish Some deadlines to send us the required "
+"information:"
+
+#: fibest/templates/disclaimer.html:17 fibest/templates/disclaimerText.html:20
+msgid "Logo e información para la página web:"
+msgstr "Logo and information for the web page:"
+
+#: fibest/templates/disclaimer.html:17 fibest/templates/disclaimerText.html:20
+msgid "Con la mayor brevedad posible."
+msgstr ""
+"As soon as possible and always before <b>February 7</b>, in order to "
+"guarantee its appearance in promotional materials.."
+
+#: fibest/templates/disclaimer.html:20 fibest/templates/disclaimerText.html:23
+msgid "Información y publicidad para la revista:"
+msgstr "Information and advertising for the magazine:"
+
+#: fibest/templates/disclaimer.html:20 fibest/templates/disclaimerText.html:23
+msgid "Lo antes posible, y siempre antes del"
+msgstr "As soon as possible, and before"
+
+#: fibest/templates/disclaimer.html:21 fibest/templates/disclaimerText.html:24
+msgid "14 de febrero de 2020. "
+msgstr "February 14, 2020. "
+
+#: fibest/templates/disclaimer.html:22 fibest/templates/disclaimerText.html:25
+msgid ""
+"A partir de esa fecha no se asegura la presencia en la revista del foro."
+msgstr "From that date the presence in the forum magazine is not assured."
+
+#: fibest/templates/disclaimer.html:25 fibest/templates/disclaimerText.html:28
+msgid "Publicidad que será incluida en el Welcome Pack:"
+msgstr "Advertising that will be included in the Welcome Pack:"
+
+#: fibest/templates/disclaimer.html:25 fibest/templates/disclaimerText.html:28
+msgid ""
+" Se debe recibir, ya impreso con el número de ejemplares deseados antes del "
+"día"
+msgstr ""
+"It must be received, already printed with the number of copies desired before"
+
+#: fibest/templates/disclaimer.html:26 fibest/templates/disclaimerText.html:29
+msgid "29 de febrero de 2020"
+msgstr "February 29, 2020"
+
+#: fibest/templates/disclaimer.html:26 fibest/templates/disclaimerText.html:29
+msgid "La dirección se encuentra en el pie de página."
+msgstr "The address is in the footer."
+
+#: fibest/templates/disclaimer.html:29 fibest/templates/disclaimerText.html:32
+msgid "Datos de facturación y contrato:"
+msgstr "Billing and contract data:"
+
+#: fibest/templates/disclaimer.html:29 fibest/templates/disclaimerText.html:32
+msgid "Lo antes posible, siempre antes del"
+msgstr "As soon as possible, and before"
+
+#: fibest/templates/disclaimer.html:30 fibest/templates/disclaimerText.html:33
+msgid "14 de febrero de 2020."
+msgstr "February 18, 2020"
+
+#: fibest/templates/disclaimer.html:32 fibest/templates/disclaimerText.html:35
+msgid "texto envio 2"
+msgstr ""
+"To send the requested information, you can do so at this email address "
+"victor.herrezuelo@bestspain.es"
+
+#: fibest/templates/disclaimer.html:34 fibest/templates/disclaimerText.html:37
+msgid "texto envio 3"
+msgstr ""
+"To send the promotional brochure included in the Welcome pack, you can send "
+"it to this address:"
+
+#: fibest/templates/disclaimer.html:38 fibest/templates/disclaimerText.html:41
+msgid "texto dir envio"
+msgstr ""
+"BEST Valladolid <br>Escuela de Ingenierías Industriales<br>Paseo del Cauce, "
+"59<br>47011 Valladolid, España<br>"
+
+#: fibest/templates/disclaimerText.html:5
+#, fuzzy
+#| msgid "FiBEST Company Area"
+msgid "Times | FiBEST Companies"
+msgstr "FiBEST Companies"
+
+#: fibest/templates/forum.html:5
+#, fuzzy
+#| msgid "FiBEST Company Area"
+msgid "Job fair | FiBEST Companies"
+msgstr "FiBEST Companies"
+
+#: fibest/templates/forum.html:17
+#, fuzzy
+#| msgid "Edit job fair info"
+msgid "Job fair form"
+msgstr "Edit"
+
+#: fibest/templates/forum.html:24
+msgid "Edit job fair info"
+msgstr "Edit"
+
+#: fibest/templates/inscription.html:5
+#, fuzzy
+#| msgid "FiBEST Company Area"
+msgid "Inscription | FiBEST Companies"
+msgstr "FiBEST Companies"
+
+#: fibest/templates/inscription.html:18
+#, fuzzy
+#| msgid "Edit inscripcion"
+msgid "Inscription form"
+msgstr "Edit"
+
+#: fibest/templates/inscription.html:25
+msgid "Edit inscripcion"
+msgstr "Edit"
+
+#: fibest/templates/inscription.html:28
+msgid "Register new company"
+msgstr ""
+
+#: fibest/templates/inscription.html:42
+msgid ""
+"After this registration, you will be able to enter the FiBEST companies "
+"dashboard and complete the inscription, set FiBEST Online and magazine."
+msgstr ""
+
+#: fibest/templates/inscription.html:43
+msgid "Register"
+msgstr ""
+
+#: fibest/templates/legal.html:5
+#, fuzzy
+#| msgid "FiBEST Company Area"
+msgid "Aviso Legal | FiBEST Companies"
+msgstr "FiBEST Companies"
+
+#: fibest/templates/legal.html:14
+msgid "AVISO LEGAL"
+msgstr "LEGAL NOTICE"
+
+#: fibest/templates/login.html:4
+#, fuzzy
+#| msgid "FiBEST Company Area"
+msgid "Login for companies | FiBEST Companies"
+msgstr "FiBEST Companies"
+
+#: fibest/templates/login.html:18
+msgid " can now be used to access."
+msgstr ""
+
+#: fibest/templates/login.html:26
+msgid "Mail sent succesfully!"
+msgstr ""
+
+#: fibest/templates/login.html:26
+msgid "Check your mailbox to access."
+msgstr ""
+
+#: fibest/templates/login.html:33
+msgid "Mail unkown!"
+msgstr ""
+
+#: fibest/templates/login.html:33
+msgid "Are you already registered? Check out "
+msgstr ""
+
+#: fibest/templates/login.html:34
+#, fuzzy
+#| msgid "Edit inscripcion"
+msgid "inscription"
+msgstr "Edit"
+
+#: fibest/templates/login.html:40
+msgid "Welcome to FiBEST"
+msgstr ""
+
+#: fibest/templates/login.html:48
+msgid ""
+"Please, introduce your email to access your company inscription details and "
+"dashboard. We will send a link to the email to login so you don't have to "
+"remember a password."
+msgstr ""
+
+#: fibest/templates/magazine.html:5
+#, fuzzy
+#| msgid "FiBEST Company Area"
+msgid "Magazine | FiBEST Companies"
+msgstr "FiBEST Companies"
+
+#: fibest/templates/magazine.html:15
+msgid "Revista"
+msgstr "Magazine"
+
+#: fibest/templates/magazine.html:20
+#, fuzzy
+#| msgid "Ficha tecnica revista"
+msgid "Ficha técnica revista"
+msgstr "Technical sheet in the magazine"
+
+#: fibest/templates/magazine.html:21
+#, fuzzy
+#| msgid "Texto ficha tecnica revista"
+msgid "Texto ficha técnica revista"
+msgstr ""
+"Next to the advertising sheet, you will have a technical sheet in the job "
+"fair magazine in which to offer expanded information about your company."
+
+#: fibest/templates/magazine.html:32 fibest/templates/stand.html:39
+msgid "info para contacto"
+msgstr "Contact information"
+
+#: fibest/templates/magazine.html:42
+msgid "Reparto de publicidad"
+msgstr "Distribution of advertising"
+
+#: fibest/templates/magazine.html:43
+msgid "Info reparto publicidad"
+msgstr ""
+"In the Welcome Pack that all those attending the Job fair receive on March "
+"18, a brochure or advertising material that your company wants will be "
+"included.<br>The material must be received, at the address you can read in "
+"the footer, already printed with the number of copies that you consider "
+"appropriate, before February 29.<br>If you want the organization to take "
+"charge of printing the material, please contact us as soon as possible."
+
+#: fibest/templates/magazine.html:46 fibest/templates/stand.html:54
+msgid "Save magazine details"
+msgstr "Edit"
+
+#: fibest/templates/officialInformation.html:5
+#, fuzzy
+#| msgid "FiBEST Company Area"
+msgid "Official Information | FiBEST Companies"
+msgstr "FiBEST Companies"
+
+#: fibest/templates/officialInformation.html:14
+msgid "Informacion Oficial"
+msgstr "Official Information"
+
+#: fibest/templates/officialInformation.html:15
+msgid "Texto info oficial"
+msgstr ""
+"Required to complete the necessary documents to formalize participation in "
+"the job fair"
+
+#: fibest/templates/officialInformation.html:23
+msgid "Datos Contrato"
+msgstr "Data to draft the contract"
+
+#: fibest/templates/officialInformation.html:28
+msgid "Texto info contrato"
+msgstr ""
+"We will send you two copies of the contract signed and sealed by us. One of "
+"those copies is for you, and the other, you must send it to us signed by "
+"you. In this way, both parties will have a copy of the contract. <br>It is "
+"essential that one of the copies of the contract has been signed and sent "
+"back to BEST Valladolid."
+
+#: fibest/templates/officialInformation.html:30
+msgid "Datos Factura"
+msgstr "Data to issue the invoice"
+
+#: fibest/templates/officialInformation.html:39
+msgid "Boton guardar info ofi"
+msgstr "Edit"
+
+#: fibest/templates/privacy.html:5
+#, fuzzy
+#| msgid "FiBEST Company Area"
+msgid "Privacy | FiBEST Companies"
+msgstr "FiBEST Companies"
+
+#: fibest/templates/privacy.html:14
+msgid "POLÍTICA DE PRIVACIDAD"
+msgstr "PRIVACY POLICY"
+
+#: fibest/templates/stand.html:5
+#, fuzzy
+#| msgid "FiBEST Company Area"
+msgid "Virtual Stand | FiBEST Companies"
+msgstr "FiBEST Companies"
+
+#: fibest/templates/stand.html:17
+msgid "texto publi virtual"
+msgstr ""
+"On the Job fair website, in the section of participating companies (FiBEST "
+"Online), the visitor will be able to access information about the company. "
+"<br>It will have its own page dedicated to the company. This page will be "
+"structured in 3 sections to make the information more accessible to the "
+"visitor.<br>From the organization we propose the following guidance sections "
+"that, from our experience, are of interest to students."
+
+#: fibest/templates/stand.html:50
+msgid "Ofertas laborales y publi en redes"
+msgstr "Job offers and publication on social networks and job fair website"
+
+#: fibest/templates/stand.html:51
+msgid "Info ofertas laborales y publi en redes"
+msgstr ""
+"Your company has the opportunity to post job offers on the job fair's "
+"website, as well as to post a message on the job fair's social networks. All "
+"these services are available until the beginning of the 2020/2021 course in "
+"September 2020. At the time your company wishes to use any of them, please "
+"notify the organization, together with the information related to the "
+"publication, to via FiBEST@BEST.eu.org."
+
+#: fibest/views/inscription.py:17
+msgid "password"
+msgstr "Password"
+
+#: fibest/views/inscription.py:17
+msgid "info password"
+msgstr "Password we have sent you for registration"
+
+#: fibest/views/inscription.py:27
+msgid "Se aceptan la "
+msgstr "Accept"
+
+#: fibest/views/inscription.py:61
+msgid "passwords do not match !"
+msgstr "Itencorrect password"
+
+#: fibest/views/inscription.py:65
+msgid "privacy not accepted"
+msgstr "privacy policy not accepted"
+
+#: fibest/views/inscription.py:68
+msgid "Mail already registered"
+msgstr ""
+
+#: fibest/views/login.py:53
+msgid "Login to FiBEST"
+msgstr ""
+
+#: fibest/views/login.py:54
+msgid "Please, click on the following link to login to FiBEST website:"
+msgstr ""
+
+#, fuzzy
+#~| msgid "FiBEST Company Area"
+#~ msgid "Terms | FiBEST Companies"
+#~ msgstr "FiBEST Companies"
+
+#, fuzzy
+#~| msgid "terminos y condiciones"
+#~ msgid "Terms and Conditions"
+#~ msgstr "Terms and Conditions"
+
+#~ msgid "FiBEST Company Area"
+#~ msgstr "FiBEST Companies"

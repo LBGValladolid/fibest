@@ -1,0 +1,134 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}
+    <title>{% trans "Privacy | FiBEST Companies" %}</title>
+{% endblock %}
+
+{% block content %}
+    {% load crispy_forms_tags %}
+    {% load i18n %}
+    {% load static %}
+
+    <section class="container form">
+        <h1>{% trans "POLÍTICA DE PRIVACIDAD" %}</h1>
+        <br><br>
+        <p style="text-align:justify;">
+
+            <b>1. INFORMACIÓN AL USUARIO</b>
+            <br><br><br>
+            <b>Responsable del tratamiento.</b>
+            <br>
+            Identidad. ASOCIACIÓN JUVENIL BEST - G47375522<br>
+            Dirección. PASEO DEL CAUCE N° 59, - 47011 VALLADOLID (Valladolid)<br>
+            Teléfono. 642108349<br>
+            Correo electrónico. victor.herrezuelo@bestspain.es
+            <br><br>
+            <b>Finalidad del tratamiento.</b>
+            <br>
+            ASOCIACIÓN JUVENIL BEST tratará la información facilitada por los Usuarios en cada uno de los
+            apartados del sitio web con la siguientes finalidades:
+            <br><br>
+            CONTACTO: Los datos serán tratados para la resolución de consultas y el envío de la
+            información solicitada.
+            <br><br>
+            PUBLICACIÓN: Los datos de contacto e información sobre la empresa y actividades que ofrecen,
+            serán harán públicos ya sea en la pagina web fibest.org o por medios fisicos durante el foro de empleo, de
+            acuerdo con las <a href="{% static "Condiciones de participación - FiBEST2020.pdf" %}">Condiciones de Participación</a>.
+            <br><br>
+            ENVIO DE INFORMACIÓN COMERCIAL: ASOCIACION JUVENIL BEST solicitará el
+            consentimiento explicito de los usuarios de forma adicional para la remisión de
+            comunicaciones e información de las actividades organizadas o en las que participe LA ASOCIACION.
+            <br><br><br>
+            <b>Criterios de conservación de los datos.</b>
+            <br>
+            ASOCIACIÓN JUVENIL BEST conservará los datos mientras persista un interés legítimo y en tanto
+            que el interesado no manifieste su oposición al tratamiento de los mismos.
+            <br><br>
+            <b>Legitimación para el tratamiento de los datos.</b>
+            <br>
+            El tratamiento de los datos del Usuario por parte de ASOCIACIÓN JUVENIL BEST tendrá su
+            legitimación en el consentimiento explícitamente prestado.
+            <br><br>
+            <b>Comunicación de los datos.</b>
+            <br>
+            Los datos facilitados por los Usuarios podrán ser cedidos a las Fuerzas y Cuerpos de Seguridad y/u
+            otras Administraciones Públicas con competencias en la materia.
+            <br><br>
+            <b>Derechos que asisten al Usuario.</b>
+            <br>
+            Cualquier Usuario tiene derecho a obtener información sobre si ASOCIACIÓN JUVENIL BEST está
+            tratando datos personales que le conciernen o no y, en tal caso, a ejercer su derecho de acceso a los
+            datos personales y a la siguiente información:
+            <br><br>
+            a) los fines del tratamiento.<br>
+            b) las categorías de datos personales de que se trate.<br>
+            c) los destinatarios o las categorías de destinatarios a los que se comunicaron o serán comunicados
+            los datos personales, en particular destinatarios en terceros u organizaciones internacionales.<br>
+            d) de ser posible, el plazo previsto de conservación de los datos personales o, de no ser posible, los
+            criterios utilizados para determinar este plazo.<br>
+            e) la existencia del derecho a solicitar del responsable la rectificación o supresión de datos personales
+            o la limitación del tratamiento de datos personales relativos al interesado, o a oponerse a dicho
+            tratamiento.<br>
+            f) el derecho a presentar una reclamación ante una autoridad de control.
+            <br><br>
+            Asimismo, el Usuario tiene derecho a solicitar la rectificación de los datos inexactos o, en su Caso, a
+            solicitar la supresión de los mismos cuando, entre otros motivos, los datos ya no sean necesarios para
+            los fines que fueron recogidos o cuando usted decida retirar el consentimiento en que se hubiera
+            basado el tratamiento hasta la fecha.
+            <br><br>
+            Los Usuarios podrán además solicitar la limitación del tratamiento de los datos de los interesados, en
+            cuyo caso únicamente serán conservados por ASOCIACIÓN JUVENIL BEST para el ejercicio o la
+            defensa de reclamaciones.
+            <br><br>
+            ASOCIACIÓN JUVENIL BEST dejará de tratar sus datos siempre que usted lleve a cabo la oposición a
+            dicho tratamiento, salvo por motivos legítimos imperiosos, o por el ejercicio o la defensa de posibles
+            reclamaciones.
+            <br><br>
+            Finalmente, y en ejercicio de su derecho a la portabilidad de los datos, el Usuario podrá recibir los
+            datos personales que hubiera proporcionado a ASOCIACIÓN JUVENIL BEST, en un formato
+            estructurado, de uso común y legible por máquina, así como a solicitar que se transmitan a otra
+            entidad responsable del tratamiento.
+            <br><br><br>
+            <b>Medios para ejercer sus derechos.</b>
+            <br>
+            El Usuario podrá ejercer materialmente los derechos descritos en el apartado anterior solicitando el
+            correspondiente formulario a la dirección del responsable: victor.herrezuelo@bestspain.es
+            <br><br>
+            Adicionalmente, el Usuario podrá solicitar información en todo momento acerca del ejercicio de los
+            derechos que le incumben ante la Agencia Española de Protección de Datos.
+            <br><br>
+            En caso de que el ejercicio de sus derechos no hubiera sido atendido o satisfecho correctamente, el
+            Usuario podrá presentar la correspondiente reclamación ante la Agencia Española de Protección de
+            Datos, ubicada en la Calle de Jorge Juan, 6, 28001, Madrid, teléfono 912663517
+            <br><br><br>
+            <b>2. CARÁCTER OBLIGATORIO O FACULTATIVO DE LA INFORMACIÓN FACILITADA POR EL
+                USUARIO</b>
+            <br><br>
+            Los Usuarios, mediante la marcación de las casillas correspondientes y entrada de datos en los
+            campos, marcados con un asterisco (*) en el formulario de contacto o presentados en formularios de
+            descarga, aceptan expresamente y de forma libre e inequívoca, que sus datos son necesarios para
+            atender su petición, por parte del prestador, siendo voluntaria la inclusión de datos en los campos
+            restantes. El Usuario garantiza que los datos personales facilitados al RESPONSABLE son veraces y
+            se hace responsable de comunicar cualquier modificación de los mismos.<br>
+            El RESPONSABLE informa y garantiza que todos los datos solicitados a través del sitio web son
+            obligatorios, ya que son necesarios para la prestación de un servicio óptimo al Usuario. En caso de
+            que no sean facilitados todos los datos, no se garantiza que la información y servicios facilitados sean
+            completamente ajustados a sus necesidades.
+            <br><br><br>
+            <b>3. MEDIDAS DE SEGURIDAD</b>
+            <br><br>
+            Que de conformidad con lo dispuesto en las normativas vigentes en protección de datos personales, el
+            RESPONSABLE está cumpliendo con todas las disposiciones de las normativas GDPR y LOPD para el
+            tratamiento de los datos personales de su responsabilidad, y manifiestamente con los principios
+            descritos en el artículo 5 del GDPR y en el artículo 4 de la LOPD, por los cuales son tratados de
+            manera lícita, leal y transparente en relación con el interesado y adecuados, pertinentes y limitados a
+            lo necesario en relación con los fines para los que son tratados.<br>
+            El RESPONSABLE garantiza que ha implementado políticas técnicas y organizativas apropiadas para
+            aplicar las medidas de seguridad que establecen el GDPR y la LOPD con el fin de proteger los
+            derechos y libertades de los Usuarios y les ha comunicado la información adecuada para que puedan
+            ejercerlos.
+        </p>
+    </section>
+
+{% endblock %}

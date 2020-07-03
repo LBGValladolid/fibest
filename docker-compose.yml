@@ -13,29 +13,40 @@ services:
   volumes:
    - data:/var/lib/postgresql/data
  django:
+  container_name: django
   build: .
   restart: always
   command: "uwsgi --socket :3031 --module fibest.wsgi"
   environment:
    ENV: "PROD"
+   INSCRIPTION: ${INSCRIPTION}
+   SECRET_KEY: ${SECRET_KEY}
+   PASSMAIL: ${PASSMAIL}
   ports:
    - "3031:3031"
   volumes:
    - ./:/opt/fibest
+   - media:/opt/fibest/media
+
   depends_on:
    - postgres
   
  nginx:
   image: nginx:1.17.2
   restart: always
+  command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
   ports:
-   - "8080:8080"
+   - "8080:80"
+   - "8081:443"
   volumes:
    - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
    - ./:/opt/fibest:ro
+   - media:/opt/fibest/media
+   - ./data/certs:/etc/nginx/certs
   depends_on:
    - django
    - postgres
 
 volumes:
  data:
+ media:

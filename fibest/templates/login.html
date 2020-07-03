@@ -1,32 +1,53 @@
-
 {% extends "base.html" %}
-
+{% load i18n %}
 {% block title %}
-<title>Login for companies | FiBEST Private Area</title>
+    <title>{% trans "Login for companies | FiBEST Companies" %}</title>
 {% endblock %}
 
 {% block customstyle %}
-    main {
-        max-width: 450px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+    .main {
+    max-width: 450px;
     }
 {% endblock %}
 
 {% block  content %}
-    <main>
-        <h1>Welcome to FiBEST</h1>
+{% if registered %}
+
+        <div class=" position-absolute mx-auto text-center alert alert-primary fade show center-absolute custom-alert"
+             role="alert">
+            <strong>{{registered}}</strong> {% trans " can now be used to access." %}
+
+        </div>
+    {% endif %}
+    {% if mailSent %}
+
+        <div class=" position-absolute mx-auto text-center alert alert-primary fade show center-absolute custom-alert"
+             role="alert">
+            <strong>{% trans "Mail sent succesfully!" %}</strong> {% trans "Check your mailbox to access." %}
+
+        </div>
+    {% endif %}
+    {% if mailFailed %}
+        <div class=" position-absolute mx-auto text-center alert alert-danger fade show center-absolute custom-alert"
+             role="alert">
+            <strong>{% trans "Mail unkown!" %}</strong> {% trans "Are you already registered? Check out " %} <a
+                href="{% url "inscription" %}">{% trans "inscription" %}</a>
+        </div>
+
+    {% endif %}
+    <div class="container m-auto main">
+
+        <h1>{% trans "Welcome to FiBEST" %}</h1>
         <form action="/login/" method="POST">
             {% csrf_token %}
             <div class="form-group">
                 <label for="exampleInputEmail1">Email:</label>
-                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">Please, introduce your email to access your company inscription details and dashboard. We will send a link to the email to login so you don't have to remember a password.</small>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
+                       placeholder="Enter email">
+                <small id="emailHelp"
+                       class="form-text text-muted">{% trans "Please, introduce your email to access your company inscription details and dashboard. We will send a link to the email to login so you don't have to remember a password." %}</small>
             </div>
-            
+
             <button type="submit" class="btn btn-primary">Login</button>
 
             {% if error_message %}
@@ -35,5 +56,5 @@
                 </div>
             {% endif %}
         </form>
-    </main>
-{% endblock  %}
+    </div>
+{% endblock %}

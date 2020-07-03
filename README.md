@@ -7,6 +7,7 @@ pública del foro en la red para usuarios y empresas.
 
 FiBEST usa Docker Compose para gestionar su entorno.
 
+Se usan variables de entorno, están subidas en el servidor en la propia carpeta de fibest
 ```
 docker-compose up --build
 ```
@@ -45,3 +46,17 @@ docker-compose run django python manage.py createsuperuser
 ```
 
 Django Admin: /admin
+
+# Backup y restore de la BD
+
+backup
+
+```
+docker run --rm -v fibest_data:/volume -v ~/backup:/backup alpine tar -cjf /backup/fibest-data.tar.bz2 -C /volume ./
+```
+
+restore
+
+```
+docker run --rm -v fibest_data:/volume -v /home/backup:/backup alpine sh -c "rm -rf /volume/* /volume/--?* /volume/.[!.]* ; tar -C /volume/ -xjf /backup/fibest-data.tar.bz2"
+```

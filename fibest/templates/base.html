@@ -1,50 +1,186 @@
 {% load staticfiles %}
 
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        {% block title %}
+<html style="overflow-y: scroll" lang="ES">
+<head>
+    {% load i18n %}
+    {% load static %}
+
+    <meta charset="utf-8">
+    {% block title %}
+    {% endblock %}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {# Favicon #}
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+
+    {# Imports de Bootstrap #}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400&display=swap&subset=latin-ext"
+          rel="stylesheet">
+    <link rel="stylesheet" href={% static "css/basic.css" %}>
+    <link rel="stylesheet" href={% static "css/custom-bootstrap.css" %}>
+    <script src="https://kit.fontawesome.com/09d2fc1173.js" crossorigin="anonymous"></script>
+    <style>
+        {% block customstyle %}
         {% endblock %}
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        {# Favicon #}
-        <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
-        <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+    </style>
+</head>
+<body>
 
-        {# Imports de Bootstrap #}
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400&display=swap&subset=latin-ext" rel="stylesheet">
-        
-        {# El buen CSS en el HTML 👍 #}
-        <style>
-            * {
-                font-family: 'Source Sans Pro', sans-serif;
-                font-weight: 300;
-                font-size: 18px;
-            }
+<nav class="navbar fixed-top navbar-light navbar-expand-lg bg-white justify-content-center border-bottom container">
+    <a style="white-space:nowrap;" href="{% url 'dashboard' %}"
+       class="navbar-brand d-flex mr-auto"><h3 class="m-0">{% trans "FiBEST Companies" %}</h3></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse w-100" id="collapsingNavbar">
 
-            body {
-                padding-bottom: 2.5rem;
-            }
+        <div class="nav navbar-nav ml-auto w-100  justify-content-end  flex-nowrap">
+            {% if not navButton %}
+                <button style="white-space: nowrap" id="logout"
+                        class="btn btn-sm btn-outline-danger nav-item m-1">{% trans "Log out" %}</button>
+                <a style="white-space: nowrap" role="button" class="btn  btn-sm btn-outline-primary nav-item m-1"
+                   href="{% url 'dashboard' %}">{% trans "Dashboard" %}</a>
+            {% endif %}
+            <div class="nav-item row mx-1  flex-nowrap justify-content-center">
+                {% get_current_language as LANGUAGE_CODE %}
+                {% get_available_languages as LANGUAGES %}
+                {% get_language_info_list for LANGUAGES as languages %}
+                {% for language in languages %}
 
-            h1, h2, h3 {
-                font-weight: 200;
-                color: #1447ff;
-            }
+                    <form class="my-auto"
+                          action="{% url 'set_language' %}"
+                          method="post">
+                        {% csrf_token %}
+                        <input name="next" type="hidden" value="{{ redirect_to }}">
+                        <input type="hidden" name="language" value="{{ language.code }}"/>
+                        <input type="image" class="m-1 align-middle" src={% static language.code|add:".png" %}>
+                    </form>
 
-            {% block customstyle %}
-            {% endblock %}
-        </style>
-    </head>
-    <body>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</nav>
+{# Template #}
+    <div  class="row page-wrap mx-auto">
         {% block content %}
         {% endblock %}
+    </div>
+{#  Footer #}
+<footer class=" container site-footer font-small blue border-top">
+    <div class="mb-3 row  container text-md-left text-center pt-1">
+        <div class="col-md-9">
+            <h2>{% trans "Contacta con Nosotros" %}</h2>
+        </div>
+        <div class="flex-nowrap col-md-3 row align-items-center ml-0">
+            <div class="col social mb-2 text-center">
+                <a href="https://facebook.com/FiBESTorg/" target="_blank" title="Facebook"
+                   class="icon-wrap small facebook">
+                    <i class="fab fa-facebook-f fa-2x"></i>
 
-        {# Bootstrap JS, Popper y JQuery #}
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </body>
+
+                </a></div>
+            <div class="col social mb-2 text-center">
+
+                <a href="https://twitter.com/fibestorg" target="_blank" title="Twitter" class="icon-wrap small twitter">
+                    <i class="fab fa-twitter fa-2x"></i>
+
+
+                </a></div>
+            <div class="col social mb-2 text-center">
+
+                <a href="https://www.linkedin.com/in/fibest-valladolid-0a3a805a" target="_blank" title="Linkedin"
+                   class="icon-wrap small linkedin">
+                    <i class="fab fa-linkedin-in fa-2x"></i>
+
+
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-md  text-center">
+            <h3>Marina Bujedo Esteban</h3>
+            <p>{% trans "Coordinadora FiBEST 2020" %}</p>
+            <p>
+                <i class="iconf-mail"></i> Email: <a href="mailto:marina.bujedo@bestspain.es">marina.bujedo@bestspain.es</a>
+            </p>
+            <p>
+                <i class="iconf-phone"></i> Tlfn.: +34 611 07 14 88
+            </p>
+        </div>
+        <div class="col-md  text-center">
+            <h3>Víctor Herrezuelo Paredes</h3>
+            <p>{% trans "Coordinador FiBEST 2020" %}</p>
+            <p>
+                <i class="iconf-mail"></i> Email: <a
+                    href="mailto:victor.herrezuelo@bestspain.es">victor.herrezuelo@bestspain.es</a>
+            </p>
+            <p>
+                <i class="iconf-phone"></i> Tlfn.: +34 642 10 83 49
+            </p>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md text-center py-1">
+            <h3>BEST Valladolid</h3>
+            <p style="text-align:justify">{% trans "Es el grupo local de BEST en la Universidad de Valladolid, fundado en 1994. BEST Valladolid cuenta con aproximadamente 30 miembros y lleva a cabo numerosos proyectos cada año,entre ellos el Foro de empleo FiBEST." %}</p>
+            <p style="text-align:center">
+                {% trans "Para más información:" %} <a href="http://www.BESTValladolid.org">www.BESTValladolid.org</a>
+            </p>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md text-center py-1">
+            <img src="{% static "logo.png" %}" style="max-height:5rem"/>
+
+        </div>
+    </div>
+    <!-- Footer Links -->
+    <div class="footer-copyright text-center py-3">© 2020
+        <a href="https://www.BESTValladolid.org/"> BEST Valladolid</a>, All rights reserved. | <a
+                href={% url "legal" %}>{% trans "legal" %}</a> | <a href={% url "privacy" %}>
+            {% trans "Privacy" %}</a>
+    </div>
+
+</footer>
+
+
+{# Bootstrap JS, Popper y JQuery #}
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+{% block script %}
+{% endblock %}
+{# Navbar JS idioma #}
+<script>
+    $("#logout").on('click', function () {
+        var active = true;// or false, you have to set it
+        $.ajax({
+            url: '/ajax/logout/',
+            data: {
+                'csrfmiddlewaretoken': $('input[name="csrfmiddlewaretoken"]').val(),
+            },
+        }).done(function (data) {
+            if (data.success) {
+                window.location.href = data.url;
+            }
+        });
+    });
+</script>
+</body>
 </html>

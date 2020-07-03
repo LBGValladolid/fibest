@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}
+    <title>{% trans "Times | FiBEST Companies" %}</title>
+{% endblock %}
+
+{% block content %}
+    {% load crispy_forms_tags %}
+    {% load i18n %}
+
+
+    <section class="container form">
+        <h1>{% trans "PLAZOS DE ENVÍO DE LA INFORMACIÓN" %}</h1>
+        {% trans "texto envio 1" %}
+
+        <br><br>
+        <ul>
+            <li>
+                <b>{% trans "Logo e información para la página web:" %}</b> {% trans "Con la mayor brevedad posible." %}
+            </li>
+            <li>
+                <b>{% trans "Información y publicidad para la revista:" %}</b> {% trans "Lo antes posible, y siempre antes del" %}
+                <b> {% trans "14 de febrero de 2020. " %}</b>
+                {% trans "A partir de esa fecha no se asegura la presencia en la revista del foro." %}
+            </li>
+            <li>
+                <b>{% trans "Publicidad que será incluida en el Welcome Pack:" %}</b>{% trans " Se debe recibir, ya impreso con el número de ejemplares deseados antes del día" %}
+                <b>{% trans "29 de febrero de 2020" %}</b>. {% trans "La dirección se encuentra en el pie de página." %}
+            </li>
+            <li>
+                <b>{% trans "Datos de facturación y contrato:" %}</b> {% trans "Lo antes posible, siempre antes del" %}
+                <b> {% trans "14 de febrero de 2020." %}</b></li>
+        </ul>
+        {% trans "texto envio 2" %}
+        <br><br>
+        {% trans "texto envio 3" %}
+
+
+        <br><br>
+        {% trans "texto dir envio" %}
+
+    </section>
+
+{% endblock %}
+
